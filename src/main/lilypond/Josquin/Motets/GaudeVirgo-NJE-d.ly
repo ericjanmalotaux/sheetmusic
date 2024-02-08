@@ -10,6 +10,12 @@
 ficta = { \set suggestAccidentals = ##t }
 recta = { \set suggestAccidentals = ##f }
 
+\layout {
+  \context {
+    \Voice
+    \consists Ambitus_engraver
+  }
+}
 
 superius =
 \relative d' {
@@ -17,49 +23,49 @@ superius =
   \key d \minor
   \time 2/1
   \override Staff.NoteHead.style = #'baroque
-  
+
   % Gaude virgo mater Christi
-  
+
   \ficta
   d\breve d1 d f2. g4 a2 bes2 a bes1 a4 g a1
   d, d d f2. g4 a2 bes a bes1 a4 g a1 r2 d c d1 c4 bes c1 r1
   a a c2. d4 e f e2~e4 c d e f2 e2~e4 c d e f2 e2~e4 d d1 cis2 d \breve~\breve
   R\breve*13
-  
+
   % Gaude quia tui nati
-  
+
   r1 d f f e c d d c a bes bes a f g g f2
   c' d f2~f e4 d e1 f2 d f e2~e d1 c4 b c2 a c b2~b a2 c2. b4 g2 a1 gis2 a\breve
   r2 a1 g4 f g2 f d a' bes a1 g4 f g2 f d d' e4 d f2. e4 d2~d cis2 d1
   R\breve*3
-  
+
   % Gaude Christo ascendente
-  
+
   r2 a1 b2~b c1 d2~d2 e1 f2~f4 e f d e2 a, b c d e2~e c2 b1 a r
   r e' f d e c d d r e f d e c2. b4 c2 d1 cis2
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
   \tuplet 2/3 { d1 r }
-  
+
   % Gaude que post ipsim scandis
-  
+
   a\breve b1 g a\breve b1 c d~d e r
-  
+
   % Et est honor tibi
-  
+
   a,\breve b1 g a\breve b1 c d~d e1 r e\breve f1 d e1. d2 d\breve cis1 \time 2/1 d1. c2 a1
-  
+
   % Ubi fructus ventris
-  
+
   c b d a c  b2. c4 d1 e r c b d a c b2. c4  d1 e
-  
+
   % In perenni gaudi
-  
+
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1 e\breve f1 d e1. d2  d\breve cis1 \time 2/1 d\breve r2
-  
+
   % Alleluja
-  
+
   d, f2. g4 a2 bes a1 r1 r2 d, f2. g4 a bes a2~a g2 a f' f f1 e4 d cis\breve~\breve\fermata d\breve~\breve
 }
 altus =
@@ -180,102 +186,86 @@ bassus =
       instrumentName = "Superius"
       shortInstrumentName = "S"
     }
-    <<
-      \new Voice = "superius" {
-        \superius
-        \addlyrics {
-          Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
-          Que per au -- rem _ _ con -- ce -- pis -- _ _ ti, con -- ce -- pis -- _ _ ti,
-          Ga -- bri -- e -- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun -- ti -- o.
-          Gau -- de, qui -- a tu -- i na -- ti,
-          Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- _ _ _ ti,
-          mor -- tem pa -- _ _ _ ti, mor -- tem pa -- _ _ _ _ _ _ ti,
-          Ful -- _ _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- _ rec -- _ _ ti -- o.
-          Et in ce -- lum te vi -- _ _ _ den -- _ te, te vi -- den -- _ _ te,
-          Mo -- tu fer -- tur pro -- pri -- o,
-          mo -- tu fer -- tur pro -- _ _ _ pri -- o.
-          Gau -- de, que post ip -- sim scan -- dis,
-          Et est ho -- nor ti -- bi gran -- dis
-          In ce -- li pa -- _ la -- ti -- o. _ _
-          U -- bi fruc -- tus ven -- tris _ tu -- i
-          No -- bis de -- tur per te _ fru -- i
-          In per -- en -- ni _ gau -- di -- o.
-          Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ lu -- ja,
-          al -- le -- lu -- _ _ _ ja.
-        }
-      }
-    >>
+    \superius
+    \addlyrics {
+      Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+      Que per au -- rem _ _ con -- ce -- pis -- _ _ ti, con -- ce -- pis -- _ _ ti,
+      Ga -- bri -- e -- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun -- ti -- o.
+      Gau -- de, qui -- a tu -- i na -- ti,
+      Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- _ _ _ ti,
+      mor -- tem pa -- _ _ _ ti, mor -- tem pa -- _ _ _ _ _ _ ti,
+      Ful -- _ _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- _ rec -- _ _ ti -- o.
+      Et in ce -- lum te vi -- _ _ _ den -- _ te, te vi -- den -- _ _ te,
+      Mo -- tu fer -- tur pro -- pri -- o,
+      mo -- tu fer -- tur pro -- _ _ _ pri -- o.
+      Gau -- de, que post ip -- sim scan -- dis,
+      Et est ho -- nor ti -- bi gran -- dis
+      In ce -- li pa -- _ la -- ti -- o. _ _
+      U -- bi fruc -- tus ven -- tris _ tu -- i
+      No -- bis de -- tur per te _ fru -- i
+      In per -- en -- ni _ gau -- di -- o.
+      Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ lu -- ja,
+      al -- le -- lu -- _ _ _ ja.
+    }
     \new Staff \with {
       instrumentName = "Altus"
       shortInstrumentName = "A"
     }
-    <<
-      \new Voice = "altus" {
-        \altus
-        \addlyrics {
-          Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
-          Que per au -- rem _ _ con -- ce -- pis -- _ _ ti,
-          Ga -- bri -- e -- _ _ _ _ _ _ le nun -- ti -- o.
-          Gau -- de, qui -- a tu -- i na -- ti,
-          Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
-          Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
-          Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
-          Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
-          Gau -- de, que post ip -- sum scan -- _ dis,
-          Et est ho -- nor ti -- bi gran -- _ dis  In ce -- li pa -- la -- ti -- o.
-          U -- bi fruc -- tus ven -- tris _ tu -- i
-          No -- bis de -- tur per te _ fru -- i
-          In per -- en -- ni gau -- di -- o.
-          Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
-        }
-      }
-    >>
+    \altus
+    \addlyrics {
+      Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+      Que per au -- rem _ _ con -- ce -- pis -- _ _ ti,
+      Ga -- bri -- e -- _ _ _ _ _ _ le nun -- ti -- o.
+      Gau -- de, qui -- a tu -- i na -- ti,
+      Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
+      Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
+      Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
+      Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
+      Gau -- de, que post ip -- sum scan -- _ dis,
+      Et est ho -- nor ti -- bi gran -- _ dis  In ce -- li pa -- la -- ti -- o.
+      U -- bi fruc -- tus ven -- tris _ tu -- i
+      No -- bis de -- tur per te _ fru -- i
+      In per -- en -- ni gau -- di -- o.
+      Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
+    }
     \new Staff \with {
       instrumentName = "Tenor"
       shortInstrumentName = "T"
     }
-    <<
-      \new Voice = "tenor" {
-        \tenor
-        \addlyrics {
-          Gau -- de, qui -- a _ de -- _ _ o ple -- na,
-          Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na, pe -- _ _ _ _ _ _ _ na,
-          Cum pu -- do -- _ _ _ _ _ _ ris li -- _ _ _ _ _ _ _ _ li -- o.
-          Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
-          Quem do -- le -- _ _ bas mor -- tem pa -- ti,
-          mor -- tem pa -- ti, mor -- tem pa -- ti-. _
-          Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
-          Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
-          mo -- tu fer -- tur pro-_ _ _ _ _ _ _ pri -- o.
-          In ce -- li pa -- la -- ti -- o. U -- bi fruc -- tus ven -- tris _ _ tu -- _ _ i
-          No -- _ _ bis de -- tur per te _ _ fru -- _ _ i
-          In per -- en -- ni gau -- di -- o.
-          Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
-        }
-      }
-    >>
+    \tenor
+    \addlyrics {
+      Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+      Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na, pe -- _ _ _ _ _ _ _ na,
+      Cum pu -- do -- _ _ _ _ _ _ ris li -- _ _ _ _ _ _ _ _ li -- o.
+      Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
+      Quem do -- le -- _ _ bas mor -- tem pa -- ti,
+      mor -- tem pa -- ti, mor -- tem pa -- ti-. _
+      Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
+      Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
+      mo -- tu fer -- tur pro-_ _ _ _ _ _ _ pri -- o.
+      In ce -- li pa -- la -- ti -- o. U -- bi fruc -- tus ven -- tris _ _ tu -- _ _ i
+      No -- _ _ bis de -- tur per te _ _ fru -- _ _ i
+      In per -- en -- ni gau -- di -- o.
+      Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
+    }
     \new Staff \with {
       instrumentName = "Bassus"
       shortInstrumentName = "B"
     }
-    <<
-      \new Voice = "bassus" {
-        \bassus
-        \addlyrics {
-          Gau -- de, qui -- a _ de -- _ _ o ple -- na,
-          Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na,
-          Cum pu -- do -- _ _ _ ris li -- _ _ _ _ _ _ _ li -- o.
-          Gau -- de, qui -- a tu -- i na -- ti,
-          Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- ti,
-          Ful -- _ _ _ _ get.
-          Gau -- de, Chris -- to a -- scen -- den -- te,
-          Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
-          In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
-          No -- bis _ _ de -- tur per te fru -- _ i _
-          In per -- en -- ni gau -- _ di -- o.
-          Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
-        }
-      }
-    >>
+    \bassus
+    \addlyrics {
+      Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+      Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na,
+      Cum pu -- do -- _ _ _ ris li -- _ _ _ _ _ _ _ li -- o.
+      Gau -- de, qui -- a tu -- i na -- ti,
+      Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- ti,
+      Ful -- _ _ _ _ get.
+      Gau -- de, Chris -- to a -- scen -- den -- te,
+      Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
+      In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
+      No -- bis _ _ de -- tur per te fru -- _ i _
+      In per -- en -- ni gau -- _ di -- o.
+      Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
+    }
   >>
 }
