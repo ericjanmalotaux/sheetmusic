@@ -5,11 +5,8 @@
   composer = "Josquin"
 }
 
-\include "satb.ly"
-
 ficta = { \set suggestAccidentals = ##t }
 recta = { \set suggestAccidentals = ##f }
-
 
 \layout {
   \override Staff.BarLine.allow-span-bar = ##f
@@ -24,6 +21,8 @@ superius =
   \clef treble
   \key c \minor
   \time 2/1
+  \set Score.tempoHideNote = ##t
+  \tempo 1 = 80
   \override Staff.NoteHead.style = #'baroque
 
   % Gaude virgo mater Christi
@@ -51,11 +50,15 @@ superius =
 
   % Gaude que post ipsim scandis
 
+  \tempo 1 = 120
   g\breve a1 f g\breve a1 bes c~c d r
 
   % Et est honor tibi
 
-  g,\breve a1 f g\breve a1 bes c~c d1 r d\breve es1 c d1. c2 c\breve b1 \time 2/1 c1. bes2 g1
+  g,\breve a1 f g\breve a1 bes c~c d1 r d\breve es1 c d1. c2 c\breve b1
+  \time 2/1
+  \tempo 1=80
+  c1. bes2 g1
 
   % Ubi fructus ventris
 
@@ -64,11 +67,16 @@ superius =
   % In perenni gaudi
 
   \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1 d\breve es1 c d1. c2  c\breve b1 \time 2/1 c\breve r2
+  \time 3/1
+  \tempo 1 = 120
+  d\breve es1 c d1. c2  c\breve b1
+  \time 2/1
+  \tempo \breve = 40
+  c\breve
 
   % Alleluja
 
-  c, es2. f4 g2 as g1 r1 r2 c, es2. f4 g as g2~g f2 g es' es es1 d4 c b\breve~\breve\fermata c\breve~\breve
+  r2 c, es2. f4 g2 as g1 r1 r2 c, es2. f4 g as g2~g f2 g es' es es1 d4 c b\breve~\breve\fermata c\breve~\breve
 }
 altus =
 \relative d' {
@@ -187,6 +195,7 @@ bassus =
     \new Staff \with {
       instrumentName = "Superius"
       shortInstrumentName = "S"
+      midiInstrument = "choir aahs"
     }
     \superius
     \addlyrics {
@@ -212,6 +221,7 @@ bassus =
     \new Staff \with {
       instrumentName = "Altus"
       shortInstrumentName = "A"
+      midiInstrument = "choir aahs"
     }
     \altus
     \addlyrics {
@@ -233,6 +243,7 @@ bassus =
     \new Staff \with {
       instrumentName = "Tenor"
       shortInstrumentName = "T"
+      midiInstrument = "choir aahs"
     }
     \tenor
     \addlyrics {
@@ -253,6 +264,7 @@ bassus =
     \new Staff \with {
       instrumentName = "Bassus"
       shortInstrumentName = "B"
+      midiInstrument = "choir aahs"
     }
     \bassus
     \addlyrics {
@@ -270,4 +282,7 @@ bassus =
       Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
     }
   >>
+  \layout {}
+  \midi {
+  }%
 }
