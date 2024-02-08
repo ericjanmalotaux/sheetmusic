@@ -184,24 +184,24 @@ bassus =
       \new Voice = "superius" {
         \superius
         \addlyrics {
-          Gau- de vir- go _ _  ma- ter Chris- _ _ ti,
-          Que per au- rem _ _ con- ce- pis- _ _ ti, con- ce- pis- _ _ ti,
-          Ga- bri- e- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun- ti- o.
-          Gau- de, qui- a tu- i na- ti,
-          Quem do- le- bas mor- tem pa- ti, mor- tem pa- _ _ _ ti,
-          mor- tem pa- _ _ _ ti, mor- tem pa- _ _ _ _ _ _ ti,
-          Ful- _ _ _ _ get re- sur- rec- _ _ _ ti- o, re- sur- _ rec- _ _ ti- o.
-          Et in ce- lum te vi- _ _ _ den- _ te, te vi- den- _ _ te,
-          Mo- tu fer- tur pro- pri- o,
-          mo- tu fer- tur pro- _ _ _ pri- o.
-          Gau- de, que post ip- sim scan- dis,
-          Et est ho- nor ti- bi gran- dis
-          In ce- li pa- _ la- ti- o. _ _
-          U- bi fruc- tus ven- tris _ tu- i
-          No- bis de- tur per te _ fru- i
-          In per- en- ni _ gau- di- o.
-          Al- le- _ _ lu- ja, al- le- _ _ _ _ lu- ja,
-          al- le- lu- _ _ _ ja.
+          Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+          Que per au -- rem _ _ con -- ce -- pis -- _ _ ti, con -- ce -- pis -- _ _ ti,
+          Ga -- bri -- e -- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun -- ti -- o.
+          Gau -- de, qui -- a tu -- i na -- ti,
+          Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- _ _ _ ti,
+          mor -- tem pa -- _ _ _ ti, mor -- tem pa -- _ _ _ _ _ _ ti,
+          Ful -- _ _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- _ rec -- _ _ ti -- o.
+          Et in ce -- lum te vi -- _ _ _ den -- _ te, te vi -- den -- _ _ te,
+          Mo -- tu fer -- tur pro -- pri -- o,
+          mo -- tu fer -- tur pro -- _ _ _ pri -- o.
+          Gau -- de, que post ip -- sim scan -- dis,
+          Et est ho -- nor ti -- bi gran -- dis
+          In ce -- li pa -- _ la -- ti -- o. _ _
+          U -- bi fruc -- tus ven -- tris _ tu -- i
+          No -- bis de -- tur per te _ fru -- i
+          In per -- en -- ni _ gau -- di -- o.
+          Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ lu -- ja,
+          al -- le -- lu -- _ _ _ ja.
         }
       }
     >>
@@ -213,20 +213,20 @@ bassus =
       \new Voice = "altus" {
         \altus
         \addlyrics {
-          Gau- de vir- go _ _  ma- ter Chris- _ _ ti,
-          Que per au- rem _ _ con- ce- pis- _ _ ti,
-          Ga- bri- e- _ _ _ _ _ _ le nun- ti- o.
-          Gau- de, qui- a tu- i na- ti,
-          Quem do- le- bas mor- tem pa- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
-          Ful- _ _ _ get re- sur- rec- _ _ _ ti- o, re- sur- rec- _ _ _ _ _ _ ti- o.
-          Et in ce- lum te vi- den- te, te vi- den- _ _ _ te, _
-          Mo- tu fer- tur pro- pri- o, mo- tu fer- tur pro- pri- o-. _
-          Gau- de, que post ip- sum scan- _ dis,
-          Et est ho- nor ti- bi gran- _ dis  In ce- li pa- la- ti- o.
-          U- bi fruc- tus ven- tris _ tu- i
-          No- bis de- tur per te _ fru- i
-          In per- en- ni gau- di- o.
-          Al- le- _ _ lu- ja, al- le- _ _ _ _ _ ja, al- le- _ _ _ _ lu- _ ja.
+          Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+          Que per au -- rem _ _ con -- ce -- pis -- _ _ ti,
+          Ga -- bri -- e -- _ _ _ _ _ _ le nun -- ti -- o.
+          Gau -- de, qui -- a tu -- i na -- ti,
+          Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
+          Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
+          Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
+          Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
+          Gau -- de, que post ip -- sum scan -- _ dis,
+          Et est ho -- nor ti -- bi gran -- _ dis  In ce -- li pa -- la -- ti -- o.
+          U -- bi fruc -- tus ven -- tris _ tu -- i
+          No -- bis de -- tur per te _ fru -- i
+          In per -- en -- ni gau -- di -- o.
+          Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
         }
       }
     >>
@@ -238,19 +238,19 @@ bassus =
       \new Voice = "tenor" {
         \tenor
         \addlyrics {
-          Gau- de, qui- a _ de- _ _ o ple- na,
-          Pe- pe- ris- ti _ si- _ _ ne pe- na, pe- _ _ _ _ _ _ _ na,
-          Cum pu- do- _ _ _ _ _ _ ris li- _ _ _ _ _ _ _ _ li- o.
-          Gau- _ _ de, qui- a tu- _ _ _ _ _ _ _ i na- ti,
-          Quem do- le- _ _ bas mor- tem pa- ti,
-          mor- tem pa- ti, mor- tem pa- ti-. _
-          Gau- de, Chris- to a- scen- _ _ _ den- te.
-          Mo- tu fer- tur pro- pri- o, _ _ _ _
-          mo- tu fer- tur pro-_ _ _ _ _ _ _ pri- o.
-          In ce- li pa- la- ti- o. U- bi fruc- tus ven- tris _ _ tu- _ _ i
-          No- _ _ bis de- tur per te _ _ fru- _ _ i
-          In per- en- ni gu- di- o.
-          Al le- _ lu- ja, al- _ _ le- lu- ja, al- _ _ le- lu- ja, _ _ al- le- lu- _ _ _ ja.
+          Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+          Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na, pe -- _ _ _ _ _ _ _ na,
+          Cum pu -- do -- _ _ _ _ _ _ ris li -- _ _ _ _ _ _ _ _ li -- o.
+          Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
+          Quem do -- le -- _ _ bas mor -- tem pa -- ti,
+          mor -- tem pa -- ti, mor -- tem pa -- ti-. _
+          Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
+          Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
+          mo -- tu fer -- tur pro-_ _ _ _ _ _ _ pri -- o.
+          In ce -- li pa -- la -- ti -- o. U -- bi fruc -- tus ven -- tris _ _ tu -- _ _ i
+          No -- _ _ bis de -- tur per te _ _ fru -- _ _ i
+          In per -- en -- ni gau -- di -- o.
+          Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
         }
       }
     >>
@@ -262,18 +262,18 @@ bassus =
       \new Voice = "bassus" {
         \bassus
         \addlyrics {
-          Gau- de, qui- a _ de- _ _ o ple- na,
-          Pe- pe- ris- ti _ si- _ _ ne pe- na,
-          Cum pu- do- _ _ _ ris li- _ _ _ _ _ _ _ li- o.
-          Gau- de, qui- a tu- i na- ti,
-          Quem do- le- bas mor- tem pa- ti, mor- tem pa- ti,
-          Ful- _ _ _ _ get.
-          Gau- de, Chris- to a- scen- den- te,
-          Mo- tu fer- tur pro- pri- o, _ _ _ mo- tu fer- tur pro- _ _ _ _ pri- o.
-          In ce- li pa- la-  _ ti- o. U- bi fruc- tus ven- tris tu- _ i _
-          No- bis _ _ de- tur per te fru- _ i _
-          In per- en- ni gau- _ di- o.
-          Al- le- _ _ lu- ja, al- le- _ _ lu- ja, al- le- _ _ lu- _ ja.
+          Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+          Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na,
+          Cum pu -- do -- _ _ _ ris li -- _ _ _ _ _ _ _ li -- o.
+          Gau -- de, qui -- a tu -- i na -- ti,
+          Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- ti,
+          Ful -- _ _ _ _ get.
+          Gau -- de, Chris -- to a -- scen -- den -- te,
+          Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
+          In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
+          No -- bis _ _ de -- tur per te fru -- _ i _
+          In per -- en -- ni gau -- _ di -- o.
+          Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
         }
       }
     >>
