@@ -12,8 +12,9 @@ recta = { \set suggestAccidentals = ##f }
 
 
 \layout {
+  \override Staff.BarLine.allow-span-bar = ##f
   \context {
-    \Voice
+    \Staff
     \consists Ambitus_engraver
   }
 }
