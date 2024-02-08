@@ -114,7 +114,7 @@ tenor =
   c1 r c bes2 d2~d2 a1 c2~c g2. a4 bes2 c d es1 d2 bes c2. bes4 g2 d'1 a2~a c1 g2~g4 a bes2 c d es1 d %94
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  bes\breve c1 a bes\breve bes1 d\breve
+  bes\breve c1 a bes\breve c1 d\breve
   \time 2/1
   c\breve. %97
   r2 c es2. f4 g2 c, r es1 d4 c bes2 c g es'2 ~es d4 c bes2 c g2. a4 bes2 c d es1 d4 c d\breve\fermata c\breve~\breve
