@@ -14,162 +14,162 @@ recta = { \set suggestAccidentals = ##f }
 superius =
 \relative d' {
   \clef treble
-  \key c \minor
+  \key d \minor
   \time 2/1
   \override Staff.NoteHead.style = #'baroque
   
   % Gaude virgo mater Christi
   
   \ficta
-  c\breve c1 c es2. f4 g2 as2 g as1 g4 f g1
-  c, c c es2. f4 g2 as g as1 g4 f g1 r2 c bes c1 bes4 as bes1 r1
-  g g bes2. c4 d es d2~d4 bes c d es2 d2~d4 bes c d es2 d2~d4 c c1 b2 c \breve~\breve
+  d\breve d1 d f2. g4 a2 bes2 a bes1 a4 g a1
+  d, d d f2. g4 a2 bes a bes1 a4 g a1 r2 d c d1 c4 bes c1 r1
+  a a c2. d4 e f e2~e4 c d e f2 e2~e4 c d e f2 e2~e4 d d1 cis2 d \breve~\breve
   R\breve*13
   
   % Gaude quia tui nati
   
-  r1 c es es d bes c c bes g as as g es f f es2
-  bes' c es2~es d4 c d1 es2 c es d2~d c1 bes4 a bes2 g bes a2~a g2 bes2. a4 f2 g1 fis2 g\breve
-  r2 g1 f4 es f2 es c g' as g1 f4 es f2 es c c' d4 c es2. d4 c2~c b2 c1
+  r1 d f f e c d d c a bes bes a f g g f2
+  c' d f2~f e4 d e1 f2 d f e2~e d1 c4 b c2 a c b2~b a2 c2. b4 g2 a1 gis2 a\breve
+  r2 a1 g4 f g2 f d a' bes a1 g4 f g2 f d d' e4 d f2. e4 d2~d cis2 d1
   R\breve*3
   
   % Gaude Christo ascendente
   
-  r2 g1 a2~a bes1 c2~c2 d1 es2~es4 d es c d2 g, a bes c d2~d bes2 a1 g r
-  r d' es c d bes c c r d es c d bes2. a4 bes2 c1 b2
+  r2 a1 b2~b c1 d2~d2 e1 f2~f4 e f d e2 a, b c d e2~e c2 b1 a r
+  r e' f d e c d d r e f d e c2. b4 c2 d1 cis2
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  \tuplet 2/3 { c1 r }
+  \tuplet 2/3 { d1 r }
   
   % Gaude que post ipsim scandis
   
-  g\breve a1 f g\breve a1 bes c~c d r
+  a\breve b1 g a\breve b1 c d~d e r
   
   % Et est honor tibi
   
-  g,\breve a1 f g\breve a1 bes c~c d1 r d\breve es1 c d1. c2 c\breve b1 \time 2/1 c1. bes2 g1
+  a,\breve b1 g a\breve b1 c d~d e1 r e\breve f1 d e1. d2 d\breve cis1 \time 2/1 d1. c2 a1
   
   % Ubi fructus ventris
   
-  bes a c g bes  a2. bes4 c1 d r bes a c g bes a2. bes4  c1 d
+  c b d a c  b2. c4 d1 e r c b d a c b2. c4  d1 e
   
   % In perenni gaudi
   
   \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1 d\breve es1 c d1. c2  c\breve b1 \time 2/1 c\breve r2
+  \time 3/1 e\breve f1 d e1. d2  d\breve cis1 \time 2/1 d\breve r2
   
   % Alleluja
   
-  c, es2. f4 g2 as g1 r1 r2 c, es2. f4 g as g2~g f2 g es' es es1 d4 c b\breve~\breve\fermata c\breve~\breve
+  d, f2. g4 a2 bes a1 r1 r2 d, f2. g4 a bes a2~a g2 a f' f f1 e4 d cis\breve~\breve\fermata d\breve~\breve
 }
 altus =
 \relative d' {
   \clef treble
-  \key c \dorian
+  \key d \dorian
   \time 2/1
   \override Staff.NoteHead.style = #'baroque
   R\breve*2
-  c\breve c1 c es2. f4 g2 \recta as2 g \ficta as1 g4 f g1
-  c, c c es2. f4 g2 as g as1 g4 f  g \breve
-  r1 g g bes1~bes2 as2 g f  es2. d4 c2 bes c1 d c\breve~\breve
+  d\breve d1 d f2. g4 a2 \recta bes2 a \ficta bes1 a4 g a1
+  d, d d f2. g4 a2 bes a bes1 a4 g  a \breve
+  r1 a a c1~c2 bes2 a g  f2. e4 d2 c d1 e d\breve~\breve
   R\breve*14
   %33
-  r1 g' bes bes as f g g f\breve
-  r1 g  as as g es  f f
-  \tuplet 3/2 { es1 c2 bes d es }
-  \tuplet 3/2 { f1 d2 c es f }
-  \tuplet 3/2 { g1 d f }
-  \tuplet 3/2 { es bes c }
-  d\breve
-  bes1. a4 g
-  a2 g r
-  g' as g1 f4 es f2 es c g'  as g1 f4 es f2 es c2. es4 d1 c
+  r1 a' c c bes g a a g\breve
+  r1 a  bes bes a f  g g
+  \tuplet 3/2 { f1 d2 c e f }
+  \tuplet 3/2 { g1 e2 d f g }
+  \tuplet 3/2 { a1 e g }
+  \tuplet 3/2 { f c d }
+  e\breve
+  c1. b4 a
+  b2 a r
+  a' bes a1 g4 f g2 f d a'  bes a1 g4 f g2 f d2. f4 e1 d
   R\breve*3
   %57
-  r1 c d es f g a b c2 g a bes2~bes4 a g1 fis2 g1 (c,) a' bes g a f g g r
-  a bes g a f g g\breve
+  r1 d e f g a b cis d2 a b c2~c4 b a1 gis2 a1 (d,) b' c a b g a a r
+  b c a b g a a\breve
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  es\breve. r1
-  c\breve  d1 bes c~c d es f1. es2 g1
-  r1 c,\breve d1 bes c~c d1 es f1. es2 g1
-  r g\breve a1 f g g g\breve
+  f\breve. r1
+  d\breve  e1 c d~d e f g1. f2 a1
+  r1 d,\breve e1 c d~d e1 f g1. f2 a1
+  r a\breve b1 g a a a\breve
   \time 2/1
-  es1
-  r es d f c es d2. es4 f1 g
-  r es d f c es d2. es4 f1 g\breve
+  f1
+  r f e g d f e2. f4 g1 a
+  r f e g d f e2. f4 g1 a\breve
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  r1 g\breve a1 f g g g\breve
+  r1 a\breve b1 g a a a\breve
   \time 2/1
-  es1 r2 c es2. f4 g2 as g c, es2. f4  g as g1 f2 g\breve
-  r2 c, es2. f4 g as g1 f2 g\breve~\breve\fermata g\breve~\breve
+  f1 r2 d f2. g4 a2 bes a d, f2. g4  a bes a1 g2 a\breve
+  r2 d, f2. g4 a bes a1 g2 a\breve~\breve\fermata a\breve~\breve
 }
 tenor =
 \relative d {
   \clef "treble_8"
-  \key c \dorian
+  \key d \dorian
   \time 2/1
   \override Staff.NoteHead.style = #'baroque
   R\breve*16  %17
-  r1 c es1 f g2 c, c'2. bes4 g2 bes \ficta as1 g1  %21
-  r2 c, es1 f g2 c, c'2. bes4 g2 bes as1 g2 es f c4 d es f g1 f2 g1  %27
-  bes c d   g,4 a bes c d c es2  g,4 a bes c d c es2~es4 d c1 b2 c\breve~\breve  %34
-  bes1. as4 g f\breve
-  r2 bes c es2~es2 d4 c d2 c~c2 bes4 as g2 c f,\breve c'2 %40
-  g as c2~c bes4 a bes2 f g1 g f  %43
-  r2 c' d1 d c r2 g a1 a g\breve (c)
+  r1 d f1 g a2 d, d'2. c4 a2 c \ficta bes1 a1  %21
+  r2 d, f1 g a2 d, d'2. c4 a2 c bes1 a2 f g d4 e f g a1 g2 a1  %27
+  c d e   a,4 b c d e d f2  a,4 b c d e d f2~f4 e d1 cis2 d\breve~\breve  %34
+  c1. bes4 a g\breve
+  r2 c d f2~f2 e4 d e2 d~d2 c4 bes a2 d g,\breve d'2 %40
+  a bes d2~d c4 b c2 g a1 a g  %43
+  r2 d' e1 e d r2 a b1 b a\breve (d)
   R\breve*4  %53
-  r2 g1 a2~a bes1 c2~c d1 es2~es4 d es c d1 c r
+  r2 a1 b2~b c1 d2~d e1 f2~f4 e f d e1 d r
   R\breve*4  %62
-  r1 r2 d2~d es1 c2~c d1 bes2~bes c1 a2~2 bes2. g4 g2~g (es'1) c2~c d1 bes2~bes c1 a2~a bes2. g4 es'2~4 d es c d1
+  r1 r2 e2~e f1 d2~d e1 c2~c d1 b2~2 c2. a4 a2~a (f'1) d2~d e1 c2~c d1 b2~b c2. a4 f'2~4 e f d e1
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  c\breve.
+  d\breve.
   R\breve.*8  %81
-  bes\breve c1 a bes\breve c1 d\breve
+  c\breve d1 b c\breve d1 e\breve
   \time 2/1
-  c1 r c bes2 d2~d2 a1 c2~c g2. a4 bes2 c d es1 d2 bes c2. bes4 g2 d'1 a2~a c1 g2~g4 a bes2 c d es1 d %94
+  d1 r d c2 e2~e2 b1 d2~d a2. b4 c2 d e f1 e2 c d2. c4 a2 e'1 b2~b d1 a2~a4 b c2 d e f1 e %94
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  bes\breve c1 a bes\breve c1 d\breve
+  c\breve d1 b c\breve d1 e\breve
   \time 2/1
-  c\breve. %97
-  r2 c es2. f4 g2 c, r es1 d4 c bes2 c g es'2 ~es d4 c bes2 c g2. a4 bes2 c d es1 d4 c d\breve\fermata c\breve~\breve
+  d\breve. %97
+  r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'2 ~f e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\breve~\breve
 
 }
 bassus =
 \relative d {
   \clef bass
-  \key c \dorian
+  \key d \dorian
   \time 2/1
   \override Staff.NoteHead.style = #'baroque
   R\breve*18
-  r1 c es f g2 c, c'2. bes4 g2 bes \ficta as1 g r2 c,2 es1 f g2 c, c'2. bes4 g2 bes as1 g %25
-  r2 es2~2 f1 g2~4 f4 g as f2 g2~4 f4 g as f2 g es f d1 c\breve~\breve %31
-  r1 g' as as g es f f es\breve
+  r1 d f g a2 d, d'2. c4 a2 c \ficta bes1 a r2 d,2 f1 g a2 d, d'2. c4 a2 c bes1 a %25
+  r2 f2~2 g1 a2~4 g4 a bes g2 a2~4 g4 a bes g2 a f g e1 d\breve~\breve %31
+  r1 a' bes bes a f g g f\breve
   R
-  r1 c d d  c g' as as g r2 d es1 es d\breve %46
-  r2 g1 f4 es f2 es c1 %48
+  r1 d e e  d a' bes bes a r2 e f1 f e\breve %46
+  r2 a1 g4 f g2 f d1 %48
   R\breve*4
-  r1 c d es f g a b c\breve %57
+  r1 d e f g a b cis d\breve %57
   R\breve*5
-  g1 as f g es f d (g) c, (c') f, g es f d es2. f4  g2 c, g'1 %71
+  a1 bes g a f g e (a) d, (d') g, a f g e f2. g4  a2 d, a'1 %71
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  c,\breve.~\breve.
+  d,\breve.~\breve.
   R\breve.*7
-  g'\breve es1 f d es (c) g'\breve %83
+  a'\breve f1 g e f (d) a'\breve %83
   \time 2/1
-  c,\breve
-  r1 g' d2 f1 c2~2 c2 g'1 f2. es4 c1 (g')
-  r2 c, g'2. f4 d2 f2~2 c1 c2 g'1 f2. es4 c1 (g')
+  d,\breve
+  r1 a' e2 g1 d2~2 d2 a'1 g2. f4 d1 (a')
+  r2 d, a'2. g4 e2 g2~2 d1 d2 a'1 g2. f4 d1 (a')
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  g\breve es1 f d es (c) g'\breve
+  a\breve f1 g e f (d) a'\breve
   \time 2/1
-  c,\breve~\breve
-  r1 r2 c es2. f4 g2 as g c, es2. f4 g2 as g c, es2. f4 g2 as g\breve~\breve\fermata c,\breve~\breve
+  d,\breve~\breve
+  r1 r2 d f2. g4 a2 bes a d, f2. g4 a2 bes a d, f2. g4 a2 bes a\breve~\breve\fermata d,\breve~\breve
   \bar "|."
 }
 
