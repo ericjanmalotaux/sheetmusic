@@ -86,7 +86,7 @@ altus =
   a' bes a1 g4 f g2 f d a'  bes a1 g4 f g2 f d2. f4 e1 d
   R\breve*3
   %57
-  r1 d e f g a b cis d2 a b c2~c4 b a1 gis2 a1 (d,) b' c a b g a a r
+  r1 d e f g a b cis d2 a b c2~c4 b a1 gis2 \[ a1 d, \] b' c a b g a a r
   b c a b g a a\breve
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
@@ -118,11 +118,11 @@ tenor =
   c1. bes4 a g\breve
   r2 c d f2~f2 e4 d e2 d~d2 c4 bes a2 d g,\breve d'2 %40
   a bes d2~d c4 b c2 g a1 a g  %43
-  r2 d' e1 e d r2 a b1 b a\breve (d)
+  r2 d' e1 e d r2 a b1 b \[ a\breve d \]
   R\breve*4  %53
   r2 a1 b2~b c1 d2~d e1 f2~f4 e f d e1 d r
   R\breve*4  %62
-  r1 r2 e2~e f1 d2~d e1 c2~c d1 b2~2 c2. a4 a2~a (f'1) d2~d e1 c2~c d1 b2~b c2. a4 f'2~4 e f d e1
+  r1 r2 e2~e f1 d2~d e1 c2~c d1 b2~2 c2. a4 \[ a2~a f'1 \] d2~d e1 c2~c d1 b2~b c2. a4 f'2~4 e f d e1
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
   d\breve.
@@ -154,19 +154,19 @@ bassus =
   R\breve*4
   r1 d e f g a b cis d\breve %57
   R\breve*5
-  a1 bes g a f g e (a) d, (d') g, a f g e f2. g4  a2 d, a'1 %71
+  a1 bes g a f g \[ e a \] \[ d, d' \] g, a f g e f2. g4  a2 d, a'1 %71
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
   d,\breve.~\breve.
   R\breve.*7
-  a'\breve f1 g e f (d) a'\breve %83
+  a'\breve f1 g e \[ f d \] a'\breve %83
   \time 2/1
   d,\breve
-  r1 a' e2 g1 d2~2 d2 a'1 g2. f4 d1 (a')
-  r2 d, a'2. g4 e2 g2~2 d1 d2 a'1 g2. f4 d1 (a')
+  r1 a' e2 g1 d2~2 d2 a'1 g2. f4 \[ d1 a' \]
+  r2 d, a'2. g4 e2 g2~2 d1 d2 a'1 g2. f4 \[ d1 a' \]
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  a\breve f1 g e f (d) a'\breve
+  a\breve f1 g e \[ f d \] a'\breve
   \time 2/1
   d,\breve~\breve
   r1 r2 d f2. g4 a2 bes a d, f2. g4 a2 bes a d, f2. g4 a2 bes a\breve~\breve\fermata d,\breve~\breve
@@ -219,7 +219,7 @@ bassus =
           Gau- de, qui- a tu- i na- ti,
           Quem do- le- bas mor- tem pa- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
           Ful- _ _ _ get re- sur- rec- _ _ _ ti- o, re- sur- rec- _ _ _ _ _ _ ti- o.
-          Et in ce- lum te vi- den- te, te vi- den- _ _ _ te,
+          Et in ce- lum te vi- den- te, te vi- den- _ _ _ te, _
           Mo- tu fer- tur pro- pri- o, mo- tu fer- tur pro- pri- o-. _
           Gau- de, que post ip- sum scan- _ dis,
           Et est ho- nor ti- bi gran- _ dis  In ce- li pa- la- ti- o.
@@ -243,9 +243,9 @@ bassus =
           Cum pu- do- _ _ _ _ _ _ ris li- _ _ _ _ _ _ _ _ li- o.
           Gau- _ _ de, qui- a tu- _ _ _ _ _ _ _ i na- ti,
           Quem do- le- _ _ bas mor- tem pa- ti,
-          mor- tem pa- ti, mor- tem pa- ti...
+          mor- tem pa- ti, mor- tem pa- ti-. _
           Gau- de, Chris- to a- scen- _ _ _ den- te.
-          Mo- tu fer- tur pro- pri- o, _ _ _
+          Mo- tu fer- tur pro- pri- o, _ _ _ _
           mo- tu fer- tur pro-_ _ _ _ _ _ _ pri- o.
           In ce- li pa- la- ti- o. U- bi fruc- tus ven- tris _ _ tu- _ _ i
           No- _ _ bis de- tur per te _ _ fru- _ _ i
@@ -269,10 +269,10 @@ bassus =
           Quem do- le- bas mor- tem pa- ti, mor- tem pa- ti,
           Ful- _ _ _ _ get.
           Gau- de, Chris- to a- scen- den- te,
-          Mo- tu fer- tur pro- pri- o, _ mo- tu fer- tur pro- _ _ _ _ pri- o.
-          In ce- li pa- la- ti- o. U- bi fruc- tus ven- tris tu- _ i
-          No- bis _ _ de- tur per te fru- _ i
-          In per- en- ni gau- di- o.
+          Mo- tu fer- tur pro- pri- o, _ _ _ mo- tu fer- tur pro- _ _ _ _ pri- o.
+          In ce- li pa- la-  _ ti- o. U- bi fruc- tus ven- tris tu- _ i _
+          No- bis _ _ de- tur per te fru- _ i _
+          In per- en- ni gau- _ di- o.
           Al- le- _ _ lu- ja, al- le- _ _ lu- ja, al- le- _ _ lu- _ ja.
         }
       }
