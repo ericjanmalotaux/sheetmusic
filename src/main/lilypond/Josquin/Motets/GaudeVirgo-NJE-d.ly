@@ -8,10 +8,22 @@
 ficta = { \set Staff.suggestAccidentals = ##t }
 recta = { \set Staff.suggestAccidentals = ##f }
 
+alla-breve = {
+  \time 2/2
+  \set Timing.measureLength = #(ly:make-moment 2/1)
+  \tempo 1=80
+}
+
+tempus-perfectus = {
+  \once \override Staff.TimeSignature.style = #'single-digit
+  \set Timing.measureLength = #(ly:make-moment 3/1)
+  \time 3/1
+  \tempo 1=120
+}
+
 superius =
 \relative d' {
-  \time 2/1
-  \tempo 1 = 80
+  \alla-breve
 
   % Gaude virgo mater Christi
 
@@ -32,20 +44,16 @@ superius =
 
   r2 a1 b1 c1 d1 e1 f2. e4 f d e2 a, b c d e1 c2 b1 a r
   r e' f d e c d d r e f d e c2. b4 c2 d1 cis2
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   \tuplet 2/3 { d1 r }
 
   % Gaude que post ipsim scandis
-
-  \tempo 1 = 120
   a\breve b1 g a\breve b1 c d\breve e1 r
 
   % Et est honor tibi
 
   a,\breve b1 g a\breve b1 c d\breve e1 r e\breve f1 d e1. d2 d\breve cis1
-  \time 2/1
-  \tempo 1=80
+  \alla-breve
   d1. c2 a1
 
   % Ubi fructus ventris
@@ -54,12 +62,9 @@ superius =
 
   % In perenni gaudi
 
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
-  \tempo 1 = 120
+  \tempus-perfectus
   e\breve f1 d e1. d2  d\breve cis1
-  \time 2/1
-  \tempo \breve = 40
+  \alla-breve
   d\breve
 
   % Alleluja
@@ -68,7 +73,7 @@ superius =
 }
 altus =
 \relative d' {
-  \time 2/1
+  \alla-breve
   R\breve*2
   d\breve d1 d f2. g4 a2 \recta bes2 a \ficta bes1 a4 g a1
   d, d d f2. g4 a2 bes a bes1 a4 g  a \breve
@@ -89,26 +94,24 @@ altus =
   %57
   r1 d e f g a b cis d2 a b c2. b4 a1 gis2 \[ a1 d, \] b' c a b g a a r
   b c a b g a a\breve
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   f\breve. r1
   d\breve  e1 c d\breve e1 f g1. f2 a1
   r1 d,\breve e1 c d\breve e1 f g1. f2 a1
   r a\breve b1 g a a a\breve
-  \time 2/1
+  \alla-breve
   f1
   r f e g d f e2. f4 g1 a
   r f e g d f e2. f4 g1 a\breve
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   r1 a\breve b1 g a a a\breve
-  \time 2/1
+  \alla-breve
   f1 r2 d f2. g4 a2 bes a d, f2. g4  a bes a1 g2 a\breve
   r2 d, f2. g4 a bes a1 g2 a\longa\fermata a\longa
 }
 tenor =
 \relative d {
-  \time 2/1
+  \alla-breve
   R\breve*16  %17
   r1 d f1 g a2 d, d'2. c4 a2 c \ficta bes1 a1  %21
   r2 d, f1 g a2 d, d'2. c4 a2 c bes1 a2 f g d4 e f g a1 g2 a1  %27
@@ -121,23 +124,21 @@ tenor =
   r2 a1 b c d1 e f2. e4 f d e1 d r
   R\breve*4  %62
   r1 r2 e1 f d e c d1 b c2. a4 \[ a1 f' \] d e c d b c2. a4 f'2. e4 f d e1
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   d\breve.
   R\breve.*8  %81
   c\breve d1 b c\breve d1 e\breve
-  \time 2/1
+  \alla-breve
   d1 r d c2 e1 b d a2. b4 c2 d e f1 e2 c d2. c4 a2 e'1 b d a2. b4 c2 d e f1 e %94
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   c\breve d1 b c\breve d1 e\breve
-  \time 2/1
+  \alla-breve
   d\breve. %97
   r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'1 e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\longa
 }
 bassus =
 \relative d {
-  \time 2/1
+  \alla-breve
   R\breve*18
   r1 d f g a2 d, d'2. c4 a2 c \ficta bes1 a r2 d,2 f1 g a2 d, d'2. c4 a2 c bes1 a %25
   r2 f1 g1 a2. g4 a bes g2 a2. g4 a bes g2 a f g e1 d\longa %31
@@ -149,19 +150,17 @@ bassus =
   r1 d e f g a b cis d\breve %57
   R\breve*5
   a1 bes g a f g \[ e a \] \[ d, d' \] g, a f g e f2. g4  a2 d, a'1 %71
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   d,\longa.
   R\breve.*7
   a'\breve f1 g e \[ f d \] a'\breve %83
-  \time 2/1
+  \alla-breve
   d,\breve
   r1 a' e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
   r2 d, a'2. g4 e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   a\breve f1 g e \[ f d \] a'\breve
-  \time 2/1
+  \alla-breve
   d,\longa
   r1 r2 d f2. g4 a2 bes a d, f2. g4 a2 bes a d, f2. g4 a2 bes a\longa\fermata d,\longa
   \bar "|."

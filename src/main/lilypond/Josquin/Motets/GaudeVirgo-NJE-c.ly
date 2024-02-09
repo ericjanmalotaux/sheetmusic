@@ -8,10 +8,22 @@
 ficta = { \set Staff.suggestAccidentals = ##t }
 recta = { \set Staff.suggestAccidentals = ##f }
 
+alla-breve = {
+  \time 2/2
+  \set Timing.measureLength = #(ly:make-moment 2/1)
+  \tempo 1=80
+}
+
+tempus-perfectus = {
+  \once \override Staff.TimeSignature.style = #'single-digit
+  \set Timing.measureLength = #(ly:make-moment 3/1)
+  \time 3/1
+  \tempo 1=120
+}
+
 superius =
 \relative d' {
-  \time 2/1
-  \tempo 1 = 80
+  \alla-breve
 
   % Gaude virgo mater Christi
 
@@ -32,20 +44,16 @@ superius =
 
   r2 g1 a1 bes1 c1 d1 es2. d4 es c d2 g, a bes c d1 bes2 a1 g r
   r d' es c d bes c c r d es c d bes2. a4 bes2 c1 b2
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   \tuplet 2/3 { c1 r }
 
   % Gaude que post ipsim scandis
-
-  \tempo 1 = 120
   g\breve a1 f g\breve a1 bes c\breve d1 r
 
   % Et est honor tibi
 
   g,\breve a1 f g\breve a1 bes c\breve d1 r d\breve es1 c d1. c2 c\breve b1
-  \time 2/1
-  \tempo 1=80
+  \alla-breve
   c1. bes2 g1
 
   % Ubi fructus ventris
@@ -54,12 +62,9 @@ superius =
 
   % In perenni gaudi
 
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
-  \tempo 1 = 120
+  \tempus-perfectus
   d\breve es1 c d1. c2  c\breve b1
-  \time 2/1
-  \tempo \breve = 40
+  \alla-breve
   c\breve
 
   % Alleluja
@@ -68,7 +73,7 @@ superius =
 }
 altus =
 \relative d' {
-  \time 2/1
+  \alla-breve
   R\breve*2
   c\breve c1 c es2. f4 g2 \recta as2 g \ficta as1 g4 f g1
   c, c c es2. f4 g2 as g as1 g4 f  g \breve
@@ -89,26 +94,24 @@ altus =
   %57
   r1 c d es f g a b c2 g a bes2. a4 g1 fis2 \[ g1 c, \] a' bes g a f g g r
   a bes g a f g g\breve
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   es\breve. r1
   c\breve  d1 bes c\breve d1 es f1. es2 g1
   r1 c,\breve d1 bes c\breve d1 es f1. es2 g1
   r g\breve a1 f g g g\breve
-  \time 2/1
+  \alla-breve
   es1
   r es d f c es d2. es4 f1 g
   r es d f c es d2. es4 f1 g\breve
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   r1 g\breve a1 f g g g\breve
-  \time 2/1
+  \alla-breve
   es1 r2 c es2. f4 g2 as g c, es2. f4  g as g1 f2 g\breve
   r2 c, es2. f4 g as g1 f2 g\longa\fermata g\longa
 }
 tenor =
 \relative d {
-  \time 2/1
+  \alla-breve
   R\breve*16  %17
   r1 c es1 f g2 c, c'2. bes4 g2 bes \ficta as1 g1  %21
   r2 c, es1 f g2 c, c'2. bes4 g2 bes as1 g2 es f c4 d es f g1 f2 g1  %27
@@ -121,23 +124,21 @@ tenor =
   r2 g1 a bes c1 d es2. d4 es c d1 c r
   R\breve*4  %62
   r1 r2 d1 es c d bes c1 a bes2. g4 \[ g1 es' \] c d bes c a bes2. g4 es'2. d4 es c d1
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   c\breve.
   R\breve.*8  %81
   bes\breve c1 a bes\breve c1 d\breve
-  \time 2/1
+  \alla-breve
   c1 r c bes2 d1 a c g2. a4 bes2 c d es1 d2 bes c2. bes4 g2 d'1 a c g2. a4 bes2 c d es1 d %94
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   bes\breve c1 a bes\breve c1 d\breve
-  \time 2/1
+  \alla-breve
   c\breve. %97
   r2 c es2. f4 g2 c, r es1 d4 c bes2 c g es'1 d4 c bes2 c g2. a4 bes2 c d es1 d4 c d\breve\fermata c\longa
 }
 bassus =
 \relative d {
-  \time 2/1
+  \alla-breve
   R\breve*18
   r1 c es f g2 c, c'2. bes4 g2 bes \ficta as1 g r2 c,2 es1 f g2 c, c'2. bes4 g2 bes as1 g %25
   r2 es1 f1 g2. f4 g as f2 g2. f4 g as f2 g es f d1 c\longa %31
@@ -149,19 +150,17 @@ bassus =
   r1 c d es f g a b c\breve %57
   R\breve*5
   g1 as f g es f \[ d g \] \[ c, c' \] f, g es f d es2. f4  g2 c, g'1 %71
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   c,\longa.
   R\breve.*7
   g'\breve es1 f d \[ es c \] g'\breve %83
-  \time 2/1
+  \alla-breve
   c,\breve
   r1 g' d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
   r2 c, g'2. f4 d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \time 3/1
+  \tempus-perfectus
   g\breve es1 f d \[ es c \] g'\breve
-  \time 2/1
+  \alla-breve
   c,\longa
   r1 r2 c es2. f4 g2 as g c, es2. f4 g2 as g c, es2. f4 g2 as g\longa\fermata c,\longa
   \bar "|."
@@ -177,7 +176,7 @@ bassus =
     }
     {
       \new Voice = superius {
-        \incipit { \key d\minor \time 2/2 \relative d' {d\breve d1 d} }
+        \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
         \clef treble
         \key c \minor
         \superius
@@ -210,7 +209,7 @@ bassus =
     }
     {
       \new Voice = altus {
-        \incipit { \clef "mensural-c1" \key d\dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
+        \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
         \clef treble
         \key c \dorian
         \altus
@@ -240,7 +239,7 @@ bassus =
     {
       \new Voice = tenor {
         \incipit {
-          \clef "mensural-c4" \key d\dorian \time 2/2 \relative d {
+          \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
             r\longa*8
             r\longa*8
             r\longa*8
@@ -280,7 +279,7 @@ bassus =
     {
       \new Voice = bassus {
         \incipit {
-          \clef "mensural-c4" \key d\dorian \time 2/2 \relative d {
+          \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
             r\longa
             r\longa
             r\longa
