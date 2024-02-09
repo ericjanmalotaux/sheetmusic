@@ -18,19 +18,19 @@ superius =
   \ficta
   d\breve d1 d f2. g4 a2 bes2 a bes1 a4 g a1
   d, d d f2. g4 a2 bes a bes1 a4 g a1 r2 d c d1 c4 bes c1 r1
-  a a c2. d4 e f e2~e4 c d e f2 e2~e4 c d e f2 e2~e4 d d1 cis2 d \breve~\breve
+  a a c2. d4 e f e2. c4 d e f2 e2. c4 d e f2 e2. d4 d1 cis2 d \longa
   R\breve*13
 
   % Gaude quia tui nati
 
   r1 d f f e c d d c a bes bes a f g g f2
-  c' d f2~f e4 d e1 f2 d f e2~e d1 c4 b c2 a c b2~b a2 c2. b4 g2 a1 gis2 a\breve
-  r2 a1 g4 f g2 f d a' bes a1 g4 f g2 f d d' e4 d f2. e4 d2~d cis2 d1
+  c' d f1 e4 d e1 f2 d f e1 d1 c4 b c2 a c b1 a2 c2. b4 g2 a1 gis2 a\breve
+  r2 a1 g4 f g2 f d a' bes a1 g4 f g2 f d d' e4 d f2. e4 d1 cis2 d1
   R\breve*3
 
   % Gaude Christo ascendente
 
-  r2 a1 b2~b c1 d2~d2 e1 f2~f4 e f d e2 a, b c d e2~e c2 b1 a r
+  r2 a1 b1 c1 d1 e1 f2. e4 f d e2 a, b c d e1 c2 b1 a r
   r e' f d e c d d r e f d e c2. b4 c2 d1 cis2
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
@@ -39,11 +39,11 @@ superius =
   % Gaude que post ipsim scandis
 
   \tempo 1 = 120
-  a\breve b1 g a\breve b1 c d~d e r
+  a\breve b1 g a\breve b1 c d\breve e1 r
 
   % Et est honor tibi
 
-  a,\breve b1 g a\breve b1 c d~d e1 r e\breve f1 d e1. d2 d\breve cis1
+  a,\breve b1 g a\breve b1 c d\breve e1 r e\breve f1 d e1. d2 d\breve cis1
   \time 2/1
   \tempo 1=80
   d1. c2 a1
@@ -64,7 +64,7 @@ superius =
 
   % Alleluja
 
-  r2 d, f2. g4 a2 bes a1 r1 r2 d, f2. g4 a bes a2~a g2 a f' f f1 e4 d cis\breve~\breve\fermata d\breve~\breve
+  r2 d, f2. g4 a2 bes a1 r1 r2 d, f2. g4 a bes a1 g2 a f' f f1 e4 d cis\longa\fermata d\longa
 }
 altus =
 \relative d' {
@@ -72,7 +72,7 @@ altus =
   R\breve*2
   d\breve d1 d f2. g4 a2 \recta bes2 a \ficta bes1 a4 g a1
   d, d d f2. g4 a2 bes a bes1 a4 g  a \breve
-  r1 a a c1~c2 bes2 a g  f2. e4 d2 c d1 e d\breve~\breve
+  r1 a a c1. bes2 a g  f2. e4 d2 c d1 e d\longa
   R\breve*14
   %33
   r1 a' c c bes g a a g\breve
@@ -87,13 +87,13 @@ altus =
   a' bes a1 g4 f g2 f d a'  bes a1 g4 f g2 f d2. f4 e1 d
   R\breve*3
   %57
-  r1 d e f g a b cis d2 a b c2~c4 b a1 gis2 \[ a1 d, \] b' c a b g a a r
+  r1 d e f g a b cis d2 a b c2. b4 a1 gis2 \[ a1 d, \] b' c a b g a a r
   b c a b g a a\breve
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
   f\breve. r1
-  d\breve  e1 c d~d e f g1. f2 a1
-  r1 d,\breve e1 c d~d e1 f g1. f2 a1
+  d\breve  e1 c d\breve e1 f g1. f2 a1
+  r1 d,\breve e1 c d\breve e1 f g1. f2 a1
   r a\breve b1 g a a a\breve
   \time 2/1
   f1
@@ -104,7 +104,7 @@ altus =
   r1 a\breve b1 g a a a\breve
   \time 2/1
   f1 r2 d f2. g4 a2 bes a d, f2. g4  a bes a1 g2 a\breve
-  r2 d, f2. g4 a bes a1 g2 a\breve~\breve\fermata a\breve~\breve
+  r2 d, f2. g4 a bes a1 g2 a\longa\fermata a\longa
 }
 tenor =
 \relative d {
@@ -112,36 +112,35 @@ tenor =
   R\breve*16  %17
   r1 d f1 g a2 d, d'2. c4 a2 c \ficta bes1 a1  %21
   r2 d, f1 g a2 d, d'2. c4 a2 c bes1 a2 f g d4 e f g a1 g2 a1  %27
-  c d e   a,4 b c d e d f2  a,4 b c d e d f2~f4 e d1 cis2 d\breve~\breve  %34
+  c d e   a,4 b c d e d f2  a,4 b c d e d f2. e4 d1 cis2 d\longa  %34
   c1. bes4 a g\breve
-  r2 c d f2~f2 e4 d e2 d~d2 c4 bes a2 d g,\breve d'2 %40
-  a bes d2~d c4 b c2 g a1 a g  %43
+  r2 c d f1 e4 d e2 d1 c4 bes a2 d g,\breve d'2 %40
+  a bes d1 c4 b c2 g a1 a g  %43
   r2 d' e1 e d r2 a b1 b \[ a\breve d \]
   R\breve*4  %53
-  r2 a1 b2~b c1 d2~d e1 f2~f4 e f d e1 d r
+  r2 a1 b c d1 e f2. e4 f d e1 d r
   R\breve*4  %62
-  r1 r2 e2~e f1 d2~d e1 c2~c d1 b2~2 c2. a4 \[ a2~a f'1 \] d2~d e1 c2~c d1 b2~b c2. a4 f'2~4 e f d e1
+  r1 r2 e1 f d e c d1 b c2. a4 \[ a1 f' \] d e c d b c2. a4 f'2. e4 f d e1
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
   d\breve.
   R\breve.*8  %81
   c\breve d1 b c\breve d1 e\breve
   \time 2/1
-  d1 r d c2 e2~e2 b1 d2~d a2. b4 c2 d e f1 e2 c d2. c4 a2 e'1 b2~b d1 a2~a4 b c2 d e f1 e %94
+  d1 r d c2 e1 b d a2. b4 c2 d e f1 e2 c d2. c4 a2 e'1 b d a2. b4 c2 d e f1 e %94
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
   c\breve d1 b c\breve d1 e\breve
   \time 2/1
   d\breve. %97
-  r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'2 ~f e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\breve~\breve
-
+  r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'1 e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\longa
 }
 bassus =
 \relative d {
   \time 2/1
   R\breve*18
   r1 d f g a2 d, d'2. c4 a2 c \ficta bes1 a r2 d,2 f1 g a2 d, d'2. c4 a2 c bes1 a %25
-  r2 f2~2 g1 a2~4 g4 a bes g2 a2~4 g4 a bes g2 a f g e1 d\breve~\breve %31
+  r2 f1 g1 a2. g4 a bes g2 a2. g4 a bes g2 a f g e1 d\longa %31
   r1 a' bes bes a f g g f\breve
   R
   r1 d e e  d a' bes bes a r2 e f1 f e\breve %46
@@ -152,19 +151,19 @@ bassus =
   a1 bes g a f g \[ e a \] \[ d, d' \] g, a f g e f2. g4  a2 d, a'1 %71
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
-  d,\breve.~\breve.
+  d,\longa.
   R\breve.*7
   a'\breve f1 g e \[ f d \] a'\breve %83
   \time 2/1
   d,\breve
-  r1 a' e2 g1 d2~2 d2 a'1 g2. f4 \[ d1 a' \]
-  r2 d, a'2. g4 e2 g2~2 d1 d2 a'1 g2. f4 \[ d1 a' \]
+  r1 a' e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
+  r2 d, a'2. g4 e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
   \once \override Staff.TimeSignature.style = #'single-digit
   \time 3/1
   a\breve f1 g e \[ f d \] a'\breve
   \time 2/1
-  d,\breve~\breve
-  r1 r2 d f2. g4 a2 bes a d, f2. g4 a2 bes a d, f2. g4 a2 bes a\breve~\breve\fermata d,\breve~\breve
+  d,\longa
+  r1 r2 d f2. g4 a2 bes a d, f2. g4 a2 bes a d, f2. g4 a2 bes a\longa\fermata d,\longa
   \bar "|."
 }
 
@@ -295,6 +294,11 @@ bassus =
     \context {
       \Score
       tempoHideNote = ##t
+    }
+    \context {
+      \Voice
+      \remove Note_heads_engraver
+      \consists Completion_heads_engraver
     }
   }
   \midi {
