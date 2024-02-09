@@ -177,6 +177,7 @@ bassus =
     }
     {
       \new Voice = superius {
+        \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
         \clef treble
         \key d \minor
         \superius
@@ -209,6 +210,7 @@ bassus =
     }
     {
       \new Voice = altus {
+        \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
         \clef treble
         \key d \dorian
         \altus
@@ -237,6 +239,19 @@ bassus =
     }
     {
       \new Voice = tenor {
+        \incipit {
+          \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
+            r\longa*8
+            r\longa*8
+            r\longa*8
+            r\longa*8
+            r\longa*8
+            r\longa*8
+            r\longa*8
+            r\longa*8
+            r1 d1 f g
+          }
+        }
         \clef "treble_8"
         \key d \dorian
         \tenor
@@ -264,6 +279,20 @@ bassus =
     }
     {
       \new Voice = bassus {
+        \incipit {
+          \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
+            r\longa
+            r\longa
+            r\longa
+            r\longa
+            r\longa
+            r\longa
+            r\longa
+            r\longa
+            r\longa
+            r1 d1 f g
+          }
+        }
         \clef bass
         \key d \dorian
         \bassus
@@ -286,6 +315,8 @@ bassus =
   >>
 
   \layout {
+    indent = 5\cm
+    incipit-width = 3\cm
     \override Staff.NoteHead.style = #'baroque
     \context {
       \Staff
