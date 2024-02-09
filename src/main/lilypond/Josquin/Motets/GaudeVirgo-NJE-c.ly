@@ -5,25 +5,13 @@
   composer = "Josquin"
 }
 
-ficta = { \set suggestAccidentals = ##t }
-recta = { \set suggestAccidentals = ##f }
-
-\layout {
-  \override Staff.BarLine.allow-span-bar = ##f
-  \context {
-    \Staff
-    \consists Ambitus_engraver
-  }
-}
+ficta = { \set Staff.suggestAccidentals = ##t }
+recta = { \set Staff.suggestAccidentals = ##f }
 
 superius =
 \relative d' {
-  \clef treble
-  \key c \minor
   \time 2/1
-  \set Score.tempoHideNote = ##t
   \tempo 1 = 80
-  \override Staff.NoteHead.style = #'baroque
 
   % Gaude virgo mater Christi
 
@@ -80,10 +68,7 @@ superius =
 }
 altus =
 \relative d' {
-  \clef treble
-  \key c \dorian
   \time 2/1
-  \override Staff.NoteHead.style = #'baroque
   R\breve*2
   c\breve c1 c es2. f4 g2 \recta as2 g \ficta as1 g4 f g1
   c, c c es2. f4 g2 as g as1 g4 f  g \breve
@@ -123,10 +108,7 @@ altus =
 }
 tenor =
 \relative d {
-  \clef "treble_8"
-  \key c \dorian
   \time 2/1
-  \override Staff.NoteHead.style = #'baroque
   R\breve*16  %17
   r1 c es1 f g2 c, c'2. bes4 g2 bes \ficta as1 g1  %21
   r2 c, es1 f g2 c, c'2. bes4 g2 bes as1 g2 es f c4 d es f g1 f2 g1  %27
@@ -156,10 +138,7 @@ tenor =
 }
 bassus =
 \relative d {
-  \clef bass
-  \key c \dorian
   \time 2/1
-  \override Staff.NoteHead.style = #'baroque
   R\breve*18
   r1 c es f g2 c, c'2. bes4 g2 bes \ficta as1 g r2 c,2 es1 f g2 c, c'2. bes4 g2 bes as1 g %25
   r2 es2~2 f1 g2~4 f4 g as f2 g2~4 f4 g as f2 g es f d1 c\breve~\breve %31
@@ -190,99 +169,134 @@ bassus =
 }
 
 \score {
-  \new StaffGroup
+  \new ChoirStaff
   <<
     \new Staff \with {
       instrumentName = "Superius"
       shortInstrumentName = "S"
       midiInstrument = "choir aahs"
     }
-    \superius
-    \addlyrics {
-      Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
-      Que per au -- rem _ _ con -- ce -- pis -- _ _ ti, con -- ce -- pis -- _ _ ti,
-      Ga -- bri -- e -- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun -- ti -- o.
-      Gau -- de, qui -- a tu -- i na -- ti,
-      Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- _ _ _ ti,
-      mor -- tem pa -- _ _ _ ti, mor -- tem pa -- _ _ _ _ _ _ ti,
-      Ful -- _ _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- _ rec -- _ _ ti -- o.
-      Et in ce -- lum te vi -- _ _ _ den -- _ te, te vi -- den -- _ _ te,
-      Mo -- tu fer -- tur pro -- pri -- o,
-      mo -- tu fer -- tur pro -- _ _ _ pri -- o.
-      Gau -- de, que post ip -- sim scan -- dis,
-      Et est ho -- nor ti -- bi gran -- dis
-      In ce -- li pa -- _ la -- ti -- o. _ _
-      U -- bi fruc -- tus ven -- tris _ tu -- i
-      No -- bis de -- tur per te _ fru -- i
-      In per -- en -- ni _ gau -- di -- o.
-      Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ lu -- ja,
-      al -- le -- lu -- _ _ _ ja.
+    {
+      \new Voice = superius {
+        \clef treble
+        \key c \minor
+        \superius
+      }
+      \addlyrics {
+        Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+        Que per au -- rem _ _ con -- ce -- pis -- _ _ ti, con -- ce -- pis -- _ _ ti,
+        Ga -- bri -- e -- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun -- ti -- o.
+        Gau -- de, qui -- a tu -- i na -- ti,
+        Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- _ _ _ ti,
+        mor -- tem pa -- _ _ _ ti, mor -- tem pa -- _ _ _ _ _ _ ti,
+        Ful -- _ _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- _ rec -- _ _ ti -- o.
+        Et in ce -- lum te vi -- _ _ _ den -- _ te, te vi -- den -- _ _ te,
+        Mo -- tu fer -- tur pro -- pri -- o,
+        mo -- tu fer -- tur pro -- _ _ _ pri -- o.
+        Gau -- de, que post ip -- sim scan -- dis,
+        Et est ho -- nor ti -- bi gran -- dis
+        In ce -- li pa -- _ la -- ti -- o. _ _
+        U -- bi fruc -- tus ven -- tris _ tu -- i
+        No -- bis de -- tur per te _ fru -- i
+        In per -- en -- ni _ gau -- di -- o.
+        Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ lu -- ja,
+        al -- le -- lu -- _ _ _ ja.
+      }
     }
     \new Staff \with {
       instrumentName = "Altus"
       shortInstrumentName = "A"
       midiInstrument = "choir aahs"
     }
-    \altus
-    \addlyrics {
-      Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
-      Que per au -- rem _ _ con -- ce -- pis -- _ _ ti,
-      Ga -- bri -- e -- _ _ _ _ _ _ le nun -- ti -- o.
-      Gau -- de, qui -- a tu -- i na -- ti,
-      Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
-      Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
-      Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
-      Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
-      Gau -- de, que post ip -- sum scan -- _ dis,
-      Et est ho -- nor ti -- bi gran -- _ dis  In ce -- li pa -- la -- ti -- o.
-      U -- bi fruc -- tus ven -- tris _ tu -- i
-      No -- bis de -- tur per te _ fru -- i
-      In per -- en -- ni gau -- di -- o.
-      Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
+    {
+      \new Voice = altus {
+        \clef treble
+        \key c \dorian
+        \altus
+      }
+      \addlyrics {
+        Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+        Que per au -- rem _ _ con -- ce -- pis -- _ _ ti,
+        Ga -- bri -- e -- _ _ _ _ _ _ le nun -- ti -- o.
+        Gau -- de, qui -- a tu -- i na -- ti,
+        Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
+        Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
+        Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
+        Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
+        Gau -- de, que post ip -- sum scan -- _ dis,
+        Et est ho -- nor ti -- bi gran -- _ dis  In ce -- li pa -- la -- ti -- o.
+        U -- bi fruc -- tus ven -- tris _ tu -- i
+        No -- bis de -- tur per te _ fru -- i
+        In per -- en -- ni gau -- di -- o.
+        Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
+      }
     }
     \new Staff \with {
       instrumentName = "Tenor"
       shortInstrumentName = "T"
       midiInstrument = "choir aahs"
     }
-    \tenor
-    \addlyrics {
-      Gau -- de, qui -- a _ de -- _ _ o ple -- na,
-      Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na, pe -- _ _ _ _ _ _ _ na,
-      Cum pu -- do -- _ _ _ _ _ _ ris li -- _ _ _ _ _ _ _ _ li -- o.
-      Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
-      Quem do -- le -- _ _ bas mor -- tem pa -- ti,
-      mor -- tem pa -- ti, mor -- tem pa -- ti-. _
-      Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
-      Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
-      mo -- tu fer -- tur pro-_ _ _ _ _ _ _ pri -- o.
-      In ce -- li pa -- la -- ti -- o. U -- bi fruc -- tus ven -- tris _ _ tu -- _ _ i
-      No -- _ _ bis de -- tur per te _ _ fru -- _ _ i
-      In per -- en -- ni gau -- di -- o.
-      Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
+    {
+      \new Voice = tenor {
+        \clef "treble_8"
+        \key c \dorian
+        \tenor
+      }
+      \addlyrics {
+        Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+        Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na, pe -- _ _ _ _ _ _ _ na,
+        Cum pu -- do -- _ _ _ _ _ _ ris li -- _ _ _ _ _ _ _ _ li -- o.
+        Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
+        Quem do -- le -- _ _ bas mor -- tem pa -- ti,
+        mor -- tem pa -- ti, mor -- tem pa -- ti-. _
+        Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
+        Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
+        mo -- tu fer -- tur pro-_ _ _ _ _ _ _ pri -- o.
+        In ce -- li pa -- la -- ti -- o. U -- bi fruc -- tus ven -- tris _ _ tu -- _ _ i
+        No -- _ _ bis de -- tur per te _ _ fru -- _ _ i
+        In per -- en -- ni gau -- di -- o.
+        Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
+      }
     }
     \new Staff \with {
       instrumentName = "Bassus"
       shortInstrumentName = "B"
       midiInstrument = "choir aahs"
     }
-    \bassus
-    \addlyrics {
-      Gau -- de, qui -- a _ de -- _ _ o ple -- na,
-      Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na,
-      Cum pu -- do -- _ _ _ ris li -- _ _ _ _ _ _ _ li -- o.
-      Gau -- de, qui -- a tu -- i na -- ti,
-      Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- ti,
-      Ful -- _ _ _ _ get.
-      Gau -- de, Chris -- to a -- scen -- den -- te,
-      Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
-      In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
-      No -- bis _ _ de -- tur per te fru -- _ i _
-      In per -- en -- ni gau -- _ di -- o.
-      Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
+    {
+      \new Voice = bassus {
+        \clef bass
+        \key c \dorian
+        \bassus
+      }
+      \addlyrics {
+        Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+        Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na,
+        Cum pu -- do -- _ _ _ ris li -- _ _ _ _ _ _ _ li -- o.
+        Gau -- de, qui -- a tu -- i na -- ti,
+        Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- ti,
+        Ful -- _ _ _ _ get.
+        Gau -- de, Chris -- to a -- scen -- den -- te,
+        Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
+        In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
+        No -- bis _ _ de -- tur per te fru -- _ i _
+        In per -- en -- ni gau -- _ di -- o.
+        Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
+      }
     }
   >>
-  \layout {}
+
+  \layout {
+    \override Staff.NoteHead.style = #'baroque
+    \context {
+      \Staff
+      \consists Ambitus_engraver
+    }
+    \context {
+      \Score
+      tempoHideNote = ##t
+    }
+  }
   \midi {
   }%
 }
