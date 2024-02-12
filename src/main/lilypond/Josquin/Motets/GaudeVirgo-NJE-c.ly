@@ -11,19 +11,27 @@ recta = { \set Staff.suggestAccidentals = ##f }
 alla-breve = {
   \time 2/2
   \set Timing.measureLength = #(ly:make-moment 2/1)
-  \tempo 1=80
 }
 
-tempus-perfectus = {
-  \once \override Staff.TimeSignature.style = #'single-digit
-  \set Timing.measureLength = #(ly:make-moment 3/1)
-  \time 3/1
-  \tempo 1=120
-}
+
+perfectus =
+#(define-music-function (parser location notes) (ly:music?)
+   (_i "Een gedeelte in drie-eende maat, die evenlang duurt als twee-eende maat")
+   #{
+     \scaleDurations 2/3 {
+       \time 3/1
+       \once \override Staff.TimeSignature.style = #'single-digit
+       \set Timing.measureLength = #(ly:make-moment 2/1)
+       #notes
+     }
+     \alla-breve
+   #}
+   )
 
 superius =
 \relative d' {
   \alla-breve
+  \tempo 1=80
 
   % Gaude virgo mater Christi
 
@@ -43,17 +51,13 @@ superius =
   % Gaude Christo ascendente
 
   r2 g1 a1 bes1 c1 d1 es2. d4 es c d2 g, a bes c d1 bes2 a1 g r
-  r d' es c d bes c c r d es c d bes2. a4 bes2 c1 b2
-  \tempus-perfectus
-  \tuplet 2/3 { c1 r }
+  r d' es c d bes c c r d es c d bes2. a4 bes2 c1 b2 c1 r
 
-  % Gaude que post ipsim scandis
-  g\breve a1 f g\breve a1 bes c\breve d1 r
+  \perfectus {
+    g\breve a1 f g\breve a1 bes c\breve d1 r g,\breve a1 f g\breve a1 bes c\breve d1 r
+    d\breve es1 c d1. c2 c\breve b1
+  }
 
-  % Et est honor tibi
-
-  g,\breve a1 f g\breve a1 bes c\breve d1 r d\breve es1 c d1. c2 c\breve b1
-  \alla-breve
   c1. bes2 g1
 
   % Ubi fructus ventris
@@ -62,14 +66,15 @@ superius =
 
   % In perenni gaudi
 
-  \tempus-perfectus
-  d\breve es1 c d1. c2  c\breve b1
-  \alla-breve
+  \perfectus {
+    d\breve es1 c d1. c2  c\breve b1
+  }
   c\breve
 
   % Alleluja
 
   r2 c, es2. f4 g2 as g1 r1 r2 c, es2. f4 g as g1 f2 g es' es es1 d4 c b\longa\fermata c\longa
+  \bar "|."
 }
 altus =
 \relative d' {
@@ -82,10 +87,9 @@ altus =
   %33
   r1 g' bes bes as f g g f\breve
   r1 g  as as g es  f f
-  \tuplet 3/2 { es1 c2 bes d es }
-  \tuplet 3/2 { f1 d2 c es f }
-  \tuplet 3/2 { g1 d f }
-  \tuplet 3/2 { es bes c }
+  \perfectus {
+    es1 c2 bes d es f1 d2 c es f g1 d f es bes c
+  }
   d\breve
   bes1. a4 g
   a2 g r
@@ -94,20 +98,21 @@ altus =
   %57
   r1 c d es f g a b c2 g a bes2. a4 g1 fis2 \[ g1 c, \] a' bes g a f g g r
   a bes g a f g g\breve
-  \tempus-perfectus
-  es\breve. r1
-  c\breve  d1 bes c\breve d1 es f1. es2 g1
-  r1 c,\breve d1 bes c\breve d1 es f1. es2 g1
-  r g\breve a1 f g g g\breve
-  \alla-breve
+  \perfectus {
+    es\breve. r1
+    c\breve  d1 bes c\breve d1 es f1. es2 g1
+    r1 c,\breve d1 bes c\breve d1 es f1. es2 g1
+    r g\breve a1 f g g g\breve
+  }
   es1
   r es d f c es d2. es4 f1 g
   r es d f c es d2. es4 f1 g\breve
-  \tempus-perfectus
-  r1 g\breve a1 f g g g\breve
-  \alla-breve
+  \perfectus {
+    r1 g\breve a1 f g g g\breve
+  }
   es1 r2 c es2. f4 g2 as g c, es2. f4  g as g1 f2 g\breve
   r2 c, es2. f4 g as g1 f2 g\longa\fermata g\longa
+  \bar "|."
 }
 tenor =
 \relative d {
@@ -124,17 +129,18 @@ tenor =
   r2 g1 a bes c1 d es2. d4 es c d1 c r
   R\breve*4  %62
   r1 r2 d1 es c d bes c1 a bes2. g4 \[ g1 es' \] c d bes c a bes2. g4 es'2. d4 es c d1
-  \tempus-perfectus
-  c\breve.
-  R\breve.*8  %81
-  bes\breve c1 a bes\breve c1 d\breve
-  \alla-breve
+  c\breve
+  R\breve*8  %81
+  \perfectus {
+    bes\breve c1 a bes\breve c1 d\breve
+  }
   c1 r c bes2 d1 a c g2. a4 bes2 c d es1 d2 bes c2. bes4 g2 d'1 a c g2. a4 bes2 c d es1 d %94
-  \tempus-perfectus
-  bes\breve c1 a bes\breve c1 d\breve
-  \alla-breve
+  \perfectus {
+    bes\breve c1 a bes\breve c1 d\breve
+  }
   c\breve. %97
   r2 c es2. f4 g2 c, r es1 d4 c bes2 c g es'1 d4 c bes2 c g2. a4 bes2 c d es1 d4 c d\breve\fermata c\longa
+  \bar "|."
 }
 bassus =
 \relative d {
@@ -150,17 +156,17 @@ bassus =
   r1 c d es f g a b c\breve %57
   R\breve*5
   g1 as f g es f \[ d g \] \[ c, c' \] f, g es f d es2. f4  g2 c, g'1 %71
-  \tempus-perfectus
-  c,\longa.
-  R\breve.*7
-  g'\breve es1 f d \[ es c \] g'\breve %83
-  \alla-breve
+  c,\longa
+  R\breve*7
+  \perfectus {
+    g'\breve es1 f d \[ es c \] g'\breve %83
+  }
   c,\breve
   r1 g' d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
   r2 c, g'2. f4 d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
-  \tempus-perfectus
-  g\breve es1 f d \[ es c \] g'\breve
-  \alla-breve
+  \perfectus {
+    g\breve es1 f d \[ es c \] g'\breve
+  }
   c,\longa
   r1 r2 c es2. f4 g2 as g c, es2. f4 g2 as g c, es2. f4 g2 as g\longa\fermata c,\longa
   \bar "|."
@@ -314,12 +320,14 @@ bassus =
   >>
 
   \layout {
+    \enablePolymeter
     indent = 5\cm
     incipit-width = 3\cm
     \override Staff.NoteHead.style = #'baroque
     \context {
       \Staff
       \consists Ambitus_engraver
+      \override Staff.TimeSignature.style = #'single-digit
     }
     \context {
       \Score
@@ -332,5 +340,6 @@ bassus =
     }
   }
   \midi {
+    \enablePolymeter
   }%
 }
