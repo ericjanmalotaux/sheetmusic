@@ -179,6 +179,7 @@ bassus =
       instrumentName = "Superius"
       shortInstrumentName = "S"
       midiInstrument = "choir aahs"
+      \consists Bar_number_engraver
     }
     {
       \new Voice = superius {
