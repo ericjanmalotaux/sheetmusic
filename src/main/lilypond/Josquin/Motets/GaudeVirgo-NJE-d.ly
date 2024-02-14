@@ -338,7 +338,6 @@ bassus =
     \context {
       \Staff
       \consists Ambitus_engraver
-      \override Staff.TimeSignature.style = #'single-digit
     }
     \context {
       \Score
