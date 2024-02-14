@@ -3,14 +3,18 @@
 \header {
   title = "Gaude virgo"
   composer = "Josquin"
+  copyright = \markup { Copyright \char ##x00A9 2024 by Eric Malotaux }
 }
 
 ficta = { \set Staff.suggestAccidentals = ##t }
 recta = { \set Staff.suggestAccidentals = ##f }
 
 alla-breve = {
-  \time 2/2
-  \set Timing.measureLength = #(ly:make-moment 2/1)
+  \time 2/1
+  \once \override Staff.TimeSignature.stencil = 
+  #(lambda (grob)
+     (grob-interpret-markup grob
+      #{ \markup \musicglyph #"timesig.C22" #}))
 }
 
 
@@ -21,7 +25,7 @@ perfectus =
      \scaleDurations 2/3 {
        \time 3/1
        \once \override Staff.TimeSignature.style = #'single-digit
-       \set Timing.measureLength = #(ly:make-moment 2/1)
+       \set Timing.measureLength = #(ly:make-moment 2)
        #notes
      }
      \alla-breve
@@ -31,47 +35,40 @@ perfectus =
 superius =
 \relative d' {
   \alla-breve
-  \tempo 1=80
-
-  % Gaude virgo mater Christi
-
+  \tempo 1=90
   \ficta
+  
   c\breve c1 c es2. f4 g2 as2 g as1 g4 f g1
   c, c c es2. f4 g2 as g as1 g4 f g1 r2 c bes c1 bes4 as bes1 r1
   g g bes2. c4 d es d2. bes4 c d es2 d2. bes4 c d es2 d2. c4 c1 b2 c \longa
+  
   R\breve*13
-
-  % Gaude quia tui nati
 
   r1 c es es d bes c c bes g as as g es f f es2
   bes' c es1 d4 c d1 es2 c es d1 c1 bes4 a bes2 g bes a1 g2 bes2. a4 f2 g1 fis2 g\breve
+  
   r2 g1 f4 es f2 es c g' as g1 f4 es f2 es c c' d4 c es2. d4 c1 b2 c1
+  
   R\breve*3
 
-  % Gaude Christo ascendente
-
   r2 g1 a1 bes1 c1 d1 es2. d4 es c d2 g, a bes c d1 bes2 a1 g r
-  r d' es c d bes c c r d es c d bes2. a4 bes2 c1 b2 c1 r
+  r d' es c d bes c c
+  r d es c d bes2. a4 bes2 c1 b2 c1 r
 
   \perfectus {
-    g\breve a1 f g\breve a1 bes c\breve d1 r g,\breve a1 f g\breve a1 bes c\breve d1 r
+    g\breve a1 f g\breve a1 bes c\breve d1 r
+    g,\breve a1 f g\breve a1 bes c\breve d1 r
     d\breve es1 c d1. c2 c\breve b1
   }
-
   c1. bes2 g1
 
-  % Ubi fructus ventris
-
-  bes a c g bes  a2. bes4 c1 d r bes a c g bes a2. bes4  c1 d
-
-  % In perenni gaudi
+  bes a c g bes  a2. bes4 c1 d r
+  bes a c g bes a2. bes4  c1 d
 
   \perfectus {
     d\breve es1 c d1. c2  c\breve b1
   }
   c\breve
-
-  % Alleluja
 
   r2 c, es2. f4 g2 as g1 r1 r2 c, es2. f4 g as g1 f2 g es' es es1 d4 c b\longa\fermata c\longa
   \bar "|."
@@ -79,96 +76,124 @@ superius =
 altus =
 \relative d' {
   \alla-breve
+  
   R\breve*2
-  c\breve c1 c es2. f4 g2 \recta as2 g \ficta as1 g4 f g1
+  
+  c\breve c1 c es2. f4 g2 as2 g \ficta as1 g4 f g1
   c, c c es2. f4 g2 as g as1 g4 f  g \breve
   r1 g g bes1. as2 g f  es2. d4 c2 bes c1 d c\longa
+  
   R\breve*14
-  %33
+  
   r1 g' bes bes as f g g f\breve
-  r1 g  as as g es  f f
+  r1 g  as as g es f f
   \perfectus {
     es1 c2 bes d es f1 d2 c es f g1 d f es bes c
   }
   d\breve
-  bes1. a4 g
-  a2 g r
-  g' as g1 f4 es f2 es c g'  as g1 f4 es f2 es c2. es4 d1 c
+  
+  bes1. a4 g a2 g r g' as g1 f4 es f2 es c g' as g1 f4 es f2 es c2. es4 d1 c
+  
   R\breve*3
-  %57
-  r1 c d es f g a b c2 g a bes2. a4 g1 fis2 \[ g1 c, \] a' bes g a f g g r
+  
+  r1 c d es f g a b c2 g a bes2. a4 g1 fis2 \[ g1 c, \]
+  a' bes g a f g g r
   a bes g a f g g\breve
   \perfectus {
-    es\breve. r1
-    c\breve  d1 bes c\breve d1 es f1. es2 g1
+    es\breve.
+    r1 c\breve  d1 bes c\breve d1 es f1. es2 g1
     r1 c,\breve d1 bes c\breve d1 es f1. es2 g1
     r g\breve a1 f g g g\breve
   }
-  es1
-  r es d f c es d2. es4 f1 g
-  r es d f c es d2. es4 f1 g\breve
+  es1 r
+  es d f c es d2. es4 f1 g r
+  es d f c es d2. es4 f1 g\breve
   \perfectus {
     r1 g\breve a1 f g g g\breve
   }
-  es1 r2 c es2. f4 g2 as g c, es2. f4  g as g1 f2 g\breve
+  es1
+  r2 c es2. f4 g2 as g c, es2. f4  g as g1 f2 g\breve
   r2 c, es2. f4 g as g1 f2 g\longa\fermata g\longa
-  \bar "|."
+ 
+ \bar "|."
 }
 tenor =
 \relative d {
   \alla-breve
-  R\breve*16  %17
-  r1 c es1 f g2 c, c'2. bes4 g2 bes \ficta as1 g1  %21
-  r2 c, es1 f g2 c, c'2. bes4 g2 bes as1 g2 es f c4 d es f g1 f2 g1  %27
-  bes c d   g,4 a bes c d c es2  g,4 a bes c d c es2. d4 c1 b2 c\longa  %34
-  bes1. as4 g f\breve
-  r2 bes c es1 d4 c d2 c1 bes4 as g2 c f,\breve c'2 %40
-  g as c1 bes4 a bes2 f g1 g f  %43
-  r2 c' d1 d c r2 g a1 a \[ g\breve c \]
-  R\breve*4  %53
+  
+  R\breve*16
+  
+  r1 c es1 f g2 c, c'2. bes4 g2 bes \ficta as1 g1
+  r2 c, es1 f g2 c, c'2. bes4 g2 bes as1 g2 es f c4 d es f g1 f2 g1
+  bes c d   g,4 a bes c d c es2  g,4 a bes c d c es2. d4 c1 b2 c\longa
+  
+  bes1. as4 g f\breve r2 bes c es1 d4 c d2 c1 bes4 as g2 c f,\breve c'2
+  g as c1 bes4 a bes2 f g1 g f r2 c' d1 d c r2 g a1 a \[ g\breve c \]
+  
+  R\breve*4
+  
   r2 g1 a bes c1 d es2. d4 es c d1 c r
-  R\breve*4  %62
-  r1 r2 d1 es c d bes c1 a bes2. g4 \[ g1 es' \] c d bes c a bes2. g4 es'2. d4 es c d1
-  c\breve
-  R\breve*8  %81
+  
+  R\breve*4
+  
+  r1 r2 d1 es c d bes c1 a bes2. g4 \[ g1 es' \] c d bes c a bes2. g4 es'2. d4 es c d1 c\breve
+  
+  R\breve*8
+  
   \perfectus {
     bes\breve c1 a bes\breve c1 d\breve
   }
-  c1 r c bes2 d1 a c g2. a4 bes2 c d es1 d2 bes c2. bes4 g2 d'1 a c g2. a4 bes2 c d es1 d %94
+  c1 r
+  c bes2 d1 a c g2. a4 bes2 c d es1 d2 bes c2. bes4 g2 d'1 a c g2. a4 bes2 c d es1 d %94
   \perfectus {
     bes\breve c1 a bes\breve c1 d\breve
   }
-  c\breve. %97
+  c\breve.
+  
   r2 c es2. f4 g2 c, r es1 d4 c bes2 c g es'1 d4 c bes2 c g2. a4 bes2 c d es1 d4 c d\breve\fermata c\longa
+  
   \bar "|."
 }
 bassus =
 \relative d {
   \alla-breve
+  
   R\breve*18
-  r1 c es f g2 c, c'2. bes4 g2 bes \ficta as1 g r2 c,2 es1 f g2 c, c'2. bes4 g2 bes as1 g %25
-  r2 es1 f1 g2. f4 g as f2 g2. f4 g as f2 g es f d1 c\longa %31
+  
+  r1 c es f g2 c, c'2. bes4 g2 bes \ficta as1 g r2 c,2 es1 f g2 c, c'2. bes4 g2 bes as1 g
+  r2 es1 f1 g2. f4 g as f2 g2. f4 g as f2 g es f d1 c\longa
   r1 g' as as g es f f es\breve
-  R
-  r1 c d d  c g' as as g r2 d es1 es d\breve %46
-  r2 g1 f4 es f2 es c1 %48
+  
+  R\breve
+  
+  r1 c d d  c g' as as g r2 d es1 es d\breve
+  
+  r2 g1 f4 es f2 es c1
+  
   R\breve*4
-  r1 c d es f g a b c\breve %57
+  
+  r1 c d es f g a b c\breve
+  
   R\breve*5
-  g1 as f g es f \[ d g \] \[ c, c' \] f, g es f d es2. f4  g2 c, g'1 %71
-  c,\longa
+  
+  g1 as f g es f \[ d g \] \[ c, c' \] f, g es f d es2. f4  g2 c, g'1 c,\longa
+  
   R\breve*7
+  
   \perfectus {
     g'\breve es1 f d \[ es c \] g'\breve %83
   }
   c,\breve
+  
   r1 g' d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
   r2 c, g'2. f4 d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
   \perfectus {
     g\breve es1 f d \[ es c \] g'\breve
   }
   c,\longa
+  
   r1 r2 c es2. f4 g2 as g c, es2. f4 g2 as g c, es2. f4 g2 as g\longa\fermata c,\longa
+  
   \bar "|."
 }
 
@@ -247,14 +272,7 @@ bassus =
       \new Voice = tenor {
         \incipit {
           \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
-            r\longa*8
-            r\longa*8
-            r\longa*8
-            r\longa*8
-            r\longa*8
-            r\longa*8
-            r\longa*8
-            r\longa*8
+            r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
             r1 d1 f g
           }
         }
@@ -287,15 +305,7 @@ bassus =
       \new Voice = bassus {
         \incipit {
           \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
-            r\longa
-            r\longa
-            r\longa
-            r\longa
-            r\longa
-            r\longa
-            r\longa
-            r\longa
-            r\longa
+            r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
             r1 d1 f g
           }
         }
