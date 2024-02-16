@@ -10,6 +10,10 @@ In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication t
 
 Suggested accidentals, indicated by placing them above the notes instead of before them, are my own, in accordance with my understanding of the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
 
+View PDF's by clicking on them. After that you can download them by clicking the down-arrow button at the top right corner of the rendering panel.
+
+Same with the MIDI-files, except that Github cannot render them.
+
 == Lilypond challenges
 
 I like the lilypond way of music typesetting. The input format is plain text, which is good for version management and, once you get used to it, lets you enter music very fast. You don't have to worry about layout, because Lilypond takes care of that automatically. Also, typesetting in Lilypond is similar to computer programming, and I _am_ a computer programmer.
