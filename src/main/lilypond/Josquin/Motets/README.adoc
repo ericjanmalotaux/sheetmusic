@@ -1,6 +1,6 @@
 = Josquin's Motet Gaude Virgo
 
-EdiThis is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], done primarily as an excercise to learn Lilypond.
+This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], done primarily as an excercise to learn Lilypond.
 
 I tried to be as faithful to the manuscript source as possible.
 
