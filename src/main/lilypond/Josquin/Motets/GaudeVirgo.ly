@@ -366,7 +366,7 @@ midiDefinition =
     }
 
 \book {
-  \bookOutputSuffix "d"
+  \bookOutputSuffix "d-dorian"
   \score {
     \keepWithTag #'originalKey
     \musicDefinition
@@ -376,7 +376,7 @@ midiDefinition =
 }
 
 \book {
-  \bookOutputSuffix "c"
+  \bookOutputSuffix "c-dorian"
   \score {
     \keepWithTag #'inC
     \musicDefinition
