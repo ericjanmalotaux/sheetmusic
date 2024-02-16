@@ -1,6 +1,7 @@
 = Josquin's Motet Gaude Virgo
 
-This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on <<JNE>> and <<BrusBR9126>>,
+This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on <<NJE
+>> and <<BrusBR9126>>,
 done primarily as an excercise to learn Lilypond.
 
 I tried to be as faithful to the manuscript source as possible.
