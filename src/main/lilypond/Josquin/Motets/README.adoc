@@ -6,7 +6,7 @@ done primarily as an excercise to learn Lilypond. Also I was not happy with any 
 
 I tried to be as faithful to the manuscript source as possible.
 
-In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication that the other voices have, but it is implied, because otherwise the voice would not fit to the other ones. The notes are written black, instead of open, the meaning of which is not clear to me. The same for bars 84-86.
+In bars 73-83 of the superius, <<BrusBR9126>> does not have the stem:[3/1] indication that the other voices have, but it is implied, because otherwise the voice would not fit to the other ones. The notes are written black, instead of open, the meaning of which is not clear to me. The same for bars 84-86.
 
 Suggested accidentals, indicated by placing them above the notes instead of before them, are my own, in accordance with my understanding of the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
 
@@ -21,13 +21,13 @@ However, I did encouter a number of interesting challenges in addition to learni
 I learned how to:
 
 * place accidentals _above_ notes instead of before them, to indicate accidentals implied by _musica ficta_ rules instead of taken from the source
-* get the alla-breve symbol, which Lilypond by default uses only for 2/2 meter, while _Gaude Virgo_ has 2/1, but indicates alle-breve in the source
-* have different meters, 2/1 and 3/1 in different voices at the same time
+* get the alla-breve symbol [big]*&#119093;*, which Lilypond by default uses only for stem:[2/2] meter, while _Gaude Virgo_ has 2/1, but indicates alle-breve in the source
+* have different meters, stem:[2/1] and stem:[3/1] in different voices at the same time
 * automatically transpose the piece. It is written in C-dorian, but many choirs what to sing it transposed down one whole tone to C-dorian
 * generate two versions of the output, one for D-dorian and one for C-dorian, from one source
 * generate a MIDI file from the source, in this case two MIDI files, one for each key
-* correctly scale the note durations for the 3/1 sections, so as to properly align them to the other voices that are still in 2/1 meter
-* obtain the correct tempo ratio for the 3/1 sections in the MIDI output
+* correctly scale the note durations for the stem:[3/1] sections, so as to properly align them to the other voices that are still in stem:[2/1] meter
+* obtain the correct tempo ratio for the stem:[3/1] sections in the MIDI output
 * create _incipits_, the short bits of original source rendering at the beginning of the piece
 * create _ambituses_, the indication of the abitus at the beginning of each voice
 * let Lilypond automatically split notes that start in one bar and continue into the next into two tied notes.
