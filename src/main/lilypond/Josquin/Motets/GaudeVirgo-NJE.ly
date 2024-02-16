@@ -219,8 +219,6 @@ music =
     \new Voice = superius {
       \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
       \clef treble
-      % Uncomment for transposition
-      %        \transpose d c
       \tag #'originalKey { \superius }
       \tag #'inC { \transpose d c \superius }
     }
@@ -254,8 +252,6 @@ music =
     \new Voice = altus {
       \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
       \clef treble
-      % Uncomment for transposition
-      %        \transpose d c
       \tag #'originalKey { \altus }
       \tag #'inC { \transpose d c \altus }
     }
@@ -290,8 +286,6 @@ music =
         }
       }
       \clef "treble_8"
-      % Uncomment for transposition
-      %        \transpose d c
       \tag #'originalKey { \tenor }
       \tag #'inC { \transpose d c { \tenor } }
     }
@@ -325,8 +319,6 @@ music =
         }
       }
       \clef bass
-      % Uncomment for transposition
-      %        \transpose d c
       \tag #'originalKey { \bassus }
       \tag #'inC { \transpose d c { \bassus } }
     }
