@@ -27,6 +27,7 @@ I learned how to:
 * place accidentals _above_ notes instead of before them, to indicate accidentals implied by _musica ficta_ rules instead of taken from the source
 * get the alla-breve symbol [big]*&#119093;*, which Lilypond by default uses only for 2/2 meter, while _Gaude Virgo_ has 2/1, but indicates alle-breve in the source
 * have different meters, 2/1 and 3/1 in different voices at the same time
+* render ligatures, which have no equivalent in modern notation, with square brackets. By the way, I have no clear idea why Josquin writes ligatures at all, except perhaps to enforce placing just one syllable on these notes
 * automatically transpose the piece. It is written in D-dorian, but many choirs want to sing it transposed down one whole tone to C-dorian
 * generate two versions of the output, one for D-dorian and one for C-dorian, from one source
 * generate a MIDI file from the source, in this case two MIDI files, one for each key
