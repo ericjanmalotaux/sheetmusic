@@ -1,1 +1,18 @@
-= README
+= Josquin's Motet Gaude Virgo
+
+This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond]. I tried to be as faithful to the manuscript source as possible.
+
+In bars 73-83 of the superius, <<BrusBR9126>> does not have a 3/1 indication, but it is implied. Instead, the notes are black, instead of open. The meaning of this is not clear to me. The same for bars 84-86. The other voices do have the 3/1 meter indication.
+
+Suggested accidentals are my own, in accordance with, my understanding of, the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
+
+
+
+Sources used are _The New Josquin Edition_ <<NJE>> and <<BrusBR9126>>.
+
+[bibliography]
+== References
+
+* [[[NJE]]] Josquin, and Willem (Wilhelmus Ignatius Maria) Elders. “The collected works of Josquin des Prez / Vol. 24, Motets on non-biblical texts. 4: De beata Maria virgine. 2 / ed. by Willem Elders.” 2007: n. pag. Print.
+
+* [[[BrusBR9126, BrusBR 9126]]] https://uurl.kbr.be/1821377[Choirbook for Philip the Fair and Juana of Castile: ms. 9126], ff.178'-180 (the very last entry of the manuscript). https://www.kbr.be/en/collections/manuscripts/[Koninklijke Bibliotheek van België]
