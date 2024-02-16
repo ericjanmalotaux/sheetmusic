@@ -1,6 +1,6 @@
 = Josquin's Motet Gaude Virgo
 
-This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on <<NJE
+This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on the _New Josquin Edition_ <<NJE
 >> and <<BrusBR9126>> (see <<Sources>>),
 done primarily as an excercise to learn Lilypond. Also I was not happy with any of the versions found on link:++https://www.cpdl.org/wiki/index.php/Gaude_Virgo,_Mater_Christi_(Josquin_des_Prez)++[CPDL], and with <<NJE>>. The <<NJE>> of course has the advantage that any additions from the editor are clearly distinguished as such.
 
