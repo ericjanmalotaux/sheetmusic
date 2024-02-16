@@ -6,7 +6,7 @@ done primarily as an excercise to learn Lilypond. Also I was not happy with any 
 
 I tried to be as faithful to the manuscript source as possible.
 
-In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication that the other voices have, but it is implied, because otherwise the voice would not fit to the other ones. The notes are written black, instead of open, the meaning of which is not clear to me. The same for bars 84-86.
+In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication that the other voices have, but it is implied, because otherwise the voice would not fit to the other ones. The notes are written in black, instead of open, the meaning of which is not clear to me. The same for bars 84-86.
 
 Suggested accidentals, indicated by placing them above the notes instead of before them, are my own, in accordance with my understanding of the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
 
