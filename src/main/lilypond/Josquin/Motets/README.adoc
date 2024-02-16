@@ -1,7 +1,7 @@
 = Josquin's Motet Gaude Virgo
 
 This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on <<NJE
->> and <<BrusBR9126>>,
+>> and <<BrusBR9126>> (see <<Sources>>,
 done primarily as an excercise to learn Lilypond. Also I was not happy with any of the versions found on link:++https://www.cpdl.org/wiki/index.php/Gaude_Virgo,_Mater_Christi_(Josquin_des_Prez)++[CPDL], and with <<NJE>>. The <<NJE>> of course has the advantage that any additions from the editor are clearly distinguished as such.
 
 I tried to be as faithful to the manuscript source as possible.
@@ -9,6 +9,30 @@ I tried to be as faithful to the manuscript source as possible.
 In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication that the other voices have, but it is implied, because otherwise the voice would not fit to the other ones. The notes are written black, instead of open, the meaning of which is not clear to me. The same for bars 84-86.
 
 Suggested accidentals, indicated by placing them above the notes instead of before them, are my own, in accordance with my understanding of the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
+
+== Lilypond challenges
+
+I like the lilypond way of music typesetting. The input format is plain text, which is good for version management and, once you get used to it, lets you enter music very fast. You don't have to worry about layout, because Lilypond takes care of that automatically. Also, typesetting in Lilypond is similar to computer programming, and I _am_ a computer programmer.
+
+I used the link:https://www.frescobaldi.org/[Frescobaldi] Graphical User Interface in addition to Lilypond. Frescobaldi renders the score in a separate panel all the time while you type in notes, which gives you much faster feedback. Also, Frescobaldi makes generating output files (PDF and MIDI) a lot easier.
+
+However, I did encouter a number of interesting challenges in addition to learning to just simply enter music and lyrics.
+
+I learned how to:
+
+* place accidentals _above_ notes instead of before them, to indicate accidentals implied by _musica ficta_ rules instead of taken from the source
+* get the alla-breve symbol, which Lilypond by default uses only for 2/2 meter, while _Gaude Virgo_ has 2/1, but indicates alle-breve in the source
+* have different meters, 2/1 and 3/1 in different voices at the same time
+* automatically transpose the piece. It is written in C-dorian, but many choirs what to sing it transposed down one whole tone to C-dorian
+* generate two versions of the output, one for D-dorian and one for C-dorian, from one source
+* generate a MIDI file from the source, in this case two MIDI files, one for each key
+* correctly scale the note durations for the 3/1 sections, so as to properly align them to the other voices that are still in 2/1 meter
+* obtain the correct tempo ratio for the 3/1 sections in the MIDI output
+* create _incipits_, the short bits of original source rendering at the beginning of the piece
+* create _ambituses_, the indication of the abitus at the beginning of each voice
+* let Lilypond automatically split notes that start in one bar and continue into the next into two tied notes.
+
+It was a very interesting and rewarding experience!
 
 [bibliography]
 == Sources
