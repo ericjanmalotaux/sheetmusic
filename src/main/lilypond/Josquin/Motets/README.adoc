@@ -2,7 +2,7 @@
 
 This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on <<NJE
 >> and <<BrusBR9126>>,
-done primarily as an excercise to learn Lilypond. Also I was not happy with any of the versions found on link:https://www.cpdl.org/wiki/index.php/Gaude_Virgo,_Mater_Christi_(Josquin_des_Prez)++[CPDL], and with <<NJE>>. The <<NJE>> of course does have the advantage that any additions from the editor are clearly distinguished as such.
+done primarily as an excercise to learn Lilypond. Also I was not happy with any of the versions found on link:++https://www.cpdl.org/wiki/index.php/Gaude_Virgo,_Mater_Christi_(Josquin_des_Prez)++[CPDL], and with <<NJE>>. The <<NJE>> of course does have the advantage that any additions from the editor are clearly distinguished as such.
 
 I tried to be as faithful to the manuscript source as possible.
 
