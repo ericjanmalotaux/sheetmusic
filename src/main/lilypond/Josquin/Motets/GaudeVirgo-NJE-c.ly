@@ -1,3 +1,4 @@
+\language "english"
 \version "2.24.2"
 
 \header {
@@ -38,82 +39,85 @@ superius =
   \tempo 1=90
   \ficta
   
-  c\breve c1 c es2. f4 g2 as2 g as1 g4 f g1
-  c, c c es2. f4 g2 as g as1 g4 f g1 r2 c bes c1 bes4 as bes1 r1
-  g g bes2. c4 d es d2. bes4 c d es2 d2. bes4 c d es2 d2. c4 c1 b2 c \longa
+  d\breve d1 d f2. g4 a2 bf2 a bf1 a4 g a1
+  d, d d f2. g4 a2 bf a bf1 a4 g a1 r2 d c d1 c4 bf c1 r1
+  a a c2. d4 e f e2. c4 d e f2 e2. c4 d e f2 e2. d4 d1 cs2 d \longa
   
-  R\breve*13
+  R\longa*6
+  R\breve
 
-  r1 c es es d bes c c bes g as as g es f f es2
-  bes' c es1 d4 c d1 es2 c es d1 c1 bes4 a bes2 g bes a1 g2 bes2. a4 f2 g1 fis2 g\breve
+  r1 d f f e c d d c a bf bf a f g g f2
+  c' d f1 e4 d e1 f2 d f e1 d1 c4 b c2 a c b1 a2 c2. b4 g2 a1 gs2 a\breve
   
-  r2 g1 f4 es f2 es c g' as g1 f4 es f2 es c c' d4 c es2. d4 c1 b2 c1
+  r2 a1 g4 f g2 f d a' bf a1 g4 f g2 f d d' e4 d f2. e4 d1 cs2 d1
   
-  R\breve*3
+  R\longa
+  R\breve
 
-  r2 g1 a1 bes1 c1 d1 es2. d4 es c d2 g, a bes c d1 bes2 a1 g r
-  r d' es c d bes c c
-  r d es c d bes2. a4 bes2 c1 b2 c1 r
+  r2 a1 b1 c1 d1 e1 f2. e4 f d e2 a, b c d e1 c2 b1 a r
+  r e' f d e c d d
+  r e f d e c2. b4 c2 d1 cs2 d1 r
 
   \perfectus {
-    g\breve a1 f g\breve a1 bes c\breve d1 r
-    g,\breve a1 f g\breve a1 bes c\breve d1 r
-    d\breve es1 c d1. c2 c\breve b1
+    a\breve b1 g a\breve b1 c d\breve e1 r
+    a,\breve b1 g a\breve b1 c d\breve e1 r
+    e\breve f1 d e1. d2 d\breve cs1
   }
-  c1. bes2 g1
+  d1. c2 a1
 
-  bes a c g bes  a2. bes4 c1 d r
-  bes a c g bes a2. bes4  c1 d
+  c b d a c  b2. c4 d1 e r
+  c b d a c b2. c4  d1 e
 
   \perfectus {
-    d\breve es1 c d1. c2  c\breve b1
+    e\breve f1 d e1. d2  d\breve cs1
   }
-  c\breve
+  d\breve
 
-  r2 c, es2. f4 g2 as g1 r1 r2 c, es2. f4 g as g1 f2 g es' es es1 d4 c b\longa\fermata c\longa
+  r2 d, f2. g4 a2 bf a1 r1 r2 d, f2. g4 a bf a1 g2 a f' f f1 e4 d cs\longa\fermata d\longa
   \bar "|."
 }
 altus =
 \relative d' {
   \alla-breve
   
-  R\breve*2
+  R\longa
   
-  c\breve c1 c es2. f4 g2 as2 g \ficta as1 g4 f g1
-  c, c c es2. f4 g2 as g as1 g4 f  g \breve
-  r1 g g bes1. as2 g f  es2. d4 c2 bes c1 d c\longa
+  d\breve d1 d f2. g4 a2 bf2 a \ficta bf1 a4 g a1
+  d, d d f2. g4 a2 bf a bf1 a4 g  a \breve
+  r1 a a c1. b2 a g  f2. e4 d2 c d1 e d\longa
   
-  R\breve*14
+  R\longa*7
   
-  r1 g' bes bes as f g g f\breve
-  r1 g  as as g es f f
+  r1 a' c c bf g a a g\breve
+  r1 a  bf bf a f g g
   \perfectus {
-    es1 c2 bes d es f1 d2 c es f g1 d f es bes c
+    f1 d2 c e f g1 e2 d f g a1 e g f c d
   }
-  d\breve
+  e\breve
   
-  bes1. a4 g a2 g r g' as g1 f4 es f2 es c g' as g1 f4 es f2 es c2. es4 d1 c
+  c1. b4 a b2 a r a' bf a1 g4 f g2 f d a' bf a1 g4 f g2 f d2. f4 e1 d
   
-  R\breve*3
+  R\longa
+  R\breve
   
-  r1 c d es f g a b c2 g a bes2. a4 g1 fis2 \[ g1 c, \]
-  a' bes g a f g g r
-  a bes g a f g g\breve
+  r1 d e f g a b cs d2 a b c2. b4 a1 gs2 \[ a1 d, \]
+  b' c a b g a a r
+  b c a b g a a\breve
   \perfectus {
-    es\breve.
-    r1 c\breve  d1 bes c\breve d1 es f1. es2 g1
-    r1 c,\breve d1 bes c\breve d1 es f1. es2 g1
-    r g\breve a1 f g g g\breve
+    f\breve.
+    r1 d\breve  e1 c d\breve e1 f g1. f2 a1
+    r1 d,\breve e1 c d\breve e1 f g1. f2 a1
+    r a\breve b1 g a a a\breve
   }
-  es1 r
-  es d f c es d2. es4 f1 g r
-  es d f c es d2. es4 f1 g\breve
+  f1 r
+  f e g d f e2. f4 g1 a r
+  f e g d f e2. f4 g1 a\breve
   \perfectus {
-    r1 g\breve a1 f g g g\breve
+    r1 a\breve b1 g a a a\breve
   }
-  es1
-  r2 c es2. f4 g2 as g c, es2. f4  g as g1 f2 g\breve
-  r2 c, es2. f4 g as g1 f2 g\longa\fermata g\longa
+  f1
+  r2 d f2. g4 a2 bf a d, f2. g4  a bf a1 g2 a\breve
+  r2 d, f2. g4 a bf a1 g2 a\longa\fermata a\longa
  
  \bar "|."
 }
@@ -121,36 +125,36 @@ tenor =
 \relative d {
   \alla-breve
   
-  R\breve*16
+  R\longa*8
   
-  r1 c es1 f g2 c, c'2. bes4 g2 bes \ficta as1 g1
-  r2 c, es1 f g2 c, c'2. bes4 g2 bes as1 g2 es f c4 d es f g1 f2 g1
-  bes c d   g,4 a bes c d c es2  g,4 a bes c d c es2. d4 c1 b2 c\longa
+  r1 d f1 g a2 d, d'2. c4 a2 c \ficta bf1 a1
+  r2 d, f1 g a2 d, d'2. c4 a2 c bf1 a2 f g d4 e f g a1 g2 a1
+  c d e   a,4 b c d e d f2  a,4 b c d e d f2. e4 d1 cs2 d\longa
   
-  bes1. as4 g f\breve r2 bes c es1 d4 c d2 c1 bes4 as g2 c f,\breve c'2
-  g as c1 bes4 a bes2 f g1 g f r2 c' d1 d c r2 g a1 a \[ g\breve c \]
+  c1. bf4 a g\breve r2 c d f1 e4 d e2 d1 c4 bf a2 d g,\breve d'2
+  a bf d1 c4 b c2 g a1 a g r2 d' e1 e d r2 a b1 b \[ a\breve d \]
   
-  R\breve*4
+  R\longa*2
   
-  r2 g1 a bes c1 d es2. d4 es c d1 c r
+  r2 a1 b c d1 e f2. e4 f d e1 d r
   
-  R\breve*4
+  R\longa*2
   
-  r1 r2 d1 es c d bes c1 a bes2. g4 \[ g1 es' \] c d bes c a bes2. g4 es'2. d4 es c d1 c\breve
+  r1 r2 e1 f d e c d1 b c2. a4 \[ a1 f' \] d e c d b c2. a4 f'2. e4 f d e1 d\breve
   
-  R\breve*8
+  R\longa*4
   
   \perfectus {
-    bes\breve c1 a bes\breve c1 d\breve
+    c\breve d1 b c\breve d1 e\breve
   }
-  c1 r
-  c bes2 d1 a c g2. a4 bes2 c d es1 d2 bes c2. bes4 g2 d'1 a c g2. a4 bes2 c d es1 d %94
+  d1 r
+  d c2 e1 b d a2. b4 c2 d e f1 e2 c d2. c4 a2 e'1 b d a2. b4 c2 d e f1 e %94
   \perfectus {
-    bes\breve c1 a bes\breve c1 d\breve
+    c\breve d1 b c\breve d1 e\breve
   }
-  c\breve.
+  d\breve.
   
-  r2 c es2. f4 g2 c, r es1 d4 c bes2 c g es'1 d4 c bes2 c g2. a4 bes2 c d es1 d4 c d\breve\fermata c\longa
+  r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'1 e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\longa
   
   \bar "|."
 }
@@ -158,41 +162,42 @@ bassus =
 \relative d {
   \alla-breve
   
-  R\breve*18
+  R\longa*9
   
-  r1 c es f g2 c, c'2. bes4 g2 bes \ficta as1 g r2 c,2 es1 f g2 c, c'2. bes4 g2 bes as1 g
-  r2 es1 f1 g2. f4 g as f2 g2. f4 g as f2 g es f d1 c\longa
-  r1 g' as as g es f f es\breve
+  r1 d f g a2 d, d'2. c4 a2 c \ficta bf1 a r2 d,2 f1 g a2 d, d'2. c4 a2 c bf1 a
+  r2 f1 g1 a2. g4 a bf g2 a2. g4 a bf g2 a f g e1 d\longa
+  r1 a' bf bf a f g g f\breve
   
   R\breve
   
-  r1 c d d  c g' as as g r2 d es1 es d\breve
+  r1 d e e  d a' bf bf a r2 e f1 f e\breve
   
-  r2 g1 f4 es f2 es c1
+  r2 a1 g4 f g2 f d1
   
-  R\breve*4
+  R\longa*2
   
-  r1 c d es f g a b c\breve
+  r1 d e f g a b cs d\breve
   
-  R\breve*5
+  R\longa*2
+  R\breve
   
-  g1 as f g es f \[ d g \] \[ c, c' \] f, g es f d es2. f4  g2 c, g'1 c,\longa
+  a1 bf g a f g \[ e a \] \[ d, d' \] g, a f g e f2. g4  a2 d, a'1 d,\longa
   
   R\breve*7
   
   \perfectus {
-    g'\breve es1 f d \[ es c \] g'\breve %83
+    a'\breve f1 g e \[ f d \] a'\breve %83
   }
-  c,\breve
+  d,\breve
   
-  r1 g' d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
-  r2 c, g'2. f4 d2 f1 c c2 g'1 f2. es4 \[ c1 g' \]
+  r1 a' e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
+  r2 d, a'2. g4 e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
   \perfectus {
-    g\breve es1 f d \[ es c \] g'\breve
+    a\breve f1 g e \[ f d \] a'\breve
   }
-  c,\longa
+  d,\longa
   
-  r1 r2 c es2. f4 g2 as g c, es2. f4 g2 as g c, es2. f4 g2 as g\longa\fermata c,\longa
+  r1 r2 d f2. g4 a2 bf a d, f2. g4 a2 bf a d, f2. g4 a2 bf a\longa\fermata d,\longa
   
   \bar "|."
 }
@@ -210,8 +215,11 @@ bassus =
       \new Voice = superius {
         \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
         \clef treble
-        \key c \minor
-        \superius
+% Uncomment for transposition
+        \transpose d c {
+          \key d \minor
+          \superius
+        }
       }
       \addlyrics {
         Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
@@ -243,8 +251,11 @@ bassus =
       \new Voice = altus {
         \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
         \clef treble
-        \key c \dorian
-        \altus
+% Uncomment for transposition
+        \transpose d c {
+          \key d \dorian
+          \altus
+        }
       }
       \addlyrics {
         Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
@@ -277,8 +288,11 @@ bassus =
           }
         }
         \clef "treble_8"
-        \key c \dorian
-        \tenor
+% Uncomment for transposition
+        \transpose d c {
+          \key d \dorian
+          \tenor
+        }
       }
       \addlyrics {
         Gau -- de, qui -- a _ de -- _ _ o ple -- na,
@@ -310,8 +324,11 @@ bassus =
           }
         }
         \clef bass
-        \key c \dorian
-        \bassus
+% Uncomment for transposition
+        \transpose d c {
+          \key d \dorian
+          \bassus
+        }
       }
       \addlyrics {
         Gau -- de, qui -- a _ de -- _ _ o ple -- na,
