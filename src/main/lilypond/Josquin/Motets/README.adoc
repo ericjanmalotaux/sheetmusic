@@ -1,6 +1,7 @@
 = Josquin's Motet Gaude Virgo
 
-This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], done primarily as an excercise to learn Lilypond.
+This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on <<JNE>> and <<BrusBR9126>>,
+done primarily as an excercise to learn Lilypond.
 
 I tried to be as faithful to the manuscript source as possible.
 
@@ -8,10 +9,8 @@ In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication t
 
 Suggested accidentals, indicated by placing them above the notes instead of before them, are my own, in accordance with my understanding of the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
 
-Sources used are _The New Josquin Edition_ <<NJE>> and <<BrusBR9126>>.
-
 [bibliography]
-== References
+== Sources
 
 * [[[NJE]]] Josquin, and Willem (Wilhelmus Ignatius Maria) Elders. “The collected works of Josquin des Prez / Vol. 24, Motets on non-biblical texts. 4: De beata Maria virgine. 2 / ed. by Willem Elders.” 2007.
 
