@@ -206,7 +206,7 @@ bassus =
   \bar "|."
 }
 
-music =
+musicDefinition =
 \new ChoirStaff
 <<
   \new Staff \with {
@@ -339,34 +339,39 @@ music =
   }
 >>
 
+layoutDefinition =
+\layout {
+  \enablePolymeter
+  indent = 5\cm
+  incipit-width = 3\cm
+  \override Staff.NoteHead.style = #'baroque
+  \context {
+    \Staff
+    \consists Ambitus_engraver
+  }
+  \context {
+    \Score
+    tempoHideNote = ##t
+  }
+  \context {
+    \Voice
+    \remove Note_heads_engraver
+    \consists Completion_heads_engraver
+  }
+}
+
+midiDefinition =
+    \midi {
+      \enablePolymeter
+    }
+
 \book {
   \bookOutputSuffix "d"
   \score {
     \keepWithTag #'originalKey
-    \music
-
-    \layout {
-      \enablePolymeter
-      indent = 5\cm
-      incipit-width = 3\cm
-      \override Staff.NoteHead.style = #'baroque
-      \context {
-        \Staff
-        \consists Ambitus_engraver
-      }
-      \context {
-        \Score
-        tempoHideNote = ##t
-      }
-      \context {
-        \Voice
-        \remove Note_heads_engraver
-        \consists Completion_heads_engraver
-      }
-    }
-    \midi {
-      \enablePolymeter
-    }
+    \musicDefinition
+    \layoutDefinition
+    \midiDefinition
   }
 }
 
@@ -374,29 +379,8 @@ music =
   \bookOutputSuffix "c"
   \score {
     \keepWithTag #'inC
-    \music
-
-    \layout {
-      \enablePolymeter
-      indent = 5\cm
-      incipit-width = 3\cm
-      \override Staff.NoteHead.style = #'baroque
-      \context {
-        \Staff
-        \consists Ambitus_engraver
-      }
-      \context {
-        \Score
-        tempoHideNote = ##t
-      }
-      \context {
-        \Voice
-        \remove Note_heads_engraver
-        \consists Completion_heads_engraver
-      }
-    }
-    \midi {
-      \enablePolymeter
-    }%
+    \musicDefinition
+    \layoutDefinition
+    \midiDefinition
   }
 }
