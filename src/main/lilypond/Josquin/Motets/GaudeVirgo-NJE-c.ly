@@ -35,6 +35,7 @@ perfectus =
 
 superius =
 \relative d' {
+  \key d \minor
   \alla-breve
   \tempo 1=90
   \ficta
@@ -78,6 +79,7 @@ superius =
 }
 altus =
 \relative d' {
+  \key d \dorian
   \alla-breve
   
   R\longa
@@ -217,7 +219,6 @@ bassus =
         \clef treble
 % Uncomment for transposition
         \transpose d c {
-          \key d \minor
           \superius
         }
       }
@@ -253,7 +254,6 @@ bassus =
         \clef treble
 % Uncomment for transposition
         \transpose d c {
-          \key d \dorian
           \altus
         }
       }
