@@ -16,7 +16,7 @@ I like the lilypond way of music typesetting. The input format is plain text, wh
 
 I used the link:https://www.frescobaldi.org/[Frescobaldi] Graphical User Interface in addition to Lilypond. Frescobaldi renders the score in a separate panel all the time while you type in notes, which gives you much faster feedback. Also, Frescobaldi makes generating output files (PDF and MIDI) a lot easier.
 
-However, I did encouter a number of interesting challenges in addition to learning to just simply enter music and lyrics.
+However, I did encounter a number of interesting challenges in addition to learning to just simply enter music and lyrics.
 
 I learned how to:
 
