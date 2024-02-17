@@ -1,10 +1,16 @@
 \language "english"
 \version "2.24.2"
+#(set-global-staff-size 17)
+#(set-default-paper-size "a4")
+
+\paper {
+  systems-per-page = 4
+}
 
 \header {
   title = "Gaude virgo"
   composer = "Josquin"
-  copyright = \markup { Copyright \char ##x00A9 2024 by Eric Malotaux }
+  copyright = \markup { \smaller Copyright \char ##x00A9 2024 by Eric Malotaux }
 }
 
 ficta = { \set Staff.suggestAccidentals = ##t }
@@ -352,6 +358,7 @@ layoutDefinition =
   \context {
     \Score
     tempoHideNote = ##t
+    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/2)
   }
   \context {
     \Voice
