@@ -81,7 +81,7 @@ superius =
   d\breve
 
   r2 d, f2. g4 a2 bf a1 r1 r2 d, f2. g4 a bf a1 g2 a f' f f1 e4 d cs\longa\fermata d\longa
-  
+
   \fine
 }
 altus =
@@ -127,7 +127,7 @@ altus =
   f1
   r2 d f2. g4 a2 bf a d, f2. g4  a bf a1 g2 a\breve
   r2 d, f2. g4 a bf a1 g2 a\longa\fermata a\longa
-  
+
   \fine
 }
 tenor =
@@ -369,9 +369,9 @@ layoutDefinition =
 }
 
 midiDefinition =
-    \midi {
-      \enablePolymeter
-    }
+\midi {
+  \enablePolymeter
+}
 
 \book {
   \bookOutputSuffix "d-dorian"
