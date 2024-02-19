@@ -6,7 +6,7 @@
 %         4: De beata Maria virgine. 2 / ed. by Willem Elders.” 2007.
 %   [BrusBR 9126] Choirbook for Philip the Fair and Juana of Castile: ms. 9126, ff.178'-180
 %         (the very last entry of the manuscript). Koninklijke Bibliotheek van België. Reference found in [NJE].
-% 
+%
 % Copyright: Eric Jan Malotaux <e.j.malotaux@gmail.com>, 2024
 %
 
@@ -26,17 +26,11 @@
   tagline = \markup { \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.3 } }
 }
 
-ficta = { \set Staff.suggestAccidentals = ##t }
-recta = { \set Staff.suggestAccidentals = ##f }
-
 alla-breve = {
   \time 2/1
   \once \override Staff.TimeSignature.stencil =
-  #(lambda (grob)
-     (grob-interpret-markup grob
-                            #{ \markup \musicglyph #"timesig.C22" #}))
+    #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"timesig.C22" #}))
 }
-
 
 perfectus =
 #(define-music-function (parser location notes) (ly:music?)
@@ -52,12 +46,10 @@ perfectus =
    #}
    )
 
-superius =
-\relative d' {
+superius = \relative d' {
   \key d \minor
   \alla-breve
   \tempo 1=90
-  \ficta
 
   d\breve d1 d f2. g4 a2 bf2 a bf1 a4 g a1
   d, d d f2. g4 a2 bf a bf1 a4 g a1 r2 d c d1 c4 bf c1 r1
@@ -97,14 +89,14 @@ superius =
 
   \fine
 }
-altus =
-\relative d' {
+
+altus = \relative d' {
   \key d \dorian
   \alla-breve
 
   R\longa
 
-  d\breve d1 d f2. g4 a2 bf2 a \ficta bf1 a4 g a1
+  d\breve d1 d f2. g4 a2 \once \set suggestAccidentals = ##f bf2 a bf1 a4 g a1
   d, d d f2. g4 a2 bf a bf1 a4 g  a \breve
   r1 a a c1. b2 a g  f2. e4 d2 c d1 e d\longa
 
@@ -143,14 +135,14 @@ altus =
 
   \fine
 }
-tenor =
-\relative d {
+
+tenor = \relative d {
   \key d \dorian
   \alla-breve
 
   R\longa*8
 
-  r1 d f1 g a2 d, d'2. c4 a2 c \ficta bf1 a1
+  r1 d f1 g a2 d, d'2. c4 a2 c bf1 a1
   r2 d, f1 g a2 d, d'2. c4 a2 c bf1 a2 f g d4 e f g a1 g2 a1
   c d e   a,4 b c d e d f2  a,4 b c d e d f2. e4 d1 cs2 d\longa
 
@@ -181,14 +173,14 @@ tenor =
 
   \fine
 }
-bassus =
-\relative d {
+
+bassus = \relative d {
   \key d \dorian
   \alla-breve
 
   R\longa*9
 
-  r1 d f g a2 d, d'2. c4 a2 c \ficta bf1 a r2 d,2 f1 g a2 d, d'2. c4 a2 c bf1 a
+  r1 d f g a2 d, d'2. c4 a2 c bf1 a r2 d,2 f1 g a2 d, d'2. c4 a2 c bf1 a
   r2 f1 g1 a2. g4 a bf g2 a2. g4 a bf g2 a f g e1 d\longa
   r1 a' bf bf a f g g f\breve
 
@@ -226,9 +218,7 @@ bassus =
   \fine
 }
 
-musicDefinition =
-\new ChoirStaff
-<<
+musicDefinition = \new ChoirStaff <<
   \new Staff \with {
     instrumentName = "Superius"
     shortInstrumentName = "S"
@@ -359,8 +349,7 @@ musicDefinition =
   }
 >>
 
-layoutDefinition =
-\layout {
+layoutDefinition = \layout {
   \enablePolymeter
   indent = 5\cm
   incipit-width = 3\cm
@@ -369,6 +358,7 @@ layoutDefinition =
     \Staff
     \consists Ambitus_engraver
     \RemoveEmptyStaves
+    suggestAccidentals = ##t
   }
   \context {
     \Score
@@ -382,10 +372,7 @@ layoutDefinition =
   }
 }
 
-midiDefinition =
-\midi {
-  \enablePolymeter
-}
+midiDefinition = \midi { \enablePolymeter }
 
 \book {
   \bookOutputSuffix "d-dorian"
