@@ -23,7 +23,7 @@
 \header {
   title = "Gaude virgo"
   composer = "Josquin"
-  tagline = \markup { \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.3 } }
+  tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.3 }
 }
 
 alla-breve = {
@@ -81,10 +81,7 @@ superiusMusic = \relative d' {
   c b d a c  b2. c4 d1 e r
   c b d a c b2. c4  d1 e
 
-  \perfectus {
-    e\breve f1 d e1. d2  d\breve cs1
-  }
-  d\breve
+  \perfectus { e\breve f1 d e1. d2  d\breve cs1 } d\breve
 
   r2 d, f2. g4 a2 bf a1 r1 r2 d, f2. g4 a bf a1 g2 a f' f f1 e4 d cs\longa\fermata d\longa
 
@@ -129,10 +126,7 @@ altusMusic = \relative d' {
 
   r1 a' c c bf g a a g\breve
   r1 a  bf bf a f g g
-  \perfectus {
-    f1 d2 c e f g1 e2 d f g a1 e g f c d
-  }
-  e\breve
+  \perfectus { f1 d2 c e f g1 e2 d f g a1 e g f c d } e\breve
 
   c1. b4 a b2 a r a' bf a1 g4 f g2 f d a' bf a1 g4 f g2 f d2. f4 e1 d
 
@@ -151,10 +145,7 @@ altusMusic = \relative d' {
   f1 r
   f e g d f e2. f4 g1 a r
   f e g d f e2. f4 g1 a\breve
-  \perfectus {
-    r1 a\breve b1 g a a a\breve
-  }
-  f1
+  \perfectus { r1 a\breve b1 g a a a\breve } f1
   r2 d f2. g4 a2 bf a d, f2. g4  a bf a1 g2 a\breve
   r2 d, f2. g4 a bf a1 g2 a\longa\fermata a\longa
 
@@ -209,15 +200,11 @@ tenorMusic = \relative d {
 
   R\longa*4
 
-  \perfectus {
-    c\breve d1 b c\breve d1 e\breve
-  }
-  d1 r
+  \perfectus { c\breve d1 b c\breve d1 e\breve } d1 r
+  
   d c2 e1 b d a2. b4 c2 d e f1 e2 c d2. c4 a2 e'1 b d a2. b4 c2 d e f1 e %94
-  \perfectus {
-    c\breve d1 b c\breve d1 e\breve
-  }
-  d\breve.
+  
+  \perfectus { c\breve d1 b c\breve d1 e\breve } d\breve.
 
   r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'1 e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\longa
 
@@ -275,17 +262,11 @@ bassusMusic = \relative d {
 
   R\breve*7
 
-  \perfectus {
-    a'\breve f1 g e \[ f d \] a'\breve %83
-  }
-  d,\breve
+  \perfectus { a'\breve f1 g e \[ f d \] a'\breve } d,\breve
 
   r1 a' e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
   r2 d, a'2. g4 e2 g1 d d2 a'1 g2. f4 \[ d1 a' \]
-  \perfectus {
-    a\breve f1 g e \[ f d \] a'\breve
-  }
-  d,\longa
+  \perfectus { a\breve f1 g e \[ f d \] a'\breve } d,\longa
 
   r1 r2 d f2. g4 a2 bf a d, f2. g4 a2 bf a d, f2. g4 a2 bf a\longa\fermata d,\longa
 
@@ -317,8 +298,8 @@ musicDefinition = \new ChoirStaff <<
   } <<
     \new Voice = superius {
       \superiusIncipit
-      \tag #'dDorian { \superiusMusic }
-      \tag #'cDorian { \transpose d c \superiusMusic }
+      \tag #'dDorian \superiusMusic
+      \tag #'cDorian \transpose d c \superiusMusic
     }
   >>
   \new Lyrics \lyricsto superius \superiusLyrics
@@ -330,8 +311,8 @@ musicDefinition = \new ChoirStaff <<
   } <<
     \new Voice = altus {
       \altusIncipit
-      \tag #'dDorian { \altusMusic }
-      \tag #'cDorian { \transpose d c \altusMusic }
+      \tag #'dDorian \altusMusic
+      \tag #'cDorian \transpose d c \altusMusic
     }
   >>
   \new Lyrics \lyricsto altus \altusLyrics
@@ -343,8 +324,8 @@ musicDefinition = \new ChoirStaff <<
   } <<
     \new Voice = tenor {
       \tenorIncipit
-      \tag #'dDorian { \tenorMusic }
-      \tag #'cDorian { \transpose d c { \tenorMusic } }
+      \tag #'dDorian \tenorMusic
+      \tag #'cDorian \transpose d c \tenorMusic
     }
   >>
   \new Lyrics \lyricsto tenor \tenorLyrics
@@ -356,8 +337,8 @@ musicDefinition = \new ChoirStaff <<
   } <<
     \new Voice = bassus {
       \bassusIncipit
-      \tag #'dDorian { \bassusMusic }
-      \tag #'cDorian { \transpose d c { \bassusMusic } }
+      \tag #'dDorian \bassusMusic
+      \tag #'cDorian \transpose d c \bassusMusic
     }
   >>
   \new Lyrics \lyricsto bassus \bassusLyrics
