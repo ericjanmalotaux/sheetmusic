@@ -1,10 +1,23 @@
+%
+% Josquin: Gaude Virgo
+% Sources:
+%   [NJE] Josquin, and Willem (Wilhelmus Ignatius Maria) Elders.
+%         “The collected works of Josquin des Prez / Vol. 24, Motets on non-biblical texts.
+%         4: De beata Maria virgine. 2 / ed. by Willem Elders.” 2007.
+%   [BrusBR 9126] Choirbook for Philip the Fair and Juana of Castile: ms. 9126, ff.178'-180
+%         (the very last entry of the manuscript). Koninklijke Bibliotheek van België. Reference found in [NJE].
+% 
+% Copyright: Eric Jan Malotaux <e.j.malotaux@gmail.com>, 2024
+%
+
 \language "english"
 \version "2.24.2"
-#(set-global-staff-size 17)
+#(set-global-staff-size 19)
 #(set-default-paper-size "a4")
 
 \paper {
-  systems-per-page = 4
+  system-count = 13
+  page-count = 4
 }
 
 \header {
@@ -355,6 +368,7 @@ layoutDefinition =
   \context {
     \Staff
     \consists Ambitus_engraver
+    \RemoveEmptyStaves
   }
   \context {
     \Score
