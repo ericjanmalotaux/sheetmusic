@@ -51,7 +51,6 @@ superiusMusic = \relative d' {
   \clef treble
   \key d \minor
   \alla-breve
-  \tempo 1=90
 
   d\breve d1 d f2. g4 a2 bf2 a bf1 a4 g a1
   d, d d f2. g4 a2 bf a bf1 a4 g a1 r2 d c d1 c4 bf c1 r1
@@ -377,18 +376,16 @@ layoutDefinition = \layout {
     suggestAccidentals = ##t
   }
   \context {
-    \Score
-    tempoHideNote = ##t
-    \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/2)
-  }
-  \context {
     \Voice
     \remove Note_heads_engraver
     \consists Completion_heads_engraver
   }
 }
 
-midiDefinition = \midi { \enablePolymeter }
+midiDefinition = \midi {
+  \enablePolymeter
+  \tempo 1=80
+}
 
 \book {
   \bookOutputSuffix "d-dorian"
