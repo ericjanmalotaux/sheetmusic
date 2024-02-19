@@ -10,7 +10,6 @@
 \header {
   title = "Gaude virgo"
   composer = "Josquin"
-  copyright = \markup { \smaller Copyright \char ##x00A9 2024 by Eric Malotaux }
 }
 
 ficta = { \set Staff.suggestAccidentals = ##t }
