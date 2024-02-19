@@ -33,19 +33,22 @@ alla-breve = {
 }
 
 perfectus = #(define-music-function (parser location notes) (ly:music?)
-   (_i "Een gedeelte in drie-eende maat, die evenlang duurt als twee-eende maat")
-   #{
-     \scaleDurations 2/3 {
-       \time 3/1
-       \once \override Staff.TimeSignature.style = #'single-digit
-       \set Timing.measureLength = #(ly:make-moment 2)
-       #notes
-     }
-     \alla-breve
-   #}
-)
+               (_i "Een gedeelte in drie-eende maat, die evenlang duurt als twee-eende maat")
+               #{
+                 \scaleDurations 2/3 {
+                   \time 3/1
+                   \once \override Staff.TimeSignature.style = #'single-digit
+                   \set Timing.measureLength = #(ly:make-moment 2)
+                   #notes
+                 }
+                 \alla-breve
+               #}
+               )
+
+superiusIncipit = \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
 
 superiusMusic = \relative d' {
+  \clef treble
   \key d \minor
   \alla-breve
   \tempo 1=90
@@ -110,7 +113,10 @@ superiusLyrics = \lyricmode {
   al -- le -- lu -- _ _ _ ja.
 }
 
+altusIncipit = \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
+
 altusMusic = \relative d' {
+  \clef treble
   \key d \dorian
   \alla-breve
 
@@ -173,7 +179,15 @@ altusLyrics = \lyricmode {
   Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
 }
 
+tenorIncipit = \incipit {
+  \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
+    r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
+    r1 d1 f g
+  }
+}
+
 tenorMusic = \relative d {
+  \clef "treble_8"
   \key d \dorian
   \alla-breve
 
@@ -227,7 +241,15 @@ tenorLyrics = \lyricmode {
   Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
 }
 
+bassusIncipit = \incipit {
+  \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
+    r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
+    r1 d1 f g
+  }
+}
+
 bassusMusic = \relative d {
+  \clef bass
   \key d \dorian
   \alla-breve
 
@@ -287,17 +309,17 @@ bassusLyrics = \lyricmode {
 }
 
 musicDefinition = \new ChoirStaff <<
+
   \new Staff \with {
     instrumentName = "Superius"
     shortInstrumentName = "S"
     midiInstrument = "choir aahs"
     \consists Bar_number_engraver
   } <<
-    \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
-    \clef treble
     \new Voice = superius {
-      \tag #'originalKey { \superiusMusic }
-      \tag #'inC { \transpose d c \superiusMusic }
+      \superiusIncipit
+      \tag #'dDorian { \superiusMusic }
+      \tag #'cDorian { \transpose d c \superiusMusic }
     }
   >>
   \new Lyrics \lyricsto superius \superiusLyrics
@@ -307,11 +329,10 @@ musicDefinition = \new ChoirStaff <<
     shortInstrumentName = "A"
     midiInstrument = "choir aahs"
   } <<
-    \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
-    \clef treble
     \new Voice = altus {
-      \tag #'originalKey { \altusMusic }
-      \tag #'inC { \transpose d c \altusMusic }
+      \altusIncipit
+      \tag #'dDorian { \altusMusic }
+      \tag #'cDorian { \transpose d c \altusMusic }
     }
   >>
   \new Lyrics \lyricsto altus \altusLyrics
@@ -321,16 +342,10 @@ musicDefinition = \new ChoirStaff <<
     shortInstrumentName = "T"
     midiInstrument = "choir aahs"
   } <<
-    \incipit {
-      \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
-        r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
-        r1 d1 f g
-      }
-    }
-    \clef "treble_8"
     \new Voice = tenor {
-      \tag #'originalKey { \tenorMusic }
-      \tag #'inC { \transpose d c { \tenorMusic } }
+      \tenorIncipit
+      \tag #'dDorian { \tenorMusic }
+      \tag #'cDorian { \transpose d c { \tenorMusic } }
     }
   >>
   \new Lyrics \lyricsto tenor \tenorLyrics
@@ -340,19 +355,14 @@ musicDefinition = \new ChoirStaff <<
     shortInstrumentName = "B"
     midiInstrument = "choir aahs"
   } <<
-    \incipit {
-      \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
-        r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
-        r1 d1 f g
-      }
-    }
-    \clef bass
     \new Voice = bassus {
-      \tag #'originalKey { \bassusMusic }
-      \tag #'inC { \transpose d c { \bassusMusic } }
+      \bassusIncipit
+      \tag #'dDorian { \bassusMusic }
+      \tag #'cDorian { \transpose d c { \bassusMusic } }
     }
   >>
   \new Lyrics \lyricsto bassus \bassusLyrics
+
 >>
 
 layoutDefinition = \layout {
@@ -383,7 +393,7 @@ midiDefinition = \midi { \enablePolymeter }
 \book {
   \bookOutputSuffix "d-dorian"
   \score {
-    \keepWithTag #'originalKey
+    \keepWithTag #'dDorian
     \musicDefinition
     \layoutDefinition
     \midiDefinition
@@ -393,7 +403,7 @@ midiDefinition = \midi { \enablePolymeter }
 \book {
   \bookOutputSuffix "c-dorian"
   \score {
-    \keepWithTag #'inC
+    \keepWithTag #'cDorian
     \musicDefinition
     \layoutDefinition
     \midiDefinition
