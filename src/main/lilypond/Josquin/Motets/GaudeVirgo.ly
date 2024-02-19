@@ -29,11 +29,10 @@
 alla-breve = {
   \time 2/1
   \once \override Staff.TimeSignature.stencil =
-    #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"timesig.C22" #}))
+  #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"timesig.C22" #}))
 }
 
-perfectus =
-#(define-music-function (parser location notes) (ly:music?)
+perfectus = #(define-music-function (parser location notes) (ly:music?)
    (_i "Een gedeelte in drie-eende maat, die evenlang duurt als twee-eende maat")
    #{
      \scaleDurations 2/3 {
@@ -44,9 +43,9 @@ perfectus =
      }
      \alla-breve
    #}
-   )
+)
 
-superius = \relative d' {
+superiusMusic = \relative d' {
   \key d \minor
   \alla-breve
   \tempo 1=90
@@ -90,7 +89,28 @@ superius = \relative d' {
   \fine
 }
 
-altus = \relative d' {
+superiusLyrics = \lyricmode {
+  Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+  Que per au -- rem _ _ con -- ce -- pis -- _ _ ti, con -- ce -- pis -- _ _ ti,
+  Ga -- bri -- e -- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun -- ti -- o.
+  Gau -- de, qui -- a tu -- i na -- ti,
+  Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- _ _ _ ti,
+  mor -- tem pa -- _ _ _ ti, mor -- tem pa -- _ _ _ _ _ _ ti,
+  Ful -- _ _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- _ rec -- _ _ ti -- o.
+  Et in ce -- lum te vi -- _ _ _ den -- _ te, te vi -- den -- _ _ te,
+  Mo -- tu fer -- tur pro -- pri -- o,
+  mo -- tu fer -- tur pro -- _ _ _ pri -- o.
+  Gau -- de, que post ip -- sim scan -- dis,
+  Et est ho -- nor ti -- bi gran -- dis
+  In ce -- li pa -- _ la -- ti -- o. _ _
+  U -- bi fruc -- tus ven -- tris _ tu -- i
+  No -- bis de -- tur per te _ fru -- i
+  In per -- en -- ni _ gau -- di -- o.
+  Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ lu -- ja,
+  al -- le -- lu -- _ _ _ ja.
+}
+
+altusMusic = \relative d' {
   \key d \dorian
   \alla-breve
 
@@ -136,7 +156,24 @@ altus = \relative d' {
   \fine
 }
 
-tenor = \relative d {
+altusLyrics = \lyricmode {
+  Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
+  Que per au -- rem _ _ con -- ce -- pis -- _ _ ti,
+  Ga -- bri -- e -- _ _ _ _ _ _ le nun -- ti -- o.
+  Gau -- de, qui -- a tu -- i na -- ti,
+  Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
+  Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
+  Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
+  Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
+  Gau -- de, que post ip -- sum scan -- _ dis,
+  Et est ho -- nor ti -- bi gran -- _ dis  In ce -- li pa -- la -- ti -- o.
+  U -- bi fruc -- tus ven -- tris _ tu -- i
+  No -- bis de -- tur per te _ fru -- i
+  In per -- en -- ni gau -- di -- o.
+  Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
+}
+
+tenorMusic = \relative d {
   \key d \dorian
   \alla-breve
 
@@ -174,7 +211,23 @@ tenor = \relative d {
   \fine
 }
 
-bassus = \relative d {
+tenorLyrics = \lyricmode {
+  Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+  Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na, pe -- _ _ _ _ _ _ _ na,
+  Cum pu -- do -- _ _ _ _ _ _ ris li -- _ _ _ _ _ _ _ _ li -- o.
+  Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
+  Quem do -- le -- _ _ bas mor -- tem pa -- ti,
+  mor -- tem pa -- ti, mor -- tem pa -- ti-. _
+  Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
+  Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
+  mo -- tu fer -- tur pro-_ _ _ _ _ _ _ pri -- o.
+  In ce -- li pa -- la -- ti -- o. U -- bi fruc -- tus ven -- tris _ _ tu -- _ _ i
+  No -- _ _ bis de -- tur per te _ _ fru -- _ _ i
+  In per -- en -- ni gau -- di -- o.
+  Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
+}
+
+bassusMusic = \relative d {
   \key d \dorian
   \alla-breve
 
@@ -218,135 +271,88 @@ bassus = \relative d {
   \fine
 }
 
+bassusLyrics = \lyricmode {
+  Gau -- de, qui -- a _ de -- _ _ o ple -- na,
+  Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na,
+  Cum pu -- do -- _ _ _ ris li -- _ _ _ _ _ _ _ li -- o.
+  Gau -- de, qui -- a tu -- i na -- ti,
+  Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- ti,
+  Ful -- _ _ _ _ get.
+  Gau -- de, Chris -- to a -- scen -- den -- te,
+  Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
+  In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
+  No -- bis _ _ de -- tur per te fru -- _ i _
+  In per -- en -- ni gau -- _ di -- o.
+  Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
+}
+
 musicDefinition = \new ChoirStaff <<
   \new Staff \with {
     instrumentName = "Superius"
     shortInstrumentName = "S"
     midiInstrument = "choir aahs"
     \consists Bar_number_engraver
-  }
-  {
+  } <<
+    \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
+    \clef treble
     \new Voice = superius {
-      \incipit { \key d \minor \time 2/2 \relative d' {d\breve d1 d} }
-      \clef treble
-      \tag #'originalKey { \superius }
-      \tag #'inC { \transpose d c \superius }
+      \tag #'originalKey { \superiusMusic }
+      \tag #'inC { \transpose d c \superiusMusic }
     }
-    \addlyrics {
-      Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
-      Que per au -- rem _ _ con -- ce -- pis -- _ _ ti, con -- ce -- pis -- _ _ ti,
-      Ga -- bri -- e -- _ _ _ _ _ _ _ _ _ _ _ _ _ le _ nun -- ti -- o.
-      Gau -- de, qui -- a tu -- i na -- ti,
-      Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- _ _ _ ti,
-      mor -- tem pa -- _ _ _ ti, mor -- tem pa -- _ _ _ _ _ _ ti,
-      Ful -- _ _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- _ rec -- _ _ ti -- o.
-      Et in ce -- lum te vi -- _ _ _ den -- _ te, te vi -- den -- _ _ te,
-      Mo -- tu fer -- tur pro -- pri -- o,
-      mo -- tu fer -- tur pro -- _ _ _ pri -- o.
-      Gau -- de, que post ip -- sim scan -- dis,
-      Et est ho -- nor ti -- bi gran -- dis
-      In ce -- li pa -- _ la -- ti -- o. _ _
-      U -- bi fruc -- tus ven -- tris _ tu -- i
-      No -- bis de -- tur per te _ fru -- i
-      In per -- en -- ni _ gau -- di -- o.
-      Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ lu -- ja,
-      al -- le -- lu -- _ _ _ ja.
-    }
-  }
+  >>
+  \new Lyrics \lyricsto superius \superiusLyrics
+
   \new Staff \with {
     instrumentName = "Altus"
     shortInstrumentName = "A"
     midiInstrument = "choir aahs"
-  }
-  {
+  } <<
+    \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
+    \clef treble
     \new Voice = altus {
-      \incipit { \clef "mensural-c1" \key d \dorian \time 2/2 \relative d' {r\longa d\breve d1 d} }
-      \clef treble
-      \tag #'originalKey { \altus }
-      \tag #'inC { \transpose d c \altus }
+      \tag #'originalKey { \altusMusic }
+      \tag #'inC { \transpose d c \altusMusic }
     }
-    \addlyrics {
-      Gau -- de vir -- go _ _  ma -- ter Chris -- _ _ ti,
-      Que per au -- rem _ _ con -- ce -- pis -- _ _ ti,
-      Ga -- bri -- e -- _ _ _ _ _ _ le nun -- ti -- o.
-      Gau -- de, qui -- a tu -- i na -- ti,
-      Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
-      Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
-      Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
-      Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
-      Gau -- de, que post ip -- sum scan -- _ dis,
-      Et est ho -- nor ti -- bi gran -- _ dis  In ce -- li pa -- la -- ti -- o.
-      U -- bi fruc -- tus ven -- tris _ tu -- i
-      No -- bis de -- tur per te _ fru -- i
-      In per -- en -- ni gau -- di -- o.
-      Al -- le -- _ _ lu -- ja, al -- le -- _ _ _ _ _ ja, al -- le -- _ _ _ _ lu -- _ ja.
-    }
-  }
+  >>
+  \new Lyrics \lyricsto altus \altusLyrics
+
   \new Staff \with {
     instrumentName = "Tenor"
     shortInstrumentName = "T"
     midiInstrument = "choir aahs"
-  }
-  {
-    \new Voice = tenor {
-      \incipit {
-        \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
-          r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
-          r1 d1 f g
-        }
+  } <<
+    \incipit {
+      \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
+        r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
+        r1 d1 f g
       }
-      \clef "treble_8"
-      \tag #'originalKey { \tenor }
-      \tag #'inC { \transpose d c { \tenor } }
     }
-    \addlyrics {
-      Gau -- de, qui -- a _ de -- _ _ o ple -- na,
-      Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na, pe -- _ _ _ _ _ _ _ na,
-      Cum pu -- do -- _ _ _ _ _ _ ris li -- _ _ _ _ _ _ _ _ li -- o.
-      Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
-      Quem do -- le -- _ _ bas mor -- tem pa -- ti,
-      mor -- tem pa -- ti, mor -- tem pa -- ti-. _
-      Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
-      Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
-      mo -- tu fer -- tur pro-_ _ _ _ _ _ _ pri -- o.
-      In ce -- li pa -- la -- ti -- o. U -- bi fruc -- tus ven -- tris _ _ tu -- _ _ i
-      No -- _ _ bis de -- tur per te _ _ fru -- _ _ i
-      In per -- en -- ni gau -- di -- o.
-      Al le -- _ lu -- ja, al -- _ _ le -- lu -- ja, al -- _ _ le -- lu -- ja, _ _ al -- le -- lu -- _ _ _ ja.
+    \clef "treble_8"
+    \new Voice = tenor {
+      \tag #'originalKey { \tenorMusic }
+      \tag #'inC { \transpose d c { \tenorMusic } }
     }
-  }
+  >>
+  \new Lyrics \lyricsto tenor \tenorLyrics
+
   \new Staff \with {
     instrumentName = "Bassus"
     shortInstrumentName = "B"
     midiInstrument = "choir aahs"
-  }
-  {
-    \new Voice = bassus {
-      \incipit {
-        \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
-          r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
-          r1 d1 f g
-        }
+  } <<
+    \incipit {
+      \clef "mensural-c4" \key d \dorian \time 2/2 \relative d {
+        r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa r\longa
+        r1 d1 f g
       }
-      \clef bass
-      \tag #'originalKey { \bassus }
-      \tag #'inC { \transpose d c { \bassus } }
     }
-    \addlyrics {
-      Gau -- de, qui -- a _ de -- _ _ o ple -- na,
-      Pe -- pe -- ris -- ti _ si -- _ _ ne pe -- na,
-      Cum pu -- do -- _ _ _ ris li -- _ _ _ _ _ _ _ li -- o.
-      Gau -- de, qui -- a tu -- i na -- ti,
-      Quem do -- le -- bas mor -- tem pa -- ti, mor -- tem pa -- ti,
-      Ful -- _ _ _ _ get.
-      Gau -- de, Chris -- to a -- scen -- den -- te,
-      Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
-      In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
-      No -- bis _ _ de -- tur per te fru -- _ i _
-      In per -- en -- ni gau -- _ di -- o.
-      Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.
+    \clef bass
+    \new Voice = bassus {
+      \tag #'originalKey { \bassusMusic }
+      \tag #'inC { \transpose d c { \bassusMusic } }
     }
-  }
+  >>
+  \new Lyrics \lyricsto bassus \bassusLyrics
 >>
 
 layoutDefinition = \layout {
