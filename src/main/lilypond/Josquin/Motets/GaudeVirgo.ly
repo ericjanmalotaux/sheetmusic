@@ -81,7 +81,8 @@ superius =
   d\breve
 
   r2 d, f2. g4 a2 bf a1 r1 r2 d, f2. g4 a bf a1 g2 a f' f f1 e4 d cs\longa\fermata d\longa
-  \bar "|."
+  
+  \fine
 }
 altus =
 \relative d' {
@@ -126,8 +127,8 @@ altus =
   f1
   r2 d f2. g4 a2 bf a d, f2. g4  a bf a1 g2 a\breve
   r2 d, f2. g4 a bf a1 g2 a\longa\fermata a\longa
-
-  \bar "|."
+  
+  \fine
 }
 tenor =
 \relative d {
@@ -165,7 +166,7 @@ tenor =
 
   r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'1 e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\longa
 
-  \bar "|."
+  \fine
 }
 bassus =
 \relative d {
@@ -209,7 +210,7 @@ bassus =
 
   r1 r2 d f2. g4 a2 bf a d, f2. g4 a2 bf a d, f2. g4 a2 bf a\longa\fermata d,\longa
 
-  \bar "|."
+  \fine
 }
 
 musicDefinition =
