@@ -10,6 +10,7 @@
 \header {
   title = "Gaude virgo"
   composer = "Josquin"
+  tagline = \markup { \smaller Engraved by Eric Malotaux with LilyPond 2.24.3 }
 }
 
 ficta = { \set Staff.suggestAccidentals = ##t }
