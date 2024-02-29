@@ -365,7 +365,7 @@ layoutDefinition = \layout {
 
 midiDefinition = \midi {
   \enablePolymeter
-  \tempo 1=80
+  \tempo 1=75
 }
 
 \book {
