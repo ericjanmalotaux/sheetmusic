@@ -11,7 +11,7 @@
 %
 
 \language "english"
-\version "2.24.2"
+\version "2.24.3"
 #(set-global-staff-size 19)
 #(set-default-paper-size "a4")
 
@@ -125,10 +125,10 @@ altusMusic = \relative d' {
   R\longa*7
 
   r1 a' c c bf g a a g\breve
-  r1 a  bf bf a f g g
-  \perfectus { f1 d2 c e f g1 e2 d f g a1 e g f c d } e\breve
+  r1 a \once \set suggestAccidentals = ##f bf bf a f g g
+  \perfectus { f1 d2 c e f g1 e2 d f g \[a1 e\] g \[f c\] d } e\breve
 
-  c1. b4 a b2 a r a' bf a1 g4 f g2 f d a' bf a1 g4 f g2 f d2. f4 e1 d
+  c1. bf4 a bf2 a r a' bf a1 g4 f g2 f d a' bf a1 g4 f g2 f d2. f4 e1 d
 
   R\longa
   R\breve
