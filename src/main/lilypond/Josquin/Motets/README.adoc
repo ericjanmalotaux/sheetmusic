@@ -10,6 +10,37 @@ In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication t
 
 Suggested accidentals, indicated by placing them above the notes instead of before them, are my own, in accordance with my understanding of the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
 
+== Text
+
+[verse,Gaude Virgo]
+----
+Gaude virgo mater Christi
+Que per aurem concepisti
+Gabriele nuntio.
+
+Gaude, quia deo plena
+Peperisti sine pena
+Cum pudoris lilio.
+
+Gaude, quia tui nati
+Quem delebas mortem pati
+Fulget resurrectio.
+
+Gaude, Christo ascendente
+Et in celum te vidente
+Motu fertur proprio.
+
+Gaude, que post ipsim scandis
+Et est honor tibi grandis
+In celi palatio.
+
+Ubu fructus ventris tui
+Nobis detur per te frui
+In perenni gaudio.
+
+Alleluja.
+----
+
 View PDF's by clicking on them. After that you can download them by clicking the down-arrow button at the top right corner of the rendering panel.
 
 Same with the MIDI-files, except that Github cannot render them.
@@ -50,6 +81,6 @@ All references to the other sources are taken from <<NJE>>.
 
 * [[[UlmS237, UlmS 237]]], ff. 9-9' (S), 9'-10 (A), 6-6' (T), 7'-8 (B), Anonymous.
 
-* [[[Petrucci1505, Petrucci 1505^2^]]], ff. 12' (S), 75' (A), 43 (T), 108 (B), Josquin: de Pres.
+* [[[Petrucci1505, Petrucci 1505\^2^]]], ff. 12' (S), 75' (A), 43 (T), 108 (B), Josquin: de Pres.
 
 * [[[Wilfflingseder1563, Wilfflingseder 1563]]], pp. 318-319 (excerpt), losquini.
