@@ -30,10 +30,3 @@ jobs:
           mv -f *.midi ${{github.workspace}}/docs/
           mv -f *.pdf ${{github.workspace}}/docs/
           mv -f *.png ${{github.workspace}}/docs/
-          git add ${{github.workspace}}/docs/
-          git commit -m "Add changes" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
