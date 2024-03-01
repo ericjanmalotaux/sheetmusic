@@ -11,7 +11,7 @@
 %
 
 \language "english"
-\version "2.24.3"
+\version "2.24.1"
 #(set-global-staff-size 19)
 #(set-default-paper-size "a4")
 
@@ -23,7 +23,7 @@
 \header {
   title = "Gaude virgo"
   composer = "Josquin"
-  tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.3 }
+  tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.1 }
   copyright = \markup \column {
     \line { " " } % More space between music and Copyright.
     \line { " " }
