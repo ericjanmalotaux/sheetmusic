@@ -42,6 +42,14 @@ It was a very interesting and rewarding experience!
 [bibliography]
 == Sources
 
+All references to the other sources are taken from <<NJE>>.
+
 * [[[NJE]]] Josquin, and Willem (Wilhelmus Ignatius Maria) Elders. “The collected works of Josquin des Prez / Vol. 24, Motets on non-biblical texts. 4: De beata Maria virgine. 2 / ed. by Willem Elders.” 2007.
 
-* [[[BrusBR9126, BrusBR 9126]]] https://uurl.kbr.be/1821377[Choirbook for Philip the Fair and Juana of Castile: ms. 9126], ff.178'-180 (the very last entry of the manuscript). https://www.kbr.be/en/collections/manuscripts/[Koninklijke Bibliotheek van België]. Reference found in <<NJE>>.
+* [[[BrusBR9126, BrusBR 9126]]] https://uurl.kbr.be/1821377[Choirbook for Philip the Fair and Juana of Castile: ms. 9126], ff.178'-180 (the very last entry of the manuscript). https://www.kbr.be/en/collections/manuscripts/[Koninklijke Bibliotheek van België].
+
+* [[[UlmS237, UlmS 237]]], ff. 9-9' (S), 9'-10 (A), 6-6' (T), 7'-8 (B), Anonymous.
+
+* [[[Petrucci1505, Petrucci 1505^2^]]], ff. 12' (S), 75' (A), 43 (T), 108 (B), Josquin: de Pres.
+
+* [[[Wilfflingseder1563, Wilfflingseder 1563]]], pp. 318-319 (excerpt), losquini.
