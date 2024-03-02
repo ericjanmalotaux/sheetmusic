@@ -34,7 +34,6 @@ jobs:
           mkdir -p ${{github.workspace}}/docs/
           mv -f *.midi ${{github.workspace}}/docs/
           mv -f *.pdf ${{github.workspace}}/docs/
-          mv -f *.png ${{github.workspace}}/docs/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
