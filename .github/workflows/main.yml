@@ -28,17 +28,20 @@ jobs:
       - name: Generate PDF music sheets
         uses: alexandre-touret/lilypond-github-action@master
         with:
-            args: -V -fpdf -fpng -fmidi ${{ steps.getfile.outputs.files }}
+            args: -V -fpdf -fmidi ${{ steps.getfile.outputs.files }}
       - name: Push Local Changes
         run: |
-          git config --local user.email "${{ secrets.GIT_USERNAME }}"
-          git config --local user.name "${{ secrets.GIT_EMAIL }}"
           mkdir -p ${{github.workspace}}/docs/
           mv -f *.midi ${{github.workspace}}/docs/
           mv -f *.pdf ${{github.workspace}}/docs/
           mv -f *.png ${{github.workspace}}/docs/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: ${{github.workspace}}/docs/
       - name: Deploy artifact
         id: deployment
         uses: actions/deploy-pages@v1
