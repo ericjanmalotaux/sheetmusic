@@ -112,7 +112,7 @@ superiusLyrics = \lyricmode {
   Mo -- tu fer -- tur pro -- pri -- o,
   mo -- tu fer -- tur pro -- _ _ _ pri -- o.
   
-  Gau -- de, que post ip -- sim scan -- dis,
+  Gau -- de, que post ip -- sum scan -- dis,
   Et est ho -- nor ti -- bi gran -- dis
   In ce -- li pa -- _ la -- ti -- o. _ _
   
