@@ -175,8 +175,8 @@ altusLyrics = \lyricmode {
   Quem do -- le -- bas mor -- tem pa -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ti,
   Ful -- _ _ _ get re -- sur -- rec -- _ _ _ ti -- o, re -- sur -- rec -- _ _ _ _ _ _ ti -- o.
   
-  Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, _
-  Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o-. _
+  Et in ce -- lum te vi -- den -- te, te vi -- den -- _ _ _ te, __ _
+  Mo -- tu fer -- tur pro -- pri -- o, mo -- tu fer -- tur pro -- pri -- o. _
   
   Gau -- de, que post ip -- sum scan -- _ dis,
   Et est ho -- nor ti -- bi gran -- _ dis
@@ -238,7 +238,7 @@ tenorLyrics = \lyricmode {
   
   Gau -- _ _ de, qui -- a tu -- _ _ _ _ _ _ _ i na -- ti,
   Quem do -- le -- _ _ bas mor -- tem pa -- ti,
-  mor -- tem pa -- ti, mor -- tem pa -- ti-. _
+  mor -- tem pa -- ti, mor -- tem pa -- ti. __ _
   
   Gau -- de, Chris -- to a -- scen -- _ _ _ den -- te.
   Mo -- tu fer -- tur pro -- pri -- o, _ _ _ _
@@ -307,10 +307,10 @@ bassusLyrics = \lyricmode {
   Ful -- _ _ _ _ get.
   
   Gau -- de, Chris -- to a -- scen -- den -- te,
-  Mo -- tu fer -- tur pro -- pri -- o, _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
+  Mo -- tu fer -- tur pro -- pri -- o, __ _ _ _ mo -- tu fer -- tur pro -- _ _ _ _ pri -- o.
   
-  In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i _
-  No -- bis _ _ de -- tur per te fru -- _ i _
+  In ce -- li pa -- la --  _ ti -- o. U -- bi fruc -- tus ven -- tris tu -- _ i __ _
+  No -- bis _ _ de -- tur per te fru -- _ i __ _
   In per -- en -- ni gau -- _ di -- o.
   
   Al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- ja, al -- le -- _ _ lu -- _ ja.

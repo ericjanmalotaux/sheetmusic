@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d76ceb-63ca-4d5e-b8d2-a85ec3462cce" name="Changes" comment="Added index.html as starting point for Pages." />
+    <list default="true" id="88d76ceb-63ca-4d5e-b8d2-a85ec3462cce" name="Changes" comment="Put the commentary back in de README.adoc.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lilypond/Josquin/Motets/GaudeVirgo.ly" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/lilypond/Josquin/Motets/GaudeVirgo.ly" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -45,24 +55,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/opt/projects/sheetmusic/docs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.kubernetes.view.ui.settings.KubernetesViewConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.source (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.source.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/opt/projects/sheetmusic/docs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.kubernetes.view.ui.settings.KubernetesViewConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\opt\projects\sheetmusic\docs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.source (1)">
+    <configuration name="source (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ead61b63-b0a6-4ff2-a49a-86be75ccfd1a/source?file=C%3A%2Fopt%2Fprojects%2Fsheetmusic%2Fsrc%2Fmain%2Flilypond%2FJosquin%2FMotets%2FREADME.adoc&amp;mac=WqEA2Flmh4NgWYKSkYLHSV0ohOvORKer+AbBPCxY/Z0=&amp;projectUrl=C%3A%2Fopt%2Fprojects%2Fsheetmusic" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="source" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ead61b63-b0a6-4ff2-a49a-86be75ccfd1a/source?file=C%3A%2Fopt%2Fprojects%2Fsheetmusic%2Fsrc%2Fmain%2Flilypond%2FJosquin%2FMotets%2FREADME.adoc&amp;mac=WqEA2Flmh4NgWYKSkYLHSV0ohOvORKer+AbBPCxY/Z0=&amp;projectUrl=C%3A%2Fopt%2Fprojects%2Fsheetmusic" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="sheetmusic" />
       <method v="2">
@@ -76,6 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.source (1)" />
+        <item itemvalue="JavaScript Debug.source" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -107,87 +136,11 @@
       <workItem from="1708360776684" duration="453000" />
       <workItem from="1708373559456" duration="4086000" />
       <workItem from="1708422025669" duration="841000" />
-      <workItem from="1709236128529" duration="9175000" />
-    </task>
-    <task id="LOCAL-00029" summary="Moved the README.adoc to the proper directory.">
-      <option name="closed" value="true" />
-      <created>1708082388431</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1708082388431</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Edited.">
-      <option name="closed" value="true" />
-      <created>1708083001116</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083001116</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Typo.">
-      <option name="closed" value="true" />
-      <created>1708083025538</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083025538</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Edited.">
-      <option name="closed" value="true" />
-      <created>1708083179572</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083179572</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Edited.">
-      <option name="closed" value="true" />
-      <created>1708083197493</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083197493</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Edited.">
-      <option name="closed" value="true" />
-      <created>1708083444402</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083444402</updated>
-    </task>
-    <task id="LOCAL-00035" summary="The URL to CPDL lookes weird.">
-      <option name="closed" value="true" />
-      <created>1708083686255</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083686255</updated>
-    </task>
-    <task id="LOCAL-00036" summary="The URL to CPDL lookes weird.">
-      <option name="closed" value="true" />
-      <created>1708083765895</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083765895</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Wrong URL escape.">
-      <option name="closed" value="true" />
-      <created>1708083815895</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083815895</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Edited.">
-      <option name="closed" value="true" />
-      <created>1708083866158</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1708083866158</updated>
+      <workItem from="1709236128529" duration="9885000" />
+      <workItem from="1709728987913" duration="46086000" />
+      <workItem from="1710945909877" duration="391000" />
+      <workItem from="1711366256414" duration="7441000" />
+      <workItem from="1711398196556" duration="754000" />
     </task>
     <task id="LOCAL-00039" summary="Reduced redundancy in the source code.">
       <option name="closed" value="true" />
@@ -501,7 +454,87 @@
       <option name="project" value="LOCAL" />
       <updated>1709328857904</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Pipeline can only process up to 2.24.1.">
+      <option name="closed" value="true" />
+      <created>1709332082928</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1709332082928</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Corrected a typo in the lyrics: ip-sim should be ip-sum.">
+      <option name="closed" value="true" />
+      <created>1710946056082</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1710946056083</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Another try to upload scores and midi-files to github-pages.">
+      <option name="closed" value="true" />
+      <created>1711369558492</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1711369558493</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Apparently &quot;_site&quot; must be created explicitly.">
+      <option name="closed" value="true" />
+      <created>1711369695433</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1711369695433</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Uploading now works. Filling in the index.html.">
+      <option name="closed" value="true" />
+      <created>1711370960104</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1711370960104</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Manual generation of index.html for now.">
+      <option name="closed" value="true" />
+      <created>1711371272416</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1711371272416</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Relative links to the files.">
+      <option name="closed" value="true" />
+      <created>1711371572089</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1711371572089</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Deleted the generated files and put a link the GitHub pages in the README.adoc.">
+      <option name="closed" value="true" />
+      <created>1711373129725</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1711373129725</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Forgot to commit the README.adoc.">
+      <option name="closed" value="true" />
+      <created>1711373177146</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1711373177146</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Put the commentary back in de README.adoc.">
+      <option name="closed" value="true" />
+      <created>1711373591146</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1711373591146</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,23 +556,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added ligatures to the challenges." />
-    <MESSAGE value="Source file renamed to GaudeVirgo.ly, and added &quot;dorian&quot; to the extensions." />
-    <MESSAGE value="Gegenereerde files ook gerenderd." />
-    <MESSAGE value="Made smaller and more compact, to fit on four pages." />
-    <MESSAGE value="See of Markdown does get rendered in the Android Github app." />
-    <MESSAGE value="Ah, so a piece is ended with &quot;\fine&quot;! Sounds logical." />
-    <MESSAGE value="Removed copyright notice." />
-    <MESSAGE value="Engraver's notice in the tagline." />
-    <MESSAGE value="Tagline smaller." />
-    <MESSAGE value="Formatted." />
     <MESSAGE value="Tried to make more readable." />
     <MESSAGE value="After reading the LilyPond tutorial." />
     <MESSAGE value="Lyrics finally also in variables." />
@@ -555,6 +590,16 @@
     <MESSAGE value="More space between music and copyright notice." />
     <MESSAGE value="Superscript 2 yet again." />
     <MESSAGE value="Added index.html as starting point for Pages." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added index.html as starting point for Pages." />
+    <MESSAGE value="Pipeline can only process up to 2.24.1." />
+    <MESSAGE value="Corrected a typo in the lyrics: ip-sim should be ip-sum." />
+    <MESSAGE value="Another try to upload scores and midi-files to github-pages." />
+    <MESSAGE value="Apparently &quot;_site&quot; must be created explicitly." />
+    <MESSAGE value="Uploading now works. Filling in the index.html." />
+    <MESSAGE value="Manual generation of index.html for now." />
+    <MESSAGE value="Relative links to the files." />
+    <MESSAGE value="Deleted the generated files and put a link the GitHub pages in the README.adoc." />
+    <MESSAGE value="Forgot to commit the README.adoc." />
+    <MESSAGE value="Put the commentary back in de README.adoc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Put the commentary back in de README.adoc." />
   </component>
 </project>
