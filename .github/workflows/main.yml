@@ -31,6 +31,7 @@ jobs:
             args: -V -fpdf -fmidi ${{ steps.getfile.outputs.files }}
       - name: Push Local Changes
         run: |
+          mkdir _site
           mv -f *.midi _site
           mv -f *.pdf _site
           mv -f ${{github.workspace}}/docs/index.html _site
