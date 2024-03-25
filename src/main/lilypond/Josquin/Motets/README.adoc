@@ -1,5 +1,86 @@
 = Josquin's Motet Gaude Virgo
 
-== Files
+This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on the _New Josquin Edition_ <<NJE
+>> and <<BrusBR9126>> (see <<Sources>>),
+done primarily as an excercise to learn Lilypond. Also I was not happy with any of the versions found on link:++https://www.cpdl.org/wiki/index.php/Gaude_Virgo,_Mater_Christi_(Josquin_des_Prez)++[CPDL], and with <<NJE>>. The <<NJE>> is very faithful to the sources and of course has the advantage that any additions from the editor are clearly distinguished as such.
 
-The generated files and my commentary are located on my link:https://ericjanmalotaux.github.io/sheetmusic[GitHub pages].
+I tried to be as faithful to the manuscript source as possible.
+
+In bars 73-83 of the superius, <<BrusBR9126>> does not have the 3/1 indication that the other voices have, but it is implied, because otherwise the voice would not fit to the other ones. The notes are written in black, instead of open, the meaning of which is not clear to me. The same for bars 84-86.
+
+Suggested accidentals, indicated by placing them above the notes instead of before them, are my own, in accordance with my understanding of the https://en.wikipedia.org/wiki/Musica_ficta[_musica ficta_] rules of the time.
+
+== Text
+
+[verse,Gaude Virgo]
+----
+Gaude virgo mater Christi
+Que per aurem concepisti
+Gabriele nuntio.
+
+Gaude, quia deo plena
+Peperisti sine pena
+Cum pudoris lilio.
+
+Gaude, quia tui nati
+Quem dolebas mortem pati
+Fulget resurrectio.
+
+Gaude, Christo ascendente
+Et in celum te vidente
+Motu fertur proprio.
+
+Gaude, que post ipsum scandis
+Et est honor tibi grandis
+In celi palatio.
+
+Ubu fructus ventris tui
+Nobis detur per te frui
+In perenni gaudio.
+
+Alleluja.
+----
+
+View PDF's by clicking on them. After that you can download them by clicking the down-arrow button at the top right corner of the rendering panel.
+
+Same with the MIDI-files, except that Github cannot render them.
+
+== Lilypond challenges
+
+I like the lilypond way of music typesetting. The input format is plain text, which is good for version management and, once you get used to it, lets you enter music very fast. You don't have to worry about layout, because Lilypond takes care of that automatically. Also, typesetting in Lilypond is similar to computer programming, and I _am_ a computer programmer.
+
+I used the link:https://www.frescobaldi.org/[Frescobaldi] Graphical User Interface in addition to Lilypond. Frescobaldi renders the score in a separate panel all the time while you type in notes, which gives you much faster feedback. Also, Frescobaldi makes generating output files (PDF and MIDI) a lot easier.
+
+However, I did encounter a number of interesting challenges in addition to learning to just simply enter music and lyrics.
+
+I learned how to:
+
+* place accidentals _above_ notes instead of before them, to indicate accidentals implied by _musica ficta_ rules instead of taken from the source
+* get the alla-breve symbol [big]*&#119093;*, which Lilypond by default uses only for 2/2 meter, while _Gaude Virgo_ has 2/1, but indicates alle-breve in the source
+* have different meters, 2/1 and 3/1 in different voices at the same time
+* render ligatures, which have no equivalent in modern notation, with square brackets. By the way, I have no clear idea why Josquin writes ligatures at all, except perhaps to enforce placing just one syllable on these notes
+* automatically transpose the piece. It is written in D-dorian, but many choirs want to sing it transposed down one whole tone to C-dorian
+* generate two versions of the output, one for D-dorian and one for C-dorian, from one source
+* generate a MIDI file from the source, in this case two MIDI files, one for each key
+* correctly scale the note durations for the 3/1 sections, so as to properly align them to the other voices that are still in 2/1 meter
+* obtain the correct tempo ratio for the 3/1 sections in the MIDI output
+* create _incipits_, the short bits of original source rendering at the beginning of the piece
+* create _ambituses_, the indication of the abitus at the beginning of each voice
+* let Lilypond automatically split notes that start in one bar and continue into the next into two tied notes.
+
+It was a very interesting and rewarding experience!
+
+[bibliography]
+== Sources
+
+All references to the other sources are taken from <<NJE>>.
+
+* [[[NJE]]] Josquin, and Willem (Wilhelmus Ignatius Maria) Elders. “The collected works of Josquin des Prez / Vol. 24, Motets on non-biblical texts. 4: De beata Maria virgine. 2 / ed. by Willem Elders.” 2007.
+
+* [[[BrusBR9126, BrusBR 9126]]] https://uurl.kbr.be/1821377[Choirbook for Philip the Fair and Juana of Castile: ms. 9126], ff.178'-180 (the very last entry of the manuscript). https://www.kbr.be/en/collections/manuscripts/[Koninklijke Bibliotheek van België].
+
+* [[[UlmS237, UlmS 237]]], ff. 9-9' (S), 9'-10 (A), 6-6' (T), 7'-8 (B), Anonymous.
+
+* [[[Petrucci1505, Petrucci 1505\^2^]]], ff. 12' (S), 75' (A), 43 (T), 108 (B), Josquin: de Pres.
+
+* [[[Wilfflingseder1563, Wilfflingseder 1563]]], pp. 318-319 (excerpt), losquini.
