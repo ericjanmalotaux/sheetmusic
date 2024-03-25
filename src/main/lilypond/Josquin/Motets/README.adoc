@@ -1,5 +1,14 @@
 = Josquin's Motet Gaude Virgo
 
+== Generated files
+
+In the original first mode (dorian) in D: link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-d-dorian.pdf[PDF],
+with link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-d-dorian.midi[MIDI].
+Transposed down a tone in C: link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-c-dorian.pdf[PDF],
+with link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-c-dorian.midi[MIDI].
+
+== Comments
+
 This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on the _New Josquin Edition_ <<NJE
 >> and <<BrusBR9126>> (see <<Sources>>),
 done primarily as an excercise to learn Lilypond. Also I was not happy with any of the versions found on link:++https://www.cpdl.org/wiki/index.php/Gaude_Virgo,_Mater_Christi_(Josquin_des_Prez)++[CPDL], and with <<NJE>>. The <<NJE>> is very faithful to the sources and of course has the advantage that any additions from the editor are clearly distinguished as such.
