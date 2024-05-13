@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d76ceb-63ca-4d5e-b8d2-a85ec3462cce" name="Changes" comment="Put the commentary back in de README.adoc.">
+    <list default="true" id="88d76ceb-63ca-4d5e-b8d2-a85ec3462cce" name="Changes" comment="Added version with Marianne Hund's accidentals.">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/lilypond/Josquin/Motets/GaudeVirgo.ly" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/lilypond/Josquin/Motets/GaudeVirgo.ly" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Maatstrepen-tussen-de-balken" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,14 +34,12 @@
     &quot;assignee&quot;: &quot;ericjanmalotaux&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="6569f528-addc-4898-9188-239fe63ee32f" />
-        <option name="url" value="git@github.com:ericjanmalotaux/sheetmusic.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:ericjanmalotaux/sheetmusic.git&quot;,
+    &quot;accountId&quot;: &quot;6569f528-addc-4898-9188-239fe63ee32f&quot;
+  }
+}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -62,7 +60,7 @@
     &quot;JavaScript Debug.source.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Marianne-Hund&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/opt/projects/sheetmusic/docs&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -109,7 +107,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -140,23 +139,10 @@
       <workItem from="1709728987913" duration="46086000" />
       <workItem from="1710945909877" duration="391000" />
       <workItem from="1711366256414" duration="7441000" />
-      <workItem from="1711398196556" duration="754000" />
-    </task>
-    <task id="LOCAL-00039" summary="Reduced redundancy in the source code.">
-      <option name="closed" value="true" />
-      <created>1708085072406</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1708085072406</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Added a section on Lilypond challenges.">
-      <option name="closed" value="true" />
-      <created>1708088165423</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1708088165423</updated>
+      <workItem from="1711398196556" duration="1551000" />
+      <workItem from="1713556961128" duration="546000" />
+      <workItem from="1714206204260" duration="86000" />
+      <workItem from="1715615558075" duration="354000" />
     </task>
     <task id="LOCAL-00041" summary="Better rendering for meter-indications.">
       <option name="closed" value="true" />
@@ -534,7 +520,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711373591146</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Extender lines added to syllables that extend over several notes.">
+      <option name="closed" value="true" />
+      <created>1711399143792</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1711399143793</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Added version with Marianne Hund's accidentals.">
+      <option name="closed" value="true" />
+      <created>1715615667956</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1715615667957</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,8 +577,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tried to make more readable." />
-    <MESSAGE value="After reading the LilyPond tutorial." />
     <MESSAGE value="Lyrics finally also in variables." />
     <MESSAGE value="Incipits in variables." />
     <MESSAGE value="Tempo to midi block." />
@@ -600,6 +600,8 @@
     <MESSAGE value="Deleted the generated files and put a link the GitHub pages in the README.adoc." />
     <MESSAGE value="Forgot to commit the README.adoc." />
     <MESSAGE value="Put the commentary back in de README.adoc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Put the commentary back in de README.adoc." />
+    <MESSAGE value="Extender lines added to syllables that extend over several notes." />
+    <MESSAGE value="Added version with Marianne Hund's accidentals." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added version with Marianne Hund's accidentals." />
   </component>
 </project>
