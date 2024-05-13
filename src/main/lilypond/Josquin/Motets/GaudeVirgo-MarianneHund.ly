@@ -23,6 +23,7 @@
 \header {
   title = "Gaude virgo"
   composer = "Josquin"
+  arranger = "Accidentals by Marianne Hund"
   tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.1 }
   copyright = \markup \column {
     \line { " " } % More space between music and Copyright.
@@ -205,7 +206,7 @@ tenorMusic = \relative d {
 
   r1 d f1 g a2 d, d'2. c4 a2 c bf1 a1
   r2 d, f1 g a2 d, d'2. c4 a2 c bf1 a2 f g d4 e f g a1 gs2 a1
-  c d e   a,4 bf c d e d f2  a,4 bf c d e d f2. e4 d1 cs2 d\longa
+  c d e   a,4 b c d e d f2  a,4 b c d e d f2. e4 d1 cs2 d\longa
 
   c1. bf4 a g\breve r2 c d f1 ef4 d ef2 d1 c4 bf a2 d g,\breve d'2
   a bf d1 c4 bf c2 g a1 a g r2 d' e1 e d r2 a b1 b \[ a\breve d \]
@@ -266,7 +267,7 @@ bassusMusic = \relative d {
   R\longa*9
 
   r1 d f g a2 d, d'2. c4 a2 c bf1 a r2 d,2 f1 g a2 d, d'2. c4 a2 c b1 a
-  r2 f1 g1 a2. g4 a bf g2 a2. g4 a bf g2 a f g e1 d\longa
+  r2 f1 g1 a2. g4 a b g2 a2. g4 a b g2 a f g e1 d\longa
   r1 a' bf bf a f g g f\breve
 
   R\breve
