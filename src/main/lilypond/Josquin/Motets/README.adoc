@@ -7,6 +7,8 @@ with link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-d-dorian.midi[
 Transposed down a tone in C: link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-c-dorian.pdf[PDF],
 with link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-c-dorian.midi[MIDI].
 
+Another version, with accidentals suggested by Marianne Hund, based on her study (not yet published) of <<Aaron1529>> and <<Aaron1545>>: link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-MarianneHund-d-dorian.pdf[PDF], with link:https://ericjanmalotaux.github.io/sheetmusic/GaudeVirgo-MarianneHund-d-dorian.midi[MIDI].
+
 == Comments
 
 This is my rendering of Josquin's Motet _Gaude Virgo_ in https://lilypond.org/[Lilypond], based on the _New Josquin Edition_ <<NJE
@@ -93,3 +95,7 @@ All references to the other sources are taken from <<NJE>>.
 * [[[Petrucci1505, Petrucci 1505\^2^]]], ff. 12' (S), 75' (A), 43 (T), 108 (B), Josquin: de Pres.
 
 * [[[Wilfflingseder1563, Wilfflingseder 1563]]], pp. 318-319 (excerpt), losquini.
+
+* [[[Aaron1529]]] Aaron, Pietro, 1529, _Toscanello in Musica_, Venice.
+
+* [[[Aaron1545]]] Aaron, Pietro, 1545, _Lucidario in musica_, Venice.
