@@ -227,7 +227,7 @@ tenorMusic = \relative d {
   
   \perfectus { cs\breve d1 b cs\breve d1 e\breve } d\breve.
 
-  r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'1 e4 d c2 d a2. b4 c2 d e f1 e4 d e\breve\fermata d\longa
+  r2 d f2. g4 a2 d, r f1 e4 d c2 d a f'1 e4 d c2 d a2. bf4 c2 d e f1 e4 d e\breve\fermata d\longa
 
   \fine
 }
