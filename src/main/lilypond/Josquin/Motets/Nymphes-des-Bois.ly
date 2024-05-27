@@ -3,8 +3,15 @@
   title = "Nymphes des Bois"
   subtitle = "La Deploration de la morte de Johannes Ockeghem"
   composer = "Josquin des Prez"
-  arranger = "Transcription Marianne Hund"
+  arranger = "Transcription: Marianne Hund"
   tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.2 }
+}
+
+alla-breve = {
+  \time 2/1
+  \set Timing.measureLength = #(ly:make-moment 4)
+  \once \override Staff.TimeSignature.stencil =
+  #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"timesig.C22" #}))
 }
 
 
@@ -24,7 +31,14 @@ superiusMusic = \relative d' {
   g\breve a1. bes2 c1 c f, f bes bes bes bes a\breve g\longa
   e\breve e1 e f\breve d e1 e e e f1. d2 d\longa
   r\breve*2 a'\breve a1 a b\breve c c1. c2 c1 c bes\breve
-  a c1. b2 g1 a bes\breve a c1. b2 a1 g a\breve g1 e\breve e1 e e g1. e2 e\longa
+  a c1. b2 g1 a bes\breve a c1. b2 a1 g a\breve g1 e\breve e1 e e g1. e2 e\longa.
+  
+  \alla-breve
+  
+  g\breve g1 g a\breve. a1 c1. b2 a1 a gis\breve b c a b g a f g1. e2 e\breve
+  g\breve g1 g c c g1. a2 b\breve d\breve. b1 b\breve g\breve. e1 e\maxima.
+  
+  \fine
 }
 
 altusMusic = \relative d' {
@@ -39,8 +53,14 @@ altusMusic = \relative d' {
   r r c' c1 c c\breve r1 c d1. d2 d1 d d\breve c\longa b\breve g
   c a1 a bes\breve r1 g c c a a bes1. g2 g\breve
   d'\longa r1 d d d d,\breve e c1 c e1. fis2 g1 d\breve a' e1 c'\breve bes1 d1. e2 f d e1 a,1. b2 c1
-  a1. b2 c1 g a b c\breve b\longa
+  a1. b2 c1 g a b c\breve b\maxima
   
+  \alla-breve
+  
+  e\breve e1 e f\breve1 f1 e c d\breve e\longa r1 e f\breve d e c d1 d b\breve c
+  g\breve c1 c c c c\breve b b\longa r\breve b\breve c c\longa b b
+  
+  \fine
 }
 
 tenorMusic = \relative d {
@@ -52,8 +72,14 @@ tenorMusic = \relative d {
   r\breve*2 r\breve*3 g\breve g1 e f\breve e\longa. r\breve*3
   r\breve*3  r\breve*2 g\longa f\longa. g\breve f\longa e\breve e
   r\breve*3 r\breve g\longa f\breve g g1 bes\breve a1 g\breve fis\longa
-  gis\breve a\longa g\longa f\breve e\breve. fis1 g\breve f e f1 e f\breve e\longa
+  gis\breve a\longa g\longa f\breve e\breve. fis1 g\breve f e f1 e f\breve e\maxima..
   
+  \alla-breve
+  
+  R\longa*8
+  e'\breve e1 e e e e\breve d d d e\longa e\maxima..
+  
+  \fine
 }
 
 quintaMusic = \relative d' {
@@ -68,7 +94,14 @@ quintaMusic = \relative d' {
   a,\breve a1 a bes bes bes bes, d d f1. e2 c\breve r1
   g'\breve e1 e a\breve f1 g g e c e\breve d\longa r1 g\breve fis1 b\breve
   r1 a a a d\breve c e\breve. e1 d d f1. e2 c\breve
-  r1 c, d1. e2 f g a1. b2 c1. d2 e\breve d1 e1. d2 c1 b a\breve g\longa
+  r1 c, d1. e2 f g a1. b2 c1. d2 e\breve d1 e1. d2 c1 b a\breve g\maxima
+  
+  \alla-breve
+  
+  b\breve b1 g d'\breve d c1 a1. g2 a1 b\breve r1 e\breve c d b c a b1 g\breve a
+  g e1 e a a e1. fis2 g\longa r\breve g\breve. e1 e\maxima..
+  
+  \fine
 }
 
 bassusMusic = \relative d {
@@ -82,7 +115,14 @@ bassusMusic = \relative d {
   r r c c1 c f,\breve r1 f bes bes g g bes1. a2 f\breve r\breve*2
   c'\breve a1 a d\breve r1 g, c1. c2 c1 c d\breve g,\longa
   r\breve g d'\breve. d1 b\breve a\longa c1. c2 g1 g d'\breve a1 c1. b2 a1 g g d'\breve a
-  r\breve*2 c1. b2 a1 gis a\breve <e e'>\longa
+  r\breve*2 c1. b2 a1 gis a\breve <e e'>\maxima
+  
+  \alla-breve
+  
+  e'\breve e1 e d\breve. d1 a'1. g2 f1 f e\longa a\breve f g e f d1 d e\breve a,
+  e'c1 c a a c\breve g\longa g'\breve. e1 e\breve r1 c\breve a1 a\breve <e' e,>\maxima
+  
+  \fine
 }
 
 
@@ -91,7 +131,6 @@ musicDefinition = \new StaffGroup <<
     instrumentName = "Superius"
     shortInstrumentName = "S"
     midiInstrument = "voice oohs"
-    \consists Bar_number_engraver
   } <<
     \new Voice = superius {
       \superiusMusic
@@ -101,7 +140,6 @@ musicDefinition = \new StaffGroup <<
     instrumentName = "Altus"
     shortInstrumentName = "A"
     midiInstrument = "voice oohs"
-    \consists Bar_number_engraver
   } <<
     \new Voice = superius {
       \altusMusic
@@ -111,7 +149,6 @@ musicDefinition = \new StaffGroup <<
     instrumentName = "Tenor"
     shortInstrumentName = "T"
     midiInstrument = "voice oohs"
-    \consists Bar_number_engraver
   } <<
     \new Voice = superius {
       \tenorMusic
@@ -121,7 +158,6 @@ musicDefinition = \new StaffGroup <<
     instrumentName = "Quinta pars"
     shortInstrumentName = "Qp"
     midiInstrument = "voice oohs"
-    \consists Bar_number_engraver
   } <<
     \new Voice = superius {
       \quintaMusic
@@ -131,7 +167,6 @@ musicDefinition = \new StaffGroup <<
     instrumentName = "Bassus"
     shortInstrumentName = "B"
     midiInstrument = "voice oohs"
-    \consists Bar_number_engraver
   } <<
     \new Voice = superius {
       \bassusMusic
