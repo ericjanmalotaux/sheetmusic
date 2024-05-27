@@ -1,5 +1,6 @@
 \version "2.24.1"
 #(set-default-paper-size "a4")
+#(set-global-staff-size 18)
 
 \paper {
   systems-per-page = 3
@@ -120,7 +121,7 @@ musicDefinition = \new StaffGroup <<
     En cris tren -- chans et la -- men -- ta -- ti -- ons.
     Car A -- tro -- pos, Car A -- tro -- pos, tres __ _ _ ter -- ri -- ble sa -- trap __ _ _ _ pe,
     A vos -- tre O -- cke -- ghem a trap -- pé en sa trap -- pe.
-    Vray tre -- so -- rier de mu -- si -- que chief dóeu vre, __ _ _
+    Vray tre -- so -- rier de mu -- si -- que chief d'oeu vre, __ _ _
     Doct, e -- le -- gant de corps et no point tra -- pe, tra -- pe.
     Grant dom -- mai -- ge est que la terre __ _ _ le coeu -- vre,
     que la terre __ _ _ _ le coeu -- _ vre,
@@ -164,12 +165,11 @@ musicDefinition = \new StaffGroup <<
   >>
   \new Lyrics = repeatTenor \lyricsto tenor {
     Re -- _ qui em e -- _ _ ter -- _ _ _ nam __ _
-    do -- _ _ na __ _ e -- is _ _ _
-    _ _ _ _ 
+    do -- _ _ na __ _ e -- is __ _ _ _ _ _ _ _ 
     do -- _ _ _ _ mi ne __ _
     Et lux __ _ _ _
     per -- pe -- _ _ tu -- a
-    lu -- _ ce -- at _ _ _ _ e -- _ _ _ _ _ _ _ _ _ is. __ _ _
+    lu -- _ ce -- at __ _ _ _ _ e -- _ _ _ _ _ _ _ _ _ is. __ _ _
     Re -- qui -- es -- scat in pa -- _ ce.
     A -- _ men.
   }
