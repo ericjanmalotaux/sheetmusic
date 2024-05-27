@@ -1,4 +1,9 @@
 \version "2.24.1"
+#(set-default-paper-size "a4")
+
+\paper {
+}
+
 \header {
   title = "Nymphes des Bois"
   subtitle = "La Deploration de la morte de Johannes Ockeghem"
@@ -56,12 +61,14 @@ musicDefinition = \new StaffGroup <<
     Chan -- tres ex -- pers _ _ de tou -- tes na -- ti -- ions,
     Chan -- géz voz vois _ tant clè -- res et _ _ haul -- tain _ _ _ _ nes
     En cris tren -- chans et la -- men -- ta -- ti -- ons.
-    Car A -- tro -- pos _ tres ter -- ri -- ble  sa -- trap _ _ pe,
-    A vos -- tre O -- cke -- ghem a -- trap -- pe en sa trap -- pe.
-    Vray tré _ _ so -- rier de mu -- si -- que chief d'oeu -- vre.
-    Doct, é -- lé -- gant de corps et non point trap _ pe.
+    Car A -- tro -- pos _ tres ter -- ri -- ble  sa -- trap -- _ _ pe,
+    A vos -- tre O -- cke -- ghem a -- trap -- pé en sa trap -- pe.
+    Vray tré -- _ _ so -- rier de mu -- si -- que chief d'oeu -- vre.
+    Doct, é -- lé -- gant de corps et non point trap -- _ pe.
     Grant dom -- ma -- ge est que la terre le cou -- vre,
-    que la terre le coeu -- vre, que la terre le coeu -- vre, que la terre le coeu -- _ vre.
+    que la terre le coeu -- vre,
+    que la terre le coeu -- vre,
+    que la terre le coeu -- _ vre.
     <<
       {
         A -- cous -- trés vous d'ha -- bis _ _ de doeul,
@@ -119,7 +126,8 @@ musicDefinition = \new StaffGroup <<
     Vray tre -- so -- rier de mu -- si -- que chief dóeu vre, __ _ _
     Doct, e -- le -- gant de corps et no point tra -- pe, tra -- pe.
     Grant dom -- mai -- ge est que la terre __ _ _ le coeu -- vre,
-    que la terre __ _ _ _ le coeu -- _ vre, que __ _ _ la terre le coeu -- vre,
+    que la terre __ _ _ _ le coeu -- _ vre,
+    que __ _ _ la terre le coeu -- vre,
     <<
       {
         A cous -- trés vous d'ha -- bis __ _ de doeul,
@@ -158,6 +166,17 @@ musicDefinition = \new StaffGroup <<
       \fine
     }
   >>
+  \new Lyrics = repeatTenor \lyricsto tenor {
+    Re -- _ qui em e -- _ _ ter -- _ _ _ nam __ _
+    do -- _ _ na __ _ e -- is _ _ _
+    _ _ _ _ 
+    do -- _ _ _ _ mi ne __ _
+    Et lux __ _ _ _
+    per -- pe -- _ _ tu -- a
+    lu -- _ ce -- at _ _ _ _ e -- _ _ _ _ _ _ _ _ _ is. __ _ _
+    Re -- qui -- es -- scat in pa -- _ ce.
+    A -- _ men.
+  }
 
   \new Staff \with {
     instrumentName = "Quinta pars"
@@ -167,42 +186,76 @@ musicDefinition = \new StaffGroup <<
     \new Voice = quintus \relative d' {
       \clef "treble_8"
 
-      r\breve*3 a\breve a d, a'\longa r\breve r a\breve a1 a a bes1. a2 a\breve g1
-      a1. bes2 c\breve d d\breve. d1 a1. bes2 c\breve r1 c1 d1. c2 bes1 bes a\breve r1 d,
-      e c d\breve e1 d e e e c d\breve e r1 c' c c g\breve r1 g d'1. d2 d1 d a\longa
-      c\breve bes\longa a e'\breve e1 e d\breve r1 d c1. b2 a1 g1. fis4 e fis1
-      g d' b  e1. c2 d1 e r e\breve e\breve. e1 e1. d2 c b a1
-      r a\breve gis1 a1. b2 c d e1. c2 d1 e\longa
+      r\breve*3
+      a\breve a d, a'\longa r\breve r a\breve a1 a a bes1. a2 a\breve g1 a1. bes2 c\breve
+      d d\breve. d1 a1. bes2 c\breve r1 c1 d1. c2 bes1 bes a\breve r1
+      d, e c d\breve e1 d e e e c d\breve e r1
+      c' c c g\breve r1 g d'1. d2 d1 d a\longa c\breve bes\longa a
+      e'\breve e1 e d\breve r1 d c1. b2 a1 g1. fis4 e fis1 g d' b  e1. c2 d1 e r
+      e\breve e\breve. e1 e1. d2 c b a1 r a\breve gis1 a1. b2 c d e1. c2 d1 e\longa
       a,\breve a1 a bes bes bes bes, d d f1. e2 c\breve r1
-      g'\breve e1 e a\breve f1 g g e c e\breve d\longa r1 g\breve fis1 b\breve
-      r1 a a a d\breve c e\breve. e1 d d f1. e2 c\breve
-      r1 c, d1. e2 f g a1. b2 c1. d2 e\breve d1 e1. d2 c1 b a\breve g\maxima
+      g'\breve e1 e a\breve f1 g g e c e\breve d\longa r1 g\breve fis1 b\breve r1
+      a a a d\breve c e\breve. e1 d d f1. e2 c\breve r1
+      c, d1. e2 f g a1. b2 c1. d2 e\breve d1
+      e1. d2 c1 b a\breve g\maxima
 
       \alla-breve
 
-      \repeat volta 2 {b\breve b1 g d'\breve d c1 a1. g2 a1 b\breve r1 e\breve c d b c a b1 g\breve a}
+      \repeat volta 2 {
+        b\breve b1 g d'\breve d c1 a1. g2 a1 b\breve r1
+        e\breve c d b c a b1 g\breve a
+      }
       g e1 e a a e1. fis2 g\longa r\breve g\breve. e1 e\maxima..
 
       \fine
     }
   >>
+  \new Lyrics = repeatQuintus \lyricsto quintus {
+    Nym -- phes des bois, dé -- es -- ses des __ _ fon -- tai -- _ _ _ nes
+    Chan -- tres ex -- pers _ _ de tou -- tes na -- ti -- ions,
+    Chan -- géz voz vois __ _ tant clè -- res et haul -- tain -- nes
+    En cris tren -- chans et la -- men -- ta -- ti -- ons. __ _ _ _
+    Car A -- tro -- pos tres ter -- ri -- ble  sa -- _ _ _ trap -- _ _ _ _ _ pe,
+    A vos -- tre O -- _  cke -- _ ghem a -- _ trap -- _ pé __ _ en sa trap -- pe.
+    Vray tré -- so -- rier de mu -- sique et chief d'oeu -- _ vre.
+    Doct, é -- lé -- gant de corps et non point trap -- pe, trap -- _ pe.
+    Grant dom -- ma -- ge est que la terre le cou -- _ vre,
+    que la __ _ _ _ terre __ _ _ le coeu -- vre,
+    que la terre le coeu -- vre.
+    <<
+      {
+        A -- cous -- trés vous d'ha -- bis _ _ de doeul,
+        Jos -- quin, Pier -- son, Bru -- mel, Com -- pè -- re.
+      }
+      \new Lyrics
+      \with { alignBelowContext = repeatQuintus } {
+        \set associatedVoice = quintus
+        Et pleu -- rez gros -- ses lar -- _ _ mes d'oeuil:
+        per -- du a -- vez vos -- tre bon pè -- re
+      }
+    >>
+    Re -- qui -- e -- scat in pa -- _ ce. A -- _ men, A -- _ men.
+  }
 
   \new Staff \with {
     instrumentName = "Bassus"
     shortInstrumentName = "B"
     midiInstrument = "voice oohs"
   } <<
-    \new Voice = superius \relative d {
+    \new Voice = bassus \relative d {
       \clef bass
 
-      r\breve*3 a\breve a bes a\longa g\breve r1 g1 d' cis d\breve d a1 c bes\breve a\longa g\breve
-      g1 g d'\breve d c1.c2 c1 c g\longa d'\breve d1 d c1. b2 g\breve r1 g
-      c c c c b\breve a\longa c\breve c1 c g\breve r1 g d'1. d2 d1 d a\longa bes1. a2 g\breve
-      f\longa c'\breve c1 c d\breve r1 d e1. d2 c1 b a\breve g r\breve*2
-      a\breve a1 a c1. d2 e\breve r1 e f1. e2 d1 c b\breve a
-      r r c c1 c f,\breve r1 f bes bes g g bes1. a2 f\breve r\breve*2
-      c'\breve a1 a d\breve r1 g, c1. c2 c1 c d\breve g,\longa
-      r\breve g d'\breve. d1 b\breve a\longa c1. c2 g1 g d'\breve a1 c1. b2 a1 g g d'\breve a
+      r\breve*3
+      a\breve a bes a\longa g\breve r1 g1 d' cis d\breve d a1 c bes\breve a\longa
+      g\breve g1 g d'\breve d c1.c2 c1 c g\longa
+      d'\breve d1 d c1. b2 g\breve r1 g c c c c b\breve a\longa
+      c\breve c1 c g\breve r1 g d'1. d2 d1 d a\longa bes1. a2 g\breve f\longa
+      c'\breve c1 c d\breve r1 d e1. d2 c1 b a\breve g r\breve*2
+      a\breve a1 a c1. d2 e\breve r1 e f1. e2 d1 c b\breve a r r
+      c c1 c f,\breve r1 f bes bes g g bes1. a2 f\breve r\breve*2
+      c'\breve a1 a d\breve r1 g, c1. c2 c1 c d\breve g,\longa r\breve 
+      g d'\breve. d1 b\breve a\longa c1. c2 g1 g d'\breve a1
+      c1. b2 a1 g g d'\breve a
       r\breve*2 c1. b2 a1 gis a\breve <e e'>\maxima
 
       \alla-breve
@@ -213,6 +266,32 @@ musicDefinition = \new StaffGroup <<
       \fine
     }
   >>
+  \new Lyrics = repeatBassus \lyricsto bassus {
+    Nym -- phes des bois, __ _ dé -- es -- ses des fon -- tai -- _ _ nes
+    Chan -- tres ex -- pers de tou -- tes na -- ti -- ions,
+    Chan -- géz voz vois __ _ _ tant clè -- res et haul -- tain -- nes
+    En cris tren -- chans et la -- men -- ta -- ti -- ons. __ _ _ _ _
+    Car A -- tro -- pos tres ter -- ri -- ble  sa -- trap -- pe,
+    A vos -- tre O -- cke -- ghem a -- trap -- pé en sa trap -- pe.
+    Vray tré -- so -- rier de mu -- sique et chief d'oeu -- _ vre.
+    Doct, é -- lé -- gant de corps et non point trap -- pe
+    Grant dom -- ma -- ge est que la terre le cou -- vre,
+    que __ _ la terre le coeu -- vre,
+    que la terre le coeu -- vre.
+    <<
+      {
+        A -- cous -- trés vous d'ha -- bis _ _ de doeul,
+        Jos -- quin, Pier -- son, Bru -- mel, Com -- pè -- re.
+      }
+      \new Lyrics
+      \with { alignBelowContext = repeatBassus } {
+        \set associatedVoice = bassus
+        Et pleu -- rez gros -- ses lar -- _ _ mes d'oeuil:
+        per -- du a -- vez vos -- tre bon pè -- re
+      }
+    >>
+    Re -- qui -- e -- scat in pa -- ce. A -- _ men, A -- men, A -- men.
+  }
 
 >>
 
