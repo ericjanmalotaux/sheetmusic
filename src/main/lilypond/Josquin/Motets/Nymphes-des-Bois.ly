@@ -10,7 +10,6 @@
   title = "Nymphes des Bois"
   subtitle = "La Deploration de la morte de Johannes Ockeghem"
   composer = "Josquin des Prez"
-  arranger = "Transcription: Marianne Hund"
   tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.2 }
 }
 
@@ -133,7 +132,7 @@ musicDefinition = \new StaffGroup <<
       }
       \new Lyrics \with { alignBelowContext = repeatAltus } {
         \set associatedVoice = altus
-        Et pleu -- res gros -- ses lar -- _ mes doeuil
+        Et pleu -- res gros -- ses lar -- _ mes d'oeuil
         per -- du a -- ves vos -- tre bon pe -- re
       }
     >>
