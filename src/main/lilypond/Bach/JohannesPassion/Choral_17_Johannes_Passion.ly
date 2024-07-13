@@ -10,8 +10,8 @@
 }
 
 \header {
-  title = "17. Choral"
-  subtitle = "Johannes Passion"
+  subtitle = "17. Choral"
+  title = "Johannes Passion"
   composer = "J.S. Bach"
   opus = "BWV 245"
   tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.1 }
@@ -24,7 +24,7 @@ superiusMusic = \relative a' {
 
   \repeat volta 2 {
     \partial 4 a a a gis e a b c c d( c16 b c8) b4\fermata
-    b  c d8( e16 f) e4 c f f e8([ d)] c( d) d2 c4\fermata
+    b  c d8( e16 f) e4 c f f e8([ d)] c d d2 c4\fermata
     c b a g8[ fis] e[ fis] g4 g a g f2 e4\fermata
     e' d c8[ b] b2 a2.\fermata
   }
@@ -34,16 +34,18 @@ superiusMusic = \relative a' {
 superiusLyrics = \lyricmode {
   <<
     {
+      \override LyricText.self-alignment-X = #LEFT
       Ach, gro -- te Ko -- ning, groot te al -- len tij -- de,
-      Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
+      Hoe kan ik toch uw trouw nog meer ver _ -- sprei -- den?
       Geen men -- sen -- hart _ zou _  ooit kun -- nen be -- den -- ken,
       Wat u te _ schen -- ken.
     }
     \new Lyrics
     {
+      \override LyricText.self-alignment-X = #LEFT
       Met mijn ver -- stand zal ik het niet be -- grij -- pen.
-      Kan ik uw goed -- heid er -- gens mee verge  -- lij  -- ken?
-      Hoe kan ik toch _ uw _ gro -- te lief -- des da -- den
+      Kan ik uw goed -- heid er -- gens mee ver -- ge  -- lij  -- ken?
+      Hoe kan ik toch _ uw _ gro -- te lief -- des -- da -- den
       ooit terug -- be - ta -- len?
     }
   >>
@@ -65,16 +67,18 @@ altusMusic = \relative d' {
 altusLyrics = \lyricmode {
   <<
     {
-      Ach, _ gro -- te Ko ning, groot _ te al -- len tij -- de,
+      \override LyricText.self-alignment-X = #LEFT
+      Ach, _ gro -- te Ko -- ning, groot _ te al -- len tij -- de,
       Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
       Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
       Wat u te schen -- ken.
     }
     \new Lyrics
     {
+      \override LyricText.self-alignment-X = #LEFT
       Met _ mijn ver -- stand zal ik _ het niet be -- grij -- pen.
       Kan ik uw goed -- heid er -- gens mee verge  -- lij  -- ken?
-      Hoe kan ik toch uw gro -- te lief -- des da -- den
+      Hoe kan ik toch uw gro -- te lief -- des -- da -- den
       ooit terug -- be -- ta -- len?
     }
   >>
@@ -96,6 +100,7 @@ tenorMusic = \relative a {
 tenorLyrics = \lyricmode {
   <<
     {
+      \override LyricText.self-alignment-X = #LEFT
       Ach, _ gro -- te Ko -- ning, groot te al -- len tij -- de,
       Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
       Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
@@ -103,10 +108,11 @@ tenorLyrics = \lyricmode {
     }
     \new Lyrics
     {
+      \override LyricText.self-alignment-X = #LEFT
       Met _ mijn ver -- stand zal ik het niet be -- grij -- pen.
       Kan ik uw goed -- heid er -- gens mee verge  -- lij  -- ken?
-      Hoe kan ik toch uw gro -- te lief -- des da -- den
-      ooit terug - be -- ta -- len?
+      Hoe kan ik toch uw gro -- te lief -- des -- da -- den
+      ooit terug _ -- be -- ta -- len?
     }
   >>
 }
@@ -127,6 +133,7 @@ bassusMusic = \relative a {
 bassusLyrics = \lyricmode {
   <<
     {
+      \override LyricText.self-alignment-X = #LEFT
       Ach, gro _ -- te _ Ko _ -- ning, _ groot _ te _ al _ -- len _ tij _ _ _ -- de,
       Hoe kan _ ik _ toch _ uw _ trouw _ nog _ meer _ ver _ -- sprei _ _ _ -- den?
       Geen men _ -- sen _ -- hart _ zou _ ooit _ kun _ -- nen _ be _ -- den _ _ _ -- ken,
@@ -134,10 +141,11 @@ bassusLyrics = \lyricmode {
     }
     \new Lyrics
     {
-      Met mijn _ ver - stand _ zal _ ik _ het _ niet _ be - grij _ _ - pen.
-      Kan ik _ uw _ goed _ -- heid _ er - gens _ mee _ ver -- ge  -- lij _ _ _ -- ken?
-      Hoe kan _ ik _ toch _ uw _ gro - te _ lief - des  - da _ _  - den
-      ooit _ terug _ be - ta _ - len?
+      \override LyricText.self-alignment-X = #LEFT
+      Met mijn _ ver - stand _ zal _ ik _ het _ niet _ be _ -- grij _ _ _ -- pen.
+      Kan ik _ uw _ goed _ -- heid _ er - gens _ mee _ ver -- ge -- lij _ _ _ -- ken?
+      Hoe kan _ ik _ toch _ uw _ gro - te _ lief _ -- des - da _ _ _ -- den
+      ooit _ terug _ -- be _ -- ta _ - len?
     }
   >>
 }
@@ -148,6 +156,7 @@ musicDefinition = \new ChoirStaff <<
     instrumentName = "Soprano"
     midiInstrument = "choir aahs"
   } <<
+    \accidentalStyle choral-cautionary
     \new Voice = superius {
       \superiusMusic
     }
