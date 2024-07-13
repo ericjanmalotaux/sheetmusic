@@ -14,10 +14,8 @@
 }
 
 alla-breve = {
-  \time 2/1
-  \set Timing.measureLength = #(ly:make-moment 4)
-  \once \override Staff.TimeSignature.stencil =
-  #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"timesig.C22" #}))
+  \time 3/2
+  \set Timing.measureLength = #(ly:make-moment 6)
 }
 
 
@@ -43,7 +41,7 @@ musicDefinition = \new StaffGroup <<
       a'\breve a1 a b\breve c c1. c2 c1 c bes\breve a
       c1. b2 g1 a bes\breve a
       c1. b2 a1 g a\breve g1
-      e\breve e1 e e g1. e2 e\longa
+      e\breve e1 e e g1. e2 e\longa.
 
       \repeat volta 2 {
         g\breve g1 g a\breve. a1 c1. b2 a1 a gis\breve
@@ -102,7 +100,7 @@ musicDefinition = \new StaffGroup <<
       c a1 a bes\breve r1 g c c a a bes1. g2 g\breve d'\longa r1
       d d d d,\breve e c1 c e1. fis2 g1 d\breve a' e1
       c'\breve bes1 d1. e2 f d e1 a,1. b2 c1
-      a1. b2 c1 g a b c\breve b\longa.
+      a1. b2 c1 g a b c\breve b\breve( b\longa.)
 
       \repeat volta 2 {
         e\breve e1 e f\breve. f1 e c d\breve e\longa r1
@@ -154,8 +152,10 @@ musicDefinition = \new StaffGroup <<
       r\breve R\longa*2 g\breve g1 e f\breve e\longa. R\longa*4
       g\longa f\longa. g\breve f\longa e\breve e
       R\longa*2 g\longa f\breve g g1 bes\breve a1 g\breve fis\longa
-      gis\breve a\longa g\longa f\breve e\breve. fis1 g\breve f e f1 e f\breve e\maxima.
+      gis\breve a\longa g\longa f\breve e\breve. fis1 g\breve f e f1 e f\breve e\breve e\longa. e\longa.
 
+      \time 2/2
+      \set Timing.measureLength = #(ly:make-moment 4)
       \repeat volta 2 {R\longa*8}
       e'\breve e1 e e e e\breve d d d e\longa e\maxima..
 
@@ -193,7 +193,7 @@ musicDefinition = \new StaffGroup <<
       g'\breve e1 e a\breve f1 g g e c e\breve d\longa r1 g\breve fis1 b\breve r1
       a a a d\breve c e\breve. e1 d d f1. e2 c\breve r1
       c, d1. e2 f g a1. b2 c1. d2 e\breve d1
-      e1. d2 c1 b a\breve g\longa.
+      e1. d2 c1 b a\breve g\breve (g\longa.)
 
       \repeat volta 2 {
         b\breve b1 g d'\breve d c1 a1. g2 a1 b\breve r1
@@ -251,7 +251,7 @@ musicDefinition = \new StaffGroup <<
       c'\breve a1 a d\breve r1 g, c1. c2 c1 c d\breve g,\longa r\breve 
       g d'\breve. d1 b\breve a\longa c1. c2 g1 g d'\breve a1
       c1. b2 a1 g g d'\breve a
-      r\breve*2 c1. b2 a1 gis a\breve <e e'>\longa.
+      r\breve*2 c1. b2 a1 gis a\breve <e e'>\breve( <e e'>\longa.)
 
       \repeat volta 2 {e'\breve e1 e d\breve. d1 a'1. g2 f1 f e\longa a\breve f g e f d1 d e\breve a,}
       e'c1 c a a c\breve g\longa g'\breve. e1 e\breve r1 c\breve a1 a\breve <e' e,>\maxima
