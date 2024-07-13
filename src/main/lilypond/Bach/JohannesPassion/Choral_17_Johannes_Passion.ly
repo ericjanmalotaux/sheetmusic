@@ -32,10 +32,21 @@ superiusMusic = \relative a' {
 }
 
 superiusLyrics = \lyricmode {
-  Ach, gro -- te Ko -- ning, groot te al -- len tij -- de,
-  Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
-  Geen men -- sen -- hart _ zou _  ooit kun -- nen be -- den -- ken,
-  Wat u te _ schen -- ken.
+  <<
+    {
+      Ach, gro -- te Ko -- ning, groot te al -- len tij -- de,
+      Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
+      Geen men -- sen -- hart _ zou _  ooit kun -- nen be -- den -- ken,
+      Wat u te _ schen -- ken.
+    }
+    \new Lyrics
+    {
+      Met mijn ver -- stand zal ik het niet be -- grij -- pen.
+      Kan ik uw goed -- heid er -- gens mee verge  -- lij  -- ken?
+      Hoe kan ik toch _ uw _ gro -- te lief -- des da -- den
+      ooit terug -- be - ta -- len?
+    }
+  >>
 }
 
 altusMusic = \relative d' {
@@ -52,10 +63,21 @@ altusMusic = \relative d' {
 }
 
 altusLyrics = \lyricmode {
-  Ach, _ gro -- te Ko ning, groot _ te al -- len tij -- de,
-  Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
-  Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
-  Wat u te schen -- ken.
+  <<
+    {
+      Ach, _ gro -- te Ko ning, groot _ te al -- len tij -- de,
+      Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
+      Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
+      Wat u te schen -- ken.
+    }
+    \new Lyrics
+    {
+      Met _ mijn ver -- stand zal ik _ het niet be -- grij -- pen.
+      Kan ik uw goed -- heid er -- gens mee verge  -- lij  -- ken?
+      Hoe kan ik toch uw gro -- te lief -- des da -- den
+      ooit terug -- be -- ta -- len?
+    }
+  >>
 }
 
 tenorMusic = \relative a {
@@ -72,10 +94,21 @@ tenorMusic = \relative a {
 }
 
 tenorLyrics = \lyricmode {
-  Ach, _ gro -- te Ko -- ning, groot te al -- len tij -- de,
-  Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
-  Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
-  Wat u _ te schen -- ken.
+  <<
+    {
+      Ach, _ gro -- te Ko -- ning, groot te al -- len tij -- de,
+      Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
+      Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
+      Wat u _ te schen -- ken.
+    }
+    \new Lyrics
+    {
+      Met _ mijn ver -- stand zal ik het niet be -- grij -- pen.
+      Kan ik uw goed -- heid er -- gens mee verge  -- lij  -- ken?
+      Hoe kan ik toch uw gro -- te lief -- des da -- den
+      ooit terug - be -- ta -- len?
+    }
+  >>
 }
 
 bassusMusic = \relative a {
@@ -92,10 +125,21 @@ bassusMusic = \relative a {
 }
 
 bassusLyrics = \lyricmode {
-  Ach, gro _ -- te _ Ko _ -- ning, _ groot _ te _ al _ -- len _ tij _ _ _ -- de,
-  Hoe kan _ ik _ toch _ uw _ trouw _ nog _ meer _ ver _ -- sprei _ _ _ -- den?
-  Geen men _ -- sen _ -- hart _ zou _ ooit _ kun _ -- nen _ be _ -- den _ _ _ -- ken,
-  Wat _ u _ te _ schen _ _ -- ken.
+  <<
+    {
+      Ach, gro _ -- te _ Ko _ -- ning, _ groot _ te _ al _ -- len _ tij _ _ _ -- de,
+      Hoe kan _ ik _ toch _ uw _ trouw _ nog _ meer _ ver _ -- sprei _ _ _ -- den?
+      Geen men _ -- sen _ -- hart _ zou _ ooit _ kun _ -- nen _ be _ -- den _ _ _ -- ken,
+      Wat _ u _ te _ schen _ _ -- ken.
+    }
+    \new Lyrics
+    {
+      Met mijn _ ver - stand _ zal _ ik _ het _ niet _ be - grij _ _ - pen.
+      Kan ik _ uw _ goed _ -- heid _ er - gens _ mee _ ver -- ge  -- lij _ _ _ -- ken?
+      Hoe kan _ ik _ toch _ uw _ gro - te _ lief - des  - da _ _  - den
+      ooit _ terug _ be - ta _ - len?
+    }
+  >>
 }
 
 musicDefinition = \new ChoirStaff <<
