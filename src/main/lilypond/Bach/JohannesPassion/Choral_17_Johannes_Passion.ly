@@ -95,7 +95,7 @@ bassusLyrics = \lyricmode {
   Ach, gro _ -- te _ Ko _ -- ning, _ groot _ te _ al _ -- len _ tij _ _ _ -- de,
   Hoe kan _ ik _ toch _ uw _ trouw _ nog _ meer _ ver _ -- sprei _ _ _ -- den?
   Geen men _ -- sen _ -- hart _ zou _ ooit _ kun _ -- nen _ be _ -- den _ _ _ -- ken,
-  Wat _ u _ te _ schen _ _ _ -- ken.
+  Wat _ u _ te _ schen _ _ -- ken.
 }
 
 musicDefinition = \new ChoirStaff <<
