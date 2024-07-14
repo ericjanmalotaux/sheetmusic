@@ -10,9 +10,10 @@
 }
 
 \header {
-  subtitle = "17. Choral"
+  piece = \markup \larger \larger \larger \larger {"17. Choral"}
   title = "Johannes Passion"
   composer = "J.S. Bach"
+  arranger = \markup { "Vertaling " \char ##x00A9 " Eva-Maria Kintzel, 2024" }
   opus = "BWV 245"
   tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.1 }
 }
@@ -23,8 +24,15 @@ superiusMusic = \relative a' {
   \key a \minor
 
   \repeat volta 2 {
-    \partial 4 a a a gis e a b c c d( c16 b c8) b4\fermata
-    b  c d8( e16 f) e4 c f f e8([ d)] c d d2 c4\fermata
+    \partial 4 a a a gis e a b c c d( c16\trill b c8) b4\fermata
+    b  c d8( e16 f) e4 c f f e8([ d)]
+    % Omdat er in het eerste couplet één lettergreep, en in het tweede twee lettergrepen
+    % op het volgende melisma passen.
+    \set melismaBusyProperties = #'()
+    \slurDashed
+    c( d)
+    \unset melismaBusyProperties
+    d2 c4\fermata
     c b a g8[ fis] e[ fis] g4 g a g f2 e4\fermata
     e' d c8[ b] b2 a2.\fermata
   }
@@ -35,10 +43,10 @@ superiusLyrics = \lyricmode {
   <<
     {
       \override LyricText.self-alignment-X = #LEFT
-      Ach, gro -- te Ko -- ning, groot te al -- len tij -- de,
-      Hoe kan ik toch uw trouw nog meer ver _ -- sprei -- den?
+      O gro -- te Ko -- ning, groot te al -- len tij -- de,
+      hoe kan ik toch uw trouw nog meer ver _ -- sprei -- den?
       Geen men -- sen -- hart _ zou _  ooit kun -- nen be -- den -- ken,
-      Wat u te _ schen -- ken.
+      wat u te _ schen -- ken.
     }
     \new Lyrics
     {
@@ -68,10 +76,10 @@ altusLyrics = \lyricmode {
   <<
     {
       \override LyricText.self-alignment-X = #LEFT
-      Ach, _ gro -- te Ko -- ning, groot _ te al -- len tij -- de,
-      Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
+      O _ gro -- te Ko -- ning, groot _ te al -- len tij -- de,
+      hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
       Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
-      Wat u te schen -- ken.
+      wat u te schen -- ken.
     }
     \new Lyrics
     {
@@ -101,10 +109,10 @@ tenorLyrics = \lyricmode {
   <<
     {
       \override LyricText.self-alignment-X = #LEFT
-      Ach, _ gro -- te Ko -- ning, groot te al -- len tij -- de,
-      Hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
+      O _ gro -- te Ko -- ning, groot te al -- len tij -- de,
+      hoe kan ik toch uw trouw nog meer ver -- sprei -- den?
       Geen men -- sen -- hart zou ooit kun -- nen be -- den -- ken,
-      Wat u _ te schen -- ken.
+      wat u _ te schen -- ken.
     }
     \new Lyrics
     {
@@ -134,10 +142,10 @@ bassusLyrics = \lyricmode {
   <<
     {
       \override LyricText.self-alignment-X = #LEFT
-      Ach, gro _ -- te _ Ko _ -- ning, _ groot _ te _ al _ -- len _ tij _ _ _ -- de,
-      Hoe kan _ ik _ toch _ uw _ trouw _ nog _ meer _ ver _ -- sprei _ _ _ -- den?
+      O gro _ -- te _ Ko _ -- ning, _ groot _ te _ al _ -- len _ tij _ _ _ -- de,
+      hoe kan _ ik _ toch _ uw _ trouw _ nog _ meer _ ver _ -- sprei _ _ _ -- den?
       Geen men _ -- sen _ -- hart _ zou _ ooit _ kun _ -- nen _ be _ -- den _ _ _ -- ken,
-      Wat _ u _ te _ schen _ _ -- ken.
+      wat _ u _ te _ schen _ _ -- ken.
     }
     \new Lyrics
     {
