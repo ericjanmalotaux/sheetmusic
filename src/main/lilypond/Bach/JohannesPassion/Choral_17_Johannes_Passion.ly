@@ -12,8 +12,11 @@
 \header {
   piece = \markup \larger \larger \larger \larger {"17. Choral"}
   title = "Johannes Passion"
-  composer = "J.S. Bach"
-  arranger = \markup { "Vertaling " \char ##x00A9 " Eva-Maria Kintzel, 2024" }
+  composer = "Johann Sebastian Bach"
+  arranger = \markup \right-column {
+    \line { "Tekst: Johann Heermann, 1630" }
+    \line { "Vertaling: " \char ##x00A9 " Eva-Maria Kintzel, 2024" }
+  }
   opus = "BWV 245"
   tagline = \markup \smaller \smaller { Engraved by Eric Malotaux with LilyPond 2.24.1 }
 }
@@ -210,10 +213,28 @@ midiDefinition = \midi {
   \tempo 4=75
 }
 
+tekstDefinition = \markup {
+    \column {
+      \italic \bold \line { Oorspronkelijke tekst: }
+      \hspace #1
+      \line { Ach großer König, groß zu allen Zeiten, }
+      \line { wie kann ich gnugsam diese Treu ausbreiten? }
+      \line { Keins Menschen Herze mag indes ausdenken,}
+      \line { was dir zu schenken. }
+      \hspace #1
+      \line { Ich kann's mit meinen Sinnen nicht erreichen, }
+      \line { womit doch dein Erbarmen zu vergleichen. }
+      \line { Wie kann ich dir denn deine Liebestaten }
+      \line { im Werk erstatten? }
+    }
+}
+
+
 \book {
   \score {
     \musicDefinition
     \layoutDefinition
     \midiDefinition
   }
+  \tekstDefinition
 }
