@@ -3,3 +3,15 @@ Eric J. Malotaux
 1984
 :doctype: book
 :title-page:
+
+* Missa Adiutorium nostrum, Anonymous <<MunBSF>>, <<Wien11883>>
+* Adiutorium nostrum <<LonBLR>>.
+
+[bibliography]
+== Sources
+
+* [[[Wien11883, ÖNB Ms. 11883]]], https://search.onb.ac.at/permalink/f/sb7jht/ONB_alma21294554740003338[Wien, Österreichische Nationalbibliothek (ÖNB), Cod. 11883]. ff. 277v-286r.
+
+* [[[MunBSF, MunBS F]]] https://www.digitale-sammlungen.de/view/bsb00079142?page=144[Munich, Bayerische Staatsbibliothek, Handschriften-Inkunabelsammlung, Musica MS F, ff. 72v-85r]
+
+* [[[LonBLR, LonBLR 8 G.VII]]] https://www.diamm.ac.uk/sources/2032[GB-Lbl Royal 8 G. vii], ff. 4v-6r.
