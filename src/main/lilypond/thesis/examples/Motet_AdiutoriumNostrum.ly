@@ -88,7 +88,7 @@ altusMusic = \relative c' {
 
   R\breve c1 e2 g2. g4 g2 g g2. f8 e d1 r2 d f2. f4 f2 f2. e8 d c4. bes8 c4 d4. c8 c2 b4 c2 r2
   g bes2. c4 d1 r4 d2 bes4 c2 c1
-  R1*5 r2. c4 d4. e8 f2. e8 d e4 f d c d8 c f2 e4 f2
+  R1*5 r2 r4 c4 d4. e8 f2. e8 d e4 f d c d8 c f2 e4 f2
   R1*3 r2. c4 d bes c2 e d \[c a\] b c1 c2
   R1*7 r4 c d e f2. e8 d e4 f d2 c4 a bes c f,4. g8 a bes c2 b4 \[c2 g\] c
   r4 f2 f4 f f d e f4. e8 c4 d4. c8 c2 b4 c1
