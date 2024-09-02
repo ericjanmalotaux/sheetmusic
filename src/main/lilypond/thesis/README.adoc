@@ -1,0 +1,5 @@
+= Wenen, Österreichische Nationalbibliothek Cod. 11883: doctoraalscriptie Muziekwetenschap Universiteit van Amsterdam
+Eric J. Malotaux
+1984
+:doctype: book
+:title-page:
