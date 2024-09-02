@@ -132,7 +132,7 @@ tenorMusic = \relative d {
     R1.*2 c1 a2 bes1 g2 R1.*2 c1 a2 bes1 g2
   }
   \time 2/2
-  r2 r4g4 a2 bes c2. c4 c2 bes c\breve
+  r2 r4 g4 a2 bes c2. c4 c2 bes c\breve
   R1*3 r4 c2 a4 bes g a f g4. f8^[ e d] c2 f e4 f8 g a bes c4 d bes c a bes g c4. bes8 a g \[f2 g\] f\breve\fermata
   
   \fine
