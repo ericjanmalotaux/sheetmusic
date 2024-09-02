@@ -89,10 +89,10 @@ altusMusic = \relative c' {
   R\breve c1 e2 g2. g4 g2 g g2. f8 e d1 r2 d f2. f4 f2 f2. e8 d c4. bes8 c4 d4. c8 c2 b4 c2 r2
   g bes2. c4 d1 r4 d2 bes4 c2 c1
   R1*5 r2 r4 c4 d4. e8 f2. e8 d e4 f d c d8 c f2 e4 f2
-  R1*3 r2. c4 d bes c2 e d \[c a\] b c1 c2
+  R1*3 r2 r4 c4 d bes c2 e d \[c a\] b c1 c2
   R1*7 r4 c d e f2. e8 d e4 f d2 c4 a bes c f,4. g8 a bes c2 b4 \[c2 g\] c
   r4 f2 f4 f f d e f4. e8 c4 d4. c8 c2 b4 c1
-  r2. c2 c4 a f c'2 d c1\fermata
+  r2 r4 c2 c4 a f c'2 d c1\fermata
   \perfectus { r2 f1 d2 es1 c2 r1 R1. r2 f1 d2 es1 c2 r2 d1 bes2 c }
   \time 2/2
   c2 r4 e f2 d f2. e4 f2 d f1
@@ -123,16 +123,16 @@ tenorMusic = \relative d {
   f, g a4. g8 g2 f4 g1
   r2 g bes2. bes4 bes2 a4 bes4. a8 g f g2 f1
   r2 f g a bes g4 a2 g8 f g4 c, c'4. bes8 a4 . g16 f g2 f
-  R1*3 r2. f4 a4. bes8 c2. bes8 a bes4 c a2 g f1
-  r2. c'2 a4 bes2 g4 a4. g8 f e f4 g8 f g2
+  R1*3 r2 r4 f4 a4. bes8 c2. bes8 a bes4 c a2 g f1
+  r2 r4 c'2 a4 bes2 g4 a4. g8 f e f4 g8 f g2
   r4 g a bes c2. bes8 a bes4 c4. bes8 a2 g8 f g4 a4. g8 f2 e8d e4 f d \[c2 f\] e4 f1
-  R1*5 r2. c'2 c4 a f c'2 d c4 d2 c8 bes c4. bes8 c4 a b c f,2
+  R1*5 r2 r4 c'2 c4 a f c'2 d c4 d2 c8 bes c4. bes8 c4 a b c f,2
   g4 c4. bes8 a g \[f2 g\] \[f2. a2\] f4 bes2 a1\fermata
   \perfectus {
     R1.*2 c1 a2 bes1 g2 R1.*2 c1 a2 bes1 g2
   }
   \time 2/2
-  r2.g4 a2 bes c2. c4 c2 bes c\breve
+  r2 r4g4 a2 bes c2. c4 c2 bes c\breve
   R1*3 r4 c2 a4 bes g a f g4. f8^[ e d] c2 f e4 f8 g a bes c4 d bes c a bes g c4. bes8 a g \[f2 g\] f\breve\fermata
   
   \fine
@@ -161,7 +161,7 @@ bassusMusic = \relative d {
   c' d e f d4 es2 d8 c d2 c4. d8 e f g4. f8 f2 e4 f2
   R1*3 r4 c d4. e8 f2. e8 d e4 f d c d8 c f2 e4 f1
   R1 r4 c d bes c2 d1 c r2
-  r2. c4 d e f2. e8 d e4 f4. e8 d2 c8 bes c4 a bes c \[f,2 g\] f1. r2
+  r2 r4 c4 d e f2. e8 d e4 f4. e8 d2 c8 bes c4 a bes c \[f,2 g\] f1. r2
   R1*3 r4 f'2 e4 d2 c1 r4 f2 f4 d bes f'2 g f1  e4 c d2 c4. d8 e4 f d2 c f1. bes,2 f'1\fermata
   \perfectus {
     R1.*2 r2 f1 d2 es1 c2 r1 R1. r2 f1 d2 es1
