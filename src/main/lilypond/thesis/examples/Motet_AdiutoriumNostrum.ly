@@ -6,7 +6,7 @@
 % Copyright: Eric Jan Malotaux <e.j.malotaux@gmail.com>, 2024
 %
 
-\version "2.24.2"
+\version "2.24.1"
 #(set-global-staff-size 20)
 #(set-default-paper-size "a4")
 
