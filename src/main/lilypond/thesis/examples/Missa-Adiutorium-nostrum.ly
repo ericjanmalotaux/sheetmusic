@@ -62,7 +62,9 @@ superiusKyrie = \relative d' {
   g1 bes1. bes2 bes1. a4 g f1. g2 a\longa
   R\longa*3
   r1 a bes1. bes2 bes1 a2 bes2. a4 g f g1 f bes1. bes2 bes a4 g f2 g a g1 f e2 f\longa
-  \section
+  
+  
+  \section \sectionLabel "Christe"
   
   %Christe
   r1 f \[g a\] bes1 g2 a1 g4 f g2. a4 bes1 g2 c1 bes4 a g1 f r
@@ -88,10 +90,36 @@ superiusLyrics = \lyricmode {
 altusKyrieIncipit = \incipit { \clef "mensural-c3" \key f \major \time 2/2 \relative d { r\longa. c'\breve e1 g1. }}
 
 altusKyrie = \relative d' {
-  \clef treble
+  \clef "treble_8"
   \key f \major
   \alla-breve
+  
+  R\longa
+  c\breve e1 g1. g2 g1 g1. f4 e d\longa r1 d f1. f2 f1. e4 d c2. b4 c2 d1 c b2 c1. bes4 a g1 d'\breve r1
+  R\breve r2 f2. e4 f2 d g1 f4 e d2. e4 f d g1 f e2 f1 r2 bes, es1 d\breve c2 bes g c1. c\longa
+  
+  \section
+  
+  %Christe
+  c1 \[d e\] f d2 e1 d4 c d c f1 e2 d g 2. f4 e d c2 f1 e2 f1 r
+  R\longa*3
+  r2 c d2. e4 f1. e4 d e2 f d1 c r
+  R\longa R\breve
+  r1 r2 c d bes c2. d4 e\breve d1 c1. b4 a b1 c2. d4 e1 d c1. b4 a b1 c\longa
+  
+  \section
+  
+  \perfectus {
+    r1 f f d es\breve c1 r r R\breve. r1 f f d es\breve c1 r d d bes c
+  }
+  c\breve r2 e1 c2 c f1 e2 f1. e4 d e2. d4 e2 c1 f e2 f\breve. r1
+  R\longa
+  r1 r2 f1 d2 e c d bes c g a bes c1 c2 f1 f2 d e c d bes a1 a g4 f c'1 c\longa
   \fine
+  
+  %Kyrie
+  
+  
 }
 
 altusLyrics = \lyricmode {
@@ -110,7 +138,7 @@ tenorKyrie = \relative d {
   R\longa r1 g bes1. bes2 bes1 a2 bes2. a4 g f g1 f\breve
   R\longa R\breve r1 g1 bes1. bes2 bes1 a2 bes2. a4 g f g1 f\longa
   
-  \section \sectionLabel "Christe"
+  \section
   
   R\longa*3 r2 f2 a2. bes4 c1. bes4 a bes2 c a g2. a4 bes c d2. c8 bes a2 c1 bes2 a f g1 f\breve. r1
   R\breve r1 r2 g2 a2. bes4 c1. bes4 a bes2 c a2. bes4 c2 d1 c b2 c\breve
