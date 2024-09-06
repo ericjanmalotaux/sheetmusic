@@ -12,8 +12,7 @@
 #(set-default-paper-size "a4")
 
 \paper {
-  system-count = 13
-  page-count = 4
+  system-count = 12
 }
 
 \header {
@@ -64,6 +63,7 @@ superiusKyrie = \relative d' {
   r1 a bes1. bes2 bes1 a2 bes2. a4 g f g1 f bes1. bes2 bes a4 g f2 g a g1 f e2 f\longa
   
   
+  \break
   \section \sectionLabel "Christe"
   
   %Christe
@@ -73,6 +73,7 @@ superiusKyrie = \relative d' {
   R\longa R\breve
   r2 c1 a2 bes1 g2 c1 bes4 a g2 a f g1 e2 f1. e4 d e2. f4 g2 a f g1 e2 f1.e4 d e\longa
   
+  \break
   \section
   \sectionLabel "Kyrie"
   \perfectus {
@@ -85,6 +86,11 @@ superiusKyrie = \relative d' {
 }
 
 superiusLyrics = \lyricmode {
+  Kyrie _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ eleyson. _ _
+  Christe _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ eleyson. _
+  Kyrie _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ eleyson.
 }
 
 altusKyrieIncipit = \incipit { \clef "mensural-c3" \key f \major \time 2/2 \relative d { r\longa. c'\breve e1 g1. }}
@@ -114,7 +120,7 @@ altusKyrie = \relative d' {
   }
   c\breve r2 e1 c2 c f1 e2 f1. e4 d e2. d4 e2 c1 f e2 f\breve. r1
   R\longa
-  r1 r2 f1 d2 e c d bes c g a bes c1 c2 f1 f2 d e c d bes a1 a g4 f c'1 c\longa
+  r1 r2 f1 d2 es c d bes c g a bes c1 c2 f1 f2 d es c d bes a1 a g4 f c'1 c\longa
   \fine
   
   %Kyrie
@@ -171,6 +177,29 @@ bassusKyrie = \relative d {
   \clef bass
   \key f \major
   \alla-breve
+  
+  %Kyrie
+  R\longa*2 c\breve e1 g1. g2 g1 g1. f4 e d\breve r1 d f1. f2 f1 e2 f2. e4 d c d1 c\breve
+  r2 g'1 f4 e d2. e4 f d g1 f e2 f\breve
+  R\longa r1 c d \once \set suggestAccidentals = ##f es1. d4 c bes2. c4 d2 e f g e f c1 f,\longa
+  
+  \section
+  
+  %Christe
+  R\longa*2 R\breve r1 c' d2. e4 f1. e4 d e2 f d c2. d4 e f g2. f4 d2 f2. e4 c d e f g1 f e2 f1 r
+  R\longa*2 r2 c d2. e4 f1. e4 d e2 f d1 c\breve R\breve
+  r1 r2 c d bes c1 d\breve c1 r2 c d bes c1 d\breve c\longa
+  
+  \section
+  \perfectus {
+    \key bes \major
+    R\longa. r1 f1 f d es\breve c1 r r R\breve. r1 f f d es\breve
+  }
+  c\breve c1. c2 f1 g f\breve c1 c2 c f1 g f\breve
+  r2 f d es c d bes c2. bes4 a g f1 g f f'2 g es f d es c1 f2 d c1 f,2 r1 f'2 g es f d es1 c2 f2. e4 d2 c1 f,\longa
+  
+  
+  %Kyrie
   \fine
 }
 
@@ -238,7 +267,6 @@ layoutDefinition = \layout {
   \context {
     \Staff
     \consists Ambitus_engraver
-    \RemoveEmptyStaves
     suggestAccidentals = ##t
   }
   \context {
