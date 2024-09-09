@@ -15,10 +15,10 @@ november 1984
 [preface]
 = Voorwoord
 
-Deze scriptie vindt zijn oorsprong in een doctoraalwerkcollege over het manuscript Wenen, Österreichische Nationalbibliothek, Cod. 11883, hierna te noemen Wenen 11883, dat in het voorjaar van 1984 door Professor C.J. Maas werd gegeven aan het Instituut voor Muziekwetenschap van de Universiteit van Amsterdam.
+Deze scriptie vindt zijn oorsprong in een doctoraalwerkcollege over het manuscript _Wenen, Österreichische Nationalbibliothek, Cod. 11883_, hierna te noemen Wenen 11883, dat in het voorjaar van 1984 door Professor C.J. Maas werd gegeven aan het Instituut voor Muziekwetenschap van de Universiteit van Amsterdam.
 Aan dit werkcollege name deel behalve ikzelf Peter van den Burg, Peter Banning, Kees Schilder, Frans Wiering, Jeffry van der Elst, Liesbeth Nederstigt en Leon Kessels, die ik graag wil bedanken voor hun toestemming om de resultaten van het werkcollege in deze scriptie te verwerken.
 De schriftelijke neerslag van het werkcollege in de vorm van transcripties en referaten is overigens te vinden in twee multobanden in de bibliotheek van het Instituut voor Muziekwetenschap, tot nu toe nog zonder signatuur.
-Verder wil ik graag nog bedanken B. Kahmann voor het ter beschilling stelln van zijn foto's van Cambridge, Magdalen College, Pepys Library, ms. 1760, Willem Hering voor zijn hulp in de bibliotheek van het Instituut voor Muziekwetenshap, Malotaux - Electronic Systems Design - voor het gebruik van hun computer voor het typwerk, en niet in het minst Professor Maas voor zijn ondersteuning en begeleiding.
+Verder wil ik graag nog bedanken B. Kahmann voor het ter beschilling stelln van zijn foto's van _Cambridge, Magdalen College, Pepys Library, ms. 1760_, Willem Hering voor zijn hulp in de bibliotheek van het Instituut voor Muziekwetenshap, Malotaux - Electronic Systems Design - voor het gebruik van hun computer voor het typwerk, en niet in het minst Professor Maas voor zijn ondersteuning en begeleiding.
 
 Eric Jan Malotaux +
 Amsterdam, november 1984
@@ -31,7 +31,7 @@ Het is geen mooi manuscript, zoals vele van de bekende prachtige koorboeken uit 
 Het schrift is vaak slordig en klein, soms vrijwel onleesbaar, en zeker ongeschikt voor een koor om uit te zingen.
 Verschillende schrifttypen zijn te onderscheiden, wat erop wijst dat delen van het manuscript van verschillende copiisten afkomstig zijn.
 
-Wenen 11883 is vaak gebruikt bij het verzorgen van uitgaven van de verzamelde werken van erin vertegenwoordigde componisten, eerst van de bekende, later ook van de minder bekende.
+_Wenen 11883_ is vaak gebruikt bij het verzorgen van uitgaven van de verzamelde werken van erin vertegenwoordigde componisten, eerst van de bekende, later ook van de minder bekende.
 Aandacht voor het manuscript beperkte zich daarbij vrijwel steeds tot die gedeelten van het manuscript waar het werk van de betreffende componist zich bevond.
 De werken van de weinig of niet bekende componisten, en de anonieme werken hebben zich ook weinig in musicologische belangstelling mogen verheugen.
 Met het manuscript als geheel heeft alleen Nowak zich beziggehouden, die het bespreekt in zijn studie over de Fugger-manuscripten in de Österreichische Nationalbibliotheek (1948).
@@ -43,14 +43,14 @@ Ook is getracht nadere biografische informatie te vinden over de vrijwel of vols
 
 Het doel van deze scriptie is ten eerste het ordenen en waar mogelijk aanvullen van de bibliografische gegevens over Wenen 11883. Hiertoe heb ik een literatuurstudie gemaakt, waarbij ik geprobeerd heb alle literatuur waarin het manuscript besproken of genoemd wordt te vinden.
 Ik heb de lijst van catalogi van bibliotheken en van afzonderlijke (groepen van) manuscripten, die Frans Wiering voor het werkcollege had gemaakt (aanwezig in één van de in het voorwoord genoemde multobanden), de catalogi van het microfilmarchief van het Instituut voor Muziekwetenschap, en de catalogus van werken van Nederlandse componisten in Italiaanse bibliotheken (zie Smijers, 1935) in het Instituut voor Muziekwetenschap van de Rijksuniversiteit Utrecht doorgenomen op zoek naar concordanties.
-Overigens met uiterst mager resultaat: één nieuwe concordantie, namelijk die van de Missa Adiutorium nostrum in MusBS F. Wat ik niet heb gedaan is het doornemen van manuscripten of microfilms daarvan om te zien of er zich onder anonieme of foutief toegeschreven werken soms nog concordanties bevinden.
+Overigens met uiterst mager resultaat: één nieuwe concordantie, namelijk die van de _Missa Adiutorium nostrum_ in MusBS F. Wat ik niet heb gedaan is het doornemen van manuscripten of microfilms daarvan om te zien of er zich onder anonieme of foutief toegeschreven werken soms nog concordanties bevinden.
 Een dergelijk tijdrovend werk kan misschien nog informatie opleveren die mij tot dusver is ontgaan.
 Alle bibliografische gegevens zijn samengevat in de inventaris.
-Het vermelden van de modellen van de Missa Misericoria domini van Heinrich Isaac, en van de vier missen van Mattheus Pipelare was helaas door tijdgebrek niet meer mogelijk, maar deze modellen zijn - voor zover ze bekend zijn - ongetwijfeld te vinden in de wèl vermelde studies over het werk van deze componisten.
+Het vermelden van de modellen van de _Missa Misericoria domini_ van Heinrich Isaac, en van de vier missen van Mattheus Pipelare was helaas door tijdgebrek niet meer mogelijk, maar deze modellen zijn - voor zover ze bekend zijn - ongetwijfeld te vinden in de wèl vermelde studies over het werk van deze componisten.
 Om het vergelijken van de inhoud met die van andere bronnen te vergemakkelijken heb ik een incipitindex gemaakt.
 
-Het tweede doel van mijn scriptie was eerst het nader bestuderen van de twee missen, de Missa per Alamyr van Hieronimus Winters, en de anonieme Missa Pourquoy alles vous seulette, die mijn tijdens het werkcollege ter transcriptie en bestudering waren toegewezen.
-Later heb ik besloten om in plaats van de mis van Winters de anonieme Missa Adiutorium nostrum te bestuderen, omdat de literatuurstudie allerlei interessante informatie over het model van deze mis opleverde, en ook omdat de enige door mij gevonden concordantie op deze mis betrekking heeft.
+Het tweede doel van mijn scriptie was eerst het nader bestuderen van de twee missen, de _Missa per Alamyr_ van Hieronimus Winters, en de anonieme _Missa Pourquoy alles vous seulette_, die mijn tijdens het werkcollege ter transcriptie en bestudering waren toegewezen.
+Later heb ik besloten om in plaats van de mis van Winters de anonieme _Missa Adiutorium nostrum_ te bestuderen, omdat de literatuurstudie allerlei interessante informatie over het model van deze mis opleverde, en ook omdat de enige door mij gevonden concordantie op deze mis betrekking heeft.
 De analyse van de twee missen richt zich alleen op de parodie-techniek, omdat een dergelijke analyse het meeste licht leek te kunnen werpen op de herkomst, zowel wat tijd als plaats betreft, van de werken, en daardoor misschien ook op de herkomst van het manuscript.
 Bovendien is studie van parodie-missen uit deze periode op zichzelf al interessant genoeg, en tot dusver nog weinig beoefend.
 (Zie hierover Lockwood, 1964 en 1966.)
