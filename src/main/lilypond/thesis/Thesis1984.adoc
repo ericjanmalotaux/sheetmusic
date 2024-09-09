@@ -25,7 +25,7 @@ Amsterdam, november 1984
 
 == Inleiding
 
-_Wenen 11883_ is een papieren manuscript, formaat 21 bij 28,7 cm, bestaande uit 325 bladen, dan 28 missen, een _Regina coeli_ en een los driedelig _Agnus Dei_ bevat van deels bekend componisten zoals Josquin des Prez, Jacob Obrecht, Johannes Ockeghem en Heinrich Isaac, deels minder bekende componisten zoals Mattheus Pipelare, Johannes Ghiselin-Verbonnet, Johannes Prioris, Jacobus Barbireau en Lupus, en deels vrijwel onbekende of volslagen onbekende componisten zoals Johannes Notens, Hieronimus Winters, Amanus Faber, Henricus Sevendonck, Nicolaus Carlir en Joh. tichler.
+_Wenen 11883_ is een papieren manuscript, formaat 21 bij 28,7 cm, bestaande uit 325 bladen, dat 28 missen, een _Regina coeli_ en een los driedelig _Agnus Dei_ bevat van deels bekende componisten zoals Josquin des Prez, Jacob Obrecht, Johannes Ockeghem en Heinrich Isaac, deels minder bekende componisten zoals Mattheus Pipelare, Johannes Ghiselin-Verbonnet, Johannes Prioris, Jacobus Barbireau en Lupus, en deels vrijwel onbekende of volslagen onbekende componisten zoals Johannes Notens, Hieronimus Winters, Amanus Faber, Henricus Sevendonck, Nicolaus Carlir en Joh. Sticheler.
 Bovendien staan er nog een stuk af tien anonieme werken in het manuscripts.
 Het is geen mooi manuscript, zoals vele van de bekende prachtige koorboeken uit het begin van de 16e eeuw, die door koningen en andere hooggeplaatste personen als relatiegeschenken werken gebruikt.
 Het schrift is vaak slordig en klein, soms vrijwel onleesbaar, en zeker ongeschikt voor een koor om uit te zingen.
@@ -38,7 +38,7 @@ Met het manuscript als geheel heeft alleen Nowak zich beziggehouden, die het bes
 Nowak concludeert daarin onder meer dat het manuscript zeer belangwekkend is, en dat een afzonderlijke, uitvoerige studie ervan dringend gewenst is.
 Al met al voldoende aanleiding voor Professor Maas om er een werkcollege aan te wijden, en voor mij om er een doctoraalscriptie over te schrijven.
 
-Het onderzoek tijdens het werkcollege heeft zich eerst voornamelijk gericht op bibliografische aspecten wan Wenen 11883, zoals het samenstellen van een betrouwbare inhoudsopgave, het thuisbrengen van de anonieme composities, het binnen nauwere grenzen vaststellen van de tijd van ontstaan, het identificeren van de copiisten en het zoeken van concordanties met andere bronnen, en later, nadat gebleken was dat dit slechts weinig nieuws opleverde, vooral op inhoudelijke aspecten, zoals transcriptie en bestudering van de niet-uitgegeven werken, en het zoeken van modellen daarvan.
+Het onderzoek tijdens het werkcollege heeft zich eerst voornamelijk gericht op bibliografische aspecten van Wenen 11883, zoals het samenstellen van een betrouwbare inhoudsopgave, het thuisbrengen van de anonieme composities, het binnen nauwere grenzen vaststellen van de tijd van ontstaan, het identificeren van de copiisten en het zoeken van concordanties met andere bronnen, en later, nadat gebleken was dat dit slechts weinig nieuws opleverde, vooral op inhoudelijke aspecten, zoals transcriptie en bestudering van de niet-uitgegeven werken, en het zoeken van modellen daarvan.
 Ook is getracht nadere biografische informatie te vinden over de vrijwel of volslagen onbekende componisten, meestal met weinig resultaat.
 
 Het doel van deze scriptie is ten eerste het ordenen en waar mogelijk aanvullen van de bibliografische gegevens over Wenen 11883. Hiertoe heb ik een literatuurstudie gemaakt, waarbij ik geprobeerd heb alle literatuur waarin het manuscript besproken of genoemd wordt te vinden.
@@ -49,11 +49,11 @@ Alle bibliografische gegevens zijn samengevat in de inventaris.
 Het vermelden van de modellen van de Missa Misericoria domini van Heinrich Isaac, en van de vier missen van Mattheus Pipelare was helaas door tijdgebrek niet meer mogelijk, maar deze modellen zijn - voor zover ze bekend zijn - ongetwijfeld te vinden in de wèl vermelde studies over het werk van deze componisten.
 Om het vergelijken van de inhoud met die van andere bronnen te vergemakkelijken heb ik een incipitindex gemaakt.
 
-Het tweede doel van mijn scriptie was eerst het nader bestuderen van de twee missen, de Missa per Alamyr van hieronimus Winters, en de anonieme Missa Pourquoy alles vous seulette, die mijn tijdens het werkcollege ter transcriptie en bestudering waren toegewezen.
+Het tweede doel van mijn scriptie was eerst het nader bestuderen van de twee missen, de Missa per Alamyr van Hieronimus Winters, en de anonieme Missa Pourquoy alles vous seulette, die mijn tijdens het werkcollege ter transcriptie en bestudering waren toegewezen.
 Later heb ik besloten om in plaats van de mis van Winters de anonieme Missa Adiutorium nostrum te bestuderen, omdat de literatuurstudie allerlei interessante informatie over het model van deze mis opleverde, en ook omdat de enige door mij gevonden concordantie op deze mis betrekking heeft.
 De analyse van de twee missen richt zich alleen op de parodie-techniek, omdat een dergelijke analyse het meeste licht leek te kunnen werpen op de herkomst, zowel wat tijd als plaats betreft, van de werken, en daardoor misschien ook op de herkomst van het manuscript.
 Bovendien is studie van parodie-missen uit deze periode op zichzelf al interessant genoeg, en tot dusver nog weinig beoefend.
-(Zie hierover Lockwoo, 1964 en 1966.)
+(Zie hierover Lockwood, 1964 en 1966.)
 
 Er zijn nog enkele onderwerpen overgebleven die ik had willen bestuderen, maar waar ik niet aan toegekomen ben.
 Zo had ik de versies van de missen van Josquin, Barbireau, Isaac, Notens, Obrecht en Prioris willen vergelijken met de versies van hun concordanties, met het doel om stemma's vast te stellen, om zo meer zicht te krijgen op de plaats van Wenen 11883 in de overlevering van deze werken.
