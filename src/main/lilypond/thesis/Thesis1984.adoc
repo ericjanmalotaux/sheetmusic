@@ -25,7 +25,8 @@ Amsterdam, november 1984*
 
 == Inleiding
 
-_Wenen 11883_ is een papieren manuscript, formaat 21 bij 28,7 cm, bestaande uit 325 bladen, dat 28 missen, een _Regina coeli_ en een los driedelig _Agnus Dei_ bevat van deels bekende componisten zoals Josquin des Prez, Jacob Obrecht, Johannes Ockeghem en Heinrich Isaac, deels minder bekende componisten zoals Mattheus Pipelare, Johannes Ghiselin-Verbonnet, Johannes Prioris, Jacobus Barbireau en Lupus, en deels vrijwel onbekende of volslagen onbekende componisten zoals Johannes Notens, Hieronimus Winters, Amanus Faber, Henricus Sevendonck, Nicolaus Carlir en Joh. Sticheler.
+_Wenen 11883_ is een papieren manuscript, formaat 21 bij 28,7 cm, bestaande uit 325 bladen, dat 28 missen, een _Regina coeli_ en een los driedelig _Agnus Dei_ bevat van deels bekende componisten zoals Josquin des Prez, Jacob Obrecht, Johannes Ockeghem en Heinrich Isaac, deels minder bekende componisten zoals Mattheus Pipelare, Johannes Ghiselin-Verbonnet, Johannes Prioris, Jacobus Barbireau en Lupus, en deels vrijwel onbekende of volslagen onbekende componisten zoals Johannes Notens, Hieronimus Winters, Amanus Faber, Henricus Sevendonck, Nicolaus Carlir en Joh.
+Sticheler.
 Bovendien staan er nog een stuk af tien anonieme werken in het manuscripts.
 Het is geen mooi manuscript, zoals vele van de bekende prachtige koorboeken uit het begin van de 16e eeuw, die door koningen en andere hooggeplaatste personen als relatiegeschenken werken gebruikt.
 Het schrift is vaak slordig en klein, soms vrijwel onleesbaar, en zeker ongeschikt voor een koor om uit te zingen.
@@ -64,3 +65,51 @@ Tenslotte lag het in mijn bedoeling om een hoofdsuk te wijden aan het ontwerpen 
 In het geval dat iemand zich ooit nog eens bezighoudt met deze onderwerpen hoop ik dat deze scriptie de weg naar een dergelijk onderzoek enigszins geplaveid heeft.
 
 == Samenvatting literatuur
+
+_Wenen 11883_ is niet bepaald een onbekend manuscript.
+De inhoud ervan is al bekend sinds 1875, toen deel VII van de _Tabulae_ footnote:[Joseph Mantuani (1875)] werd gepubliceerd, waarin _Wenen 11883_ gecatalogiseerd is.
+Doordat het manuscript onder meer werken bevat van enkele van de breoemdste componisten van de tweede helft van de 15e eeuw en het begin van de 16e eeuw, is het ook geregeld gebruikt in studies over het werk van deze componisten.
+
+De eerste die _Wenen 11883_ na het verschijnen van de _Tabulae_ noemt, is Robert Eitner in de _Quellenlexicon_, in de artikelen over componisten die met hun werk in het manuscript zijn vertegenwoordigd.
+Eitner vermeldt dan alleen dat het een manuscript uit de 164 eeuw is, dat het 325 bladen telt, en het nummer van de betreffende compositie.
+
+De volgende die het manuscript noemt, is Johannes Wolf in de uitgave van werken van Jacob Obrecht.
+Wolf geeft tweemaal een beschrijving van het manuscript: éénmaal in de inleiding van de _Missa L'homme armé_ footnote:[_Werken_, deel V, voor pagina 53], en éénmaal in de inleiding van de _Missa sine nomine_ footnote:[_Werken_, deel V, voor pagina 157].
+De twee beschrijvingen stemmen echter niet geheel met elkaar overeen.
+In de inleiding van de _Missa L'homme armé_ noemt hij naast een _Regina coeli laetare_ en een _Agnus_ een aantal van 28 missen, terwijl hij het in de inleiding van de _Missa sine nomine_ heeft over 29 missen een _Regina coeli_.
+Onder de componisten noemt Wolf in de eerste beschrijving wèl Johannes Notens, maar de de tweede beschrijving niet.
+Tenslotte begint volgens de eerste beschrijving de _Missa L'homme armé_ op folio 51 recto, en volgens de tweede beschrijving op folio 52 recto.
+Beide keren vermeldt Wolf als ontstaanstijd van het manuscript het einde van de 15e eeuw.
+
+George van Doorslaer <<DOORSLAER1933>> noemt _Wenen 11883_ alleen maar in verband met Nicolaus Carlir, die in het manuscript "sangmeyster zu Anthorff" wordt genoemd, en over wie van Doorslaer enige interessante informatie heeft verzameld.
+Vrijwel de enige informatie trouwens, die over deze componist, van wie alleen de mis in _Wenen 11883_ bekend is, te vinden is.
+
+Smijers <<SMIJERS1939>>footnote:[In de inleiding van de _Missa Malheur me bat_, _Werken_ afl.19, p. VII.] geeft behalve een beschrijving ook een inhoudsopgave, die kennelijk ontleend is aan de _Tabulae_.
+Smijers identificeert verde de _Missa 4 vocum_ op folia 42'-51 als de _Missa quant jái au cor_ van Heinrich Isaac, de _Missa 3 voc_ van Obrecht als _Missa De tous biens_,footnote:[Dit had Otto Gombosi al ontdekt: zie Gombosi (1925), 45-47.] en de _Missa 4 voc_ van Johannes Notens eveneens als een _Missa De tous biens_.
+Als ontstaanstijd noemt hij het begin van de 16e eeuw.
+
+Enige informatie over minder bekende werken in _Wenen 11883_ vinden we in het boek van du Saar <<SAAR>> over Jacobus Barbireau.
+Behalve over de _Missa Faulx perversa_ van Barbireaufootnote:[pp. 38-48] schrijft du Saar ook over de _Missa Pourquoy alles vous seullette_, die anoniem staat op folia 195'-198footnote:[pp. 32].
+Du Saar weerlegt de toeschrijving aan Jacobus Barbireau, gedaan door J.B. Weckerlin <<WECKERLIN>>footnote:[pp. 115. Volgens du Saar heeft M. Bottée de Toulmont tussen 1831 en 1850, toen deze laatste bibliothecaris was van de Bibliothèque du Conservatoire de Paris, afschriften laten maken voor zijn bibliotheek van verscheidene Weense manuscripten, waaronder Wenen1783, 11883 en 15497. Het afschrift van _Wenen 11883_ bevindt zich nu in de Bibliothèque Nationale onder de signatuur Cons.Rés. F.1332.], op grond van stylistische criteria.
+Hij meent tevens, dat de _Tabulae_ en Smijers ten onrechte aangeven dat deze mis slechts de folia 196'-198 beslaan, en dat daarentegen deze mis doorloopt tot folia 204. Volgens du Saar past één mis nooit op zo weinig foliafootnote:[Du Saar had ongelijk: weliswaar is de opgave van Smijers niet correct, aangezien de _Missa Pourquoy alles vous seullette_ al op folio 195' begint in plaats van op folio 196', maar de mis eindigt inderdaad op folio 198. De copiist heeft gewoon verschrikkelijk klein geschreven. Du Saar merkte trouwens ook de verschillen op in de twee beschrijvingen van Johannes Wolf. De ene keer spelt Wolf Barbariaw, en de andere keer Barberiaw.].
+Op pagina 60 tenslotte noemt hij Matheus Pipelare als componist van de twee laatste missen van het manuscript, op folia 305-315 en 315'-325, die Smijers anoniem genoemd had.
+Du Saar is trouwens de enige, die het bovengenoemde artikel van G. van Doorslaer over "Nicole Carlier" noemt.
+
+Het volgende anonieme werk dat thuisgebracht kon worden, is de _Missa 4 voc._ op folia 208-221, die de _Missa Prolationum_ van Johannes Ockeghem blijkt te zijn.
+De versie van deze mis in _Wenen 11883_ is een "resolutio" van de oorspronkelijke notatie in twee stemmen, zoals in de "Chigi-codex"footnote:[ROMA, Biblioteca Apostolicana Vaticana, Chigiana, C.VIII.234, fol. 106'-114.].
+Dit staat in de uitgave van <<PLAMENAC>> van de werken van Johannes Ockeghem.
+Plamenac zegt dat Professor Newman W. Powell dit ontdekt en het hem meegedeeld heeft.
+Verder geeft Plamenac een beknopte beschrijving van _Wenen 11883_, die vrijwel overeen komt met die van Smijers, en een gedetailleerde collatie van de "Weense" versie van de _Missa Prolationum_ met die van de Chigi-codex."
+
+[bibliography]
+== Bibliografie
+
+* [[[ANTWERPS]]] _Het Antwerps Liedboek: 87 melodieën op teksten uit "Een Schoon Liedekens-Boeck"van 1544_ / uitgegeven door K. Vellekoop en H. Wagenaar-Nolthenius; met medewerking van W.P. Gerritsen en A.C. Hemmes-Hoogstadt.&nbsp;-&nbsp;2e druk.&nbsp;-&nbsp;Amsterdam : Vereniging voor Nederlandse Muziekgeschiedenis, 1975.&nbsp;-&nbsp;2 delen.
+* [[[DOORSLAER1928, Doorslaer (1928)]]] G, van Doorslaer: "_Calligraphes de musique à Malines au XVIe siècle_", in: _Bulletin du Cercle archéologique, litteraire, et artistique de Malines_, 33 (1928), 91-102.
+* [[[DOORSLAER1933, Doorslaer (1933)]]] G. van Doorslaer: "_Nicole Carlier(gest. 1523), Componist en Zangmeester te Antwerpen_" in: _Antwerps Archievenblad_, 2e reeks, 8 (1933), 10-12.
+* [[[DOORSLAER1934, Doorslaer (1934)]]] G. van Doorslaer: "_La chapelle musicale de Philippe le Beau_", in: _Revue belge d'archéologie et d'histoire de l'art_, 4 (1934), 21-57, 139-165.
+* [[[EITNER]]] Robert Eitner: _Biographisch-Bibliographisches Quellen-Lexicon der Musiker und Musikgelehrten christlichter Zeitrechnung bis Mitte des neunzehnten Jahrhunderts_.&nbsp;-&nbsp;2e verbesserte Auflage in 11 Bänden.&nbsp;- Graz : Akademische Druck- und Verlags-Anstalt, 1959.
+* [[[PLAMENAC, Plamenac (1966)]]] Dragan Plamenac (ed.): _Johannes Ockeghem: Collected Works_.&nbsp;-&nbsp;2nd corrected edition.&nbsp;-&nbsp;[s.l.]&nbsp:&nbsp;American Musicological Society, 1966.&nbsp-&nbsp;(Studies and Documents; 1).
+* [[[SAAR, Saar 1949)]]] Johannes du Saar: _Het leven en de composities van Jacobus Barbireau_.&nbsp;-&nbsp;Utrecht : de Haan, 1946.&nbsp;-&nbsp;Proefschrift Rijksuniversiteit Utrecht.
+* [[[SMIJERS1939,Smijers (1939)]]] A. Smijers (ed.): Afl. 19: _Missa Malheur me bat_.&nbsp;-&nbsp;Leipzig : Kistner & Siegel, 1939.
+* [[[WECKERLIN, Weckerlin]]] J.B. Weckerlin: _La chanson populaire_.&nbsp;-&nbsp;Paris, 1886.
