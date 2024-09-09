@@ -1,0 +1,53 @@
+= Wenen, Österreichische Nationalbibliothek Cod. 11883: doctoraalscriptie Muziekwetenschap Universiteit van Amsterdam
+Eric J. Malotaux
+november 1984
+:doctype: book
+:title-page:
+:toc:
+:toc-title: Inhoud
+:sectnums:
+:chapter-signifier: Hoofdstuk
+:authors:
+:content:
+:name-only: Eric Jan Malotaux
+:name-only: Scriptiebegeleider: Prof. Dr. C.J. Maas
+
+[preface]
+= Voorwoord
+
+Deze scriptie vindt zijn oorsprong in een doctoraalwerkcollege over het manuscript Wenen, Österreichische Nationalbibliothek, Cod. 11883, hierna te noemen Wenen 11883, dat in het voorjaar van 1984 door Professor C.J. Maas werd gegeven aan het Instituut voor Muziekwetenschap van de Universiteit van Amsterdam.
+Aan dit werkcollege name deel behalve ikzelf Peter van den Burg, Peter Banning, Kees Schilder, Frans Wiering, Jeffry van der Elst, Liesbeth Nederstigt en Leon Kessels, die ik graag wil bedanken voor hun toestemming om de resultaten van het werkcollege in deze scriptie te verwerken.
+De schriftelijke neerslag van het werkcollege in de vorm van transcripties en referaten is overigens te vinden in twee multobanden in de bibliotheek van het Instituut voor Muziekwetenschap, tot nu toe nog zonder signatuur.
+Verder wil ik graag nog bedanken B. Kahmann voor het ter beschilling stelln van zijn foto's van Cambridge, Magdalen College, Pepys Library, ms. 1760, Willem Hering voor zijn hulp in de bibliotheek van het Instituut voor Muziekwetenshap, Malotaux - Electronic Systems Design - voor het gebruik van hun computer voor het typwerk, en niet in het minst Professor Maas voor zijn ondersteuning en begeleiding.
+
+Eric Jan Malotaux +
+Amsterdam, november 1984
+
+== Inleiding
+
+_Wenen 11883_ is een papieren manuscript, formaat 21 bij 28,7 cm, bestaande uit 325 bladen, dan 28 missen, een _Regina coeli_ en een los driedelig _Agnus Dei_ bevat van deels bekend componisten zoals Josquin des Prez, Jacob Obrecht, Johannes Ockeghem en Heinrich Isaac, deels minder bekende componisten zoals Mattheus Pipelare, Johannes Ghiselin-Verbonnet, Johannes Prioris, Jacobus Barbireau en Lupus, en deels vrijwel onbekende of volslagen onbekende componisten zoals Johannes Notens, Hieronimus Winters, Amanus Faber, Henricus Sevendonck, Nicolaus Carlir en Joh. tichler.
+Bovendien staan er nog een stuk af tien anonieme werken in het manuscripts.
+Het is geen mooi manuscript, zoals vele van de bekende prachtige koorboeken uit het begin van de 16e eeuw, die door koningen en andere hooggeplaatste personen als relatiegeschenken werken gebruikt.
+Het schrift is vaak slordig en klein, soms vrijwel onleesbaar, en zeker ongeschikt voor een koor om uit te zingen.
+Verschillende schrifttypen zijn te onderscheiden, wat erop wijst dat delen van het manuscript van verschillende copiisten afkomstig zijn.
+
+Wenen 11883 is vaak gebruikt bij het verzorgen van uitgaven van de verzamelde werken van erin vertegenwoordigde componisten, eerst van de bekende, later ook van de minder bekende.
+Aandacht voor het manuscript beperkte zich daarbij vrijwel steeds tot die gedeelten van het manuscript waar het werk van de betreffende componist zich bevond.
+De werken van de weinig of niet bekende componisten, en de anonieme werken hebben zich ook weinig in musicologische belangstelling mogen verheugen.
+Met het manuscript als geheel heeft alleen Nowak zich beziggehouden, die het bespreekt in zijn studie over de Fugger-manuscripten in de Österreichische Nationalbibliotheek (1948).
+Nowak concludeert daarin onder meer dat het manuscript zeer belangwekkend is, en dat een afzonderlijke, uitvoerige studie ervan dringend gewenst is.
+Al met al voldoende aanleiding voor Professor Maas om er een werkcollege aan te wijden, en voor mij om er een doctoraalscriptie over te schrijven.
+
+Het onderzoek tijdens het werkcollege heeft zich eerst voornamelijk gericht op bibliografische aspecten wan Wenen 11883, zoals het samenstellen van een betrouwbare inhoudsopgave, het thuisbrengen van de anonieme composities, het binnen nauwere grenzen vaststellen van de tijd van ontstaan, het identificeren van de copiisten en het zoeken van concordanties met andere bronnen, en later, nadat gebleken was dat dit slechts weinig nieuws opleverde, vooral op inhoudelijke aspecten, zoals transcriptie en bestudering van de niet-uitgegeven werken, en het zoeken van modellen daarvan.
+Ook is getracht nadere biografische informatie te vinden over de vrijwel of volslagen onbekende componisten, meestal met weinig resultaat.
+
+Het doel van deze scriptie is ten eerste het ordenen en waar mogelijk aanvullen van de bibliografische gegevens over Wenen 11883. Hiertoe heb ik een literatuurstudie gemaakt, waarbij ik geprobeerd heb alle literatuur waarin het manuscript besproken of genoemd wordt te vinden.
+Ik heb de lijst van catalogi van bibliotheken en van afzonderlijke (groepen van) manuscripten, die Frans Wiering voor het werkcollege had gemaakt (aanwezig in één van de in het voorwoord genoemde multobanden), de catalogi van het microfilmarchief van het Instituut voor Muziekwetenschap, en de catalogus van werken van Nederlandse componisten in Italiaanse bibliotheken (zie Smijers, 1935) in het Instituut voor Muziekwetenschap van de Rijksuniversiteit Utrecht doorgenomen op zoek naar concordanties.
+Overigens met uiterst mager resultaat: één nieuwe concordantie, namelijk die van de Missa Adiutorium nostrum in MusBS F. Wat ik niet heb gedaan is het doornemen van manuscripten of microfilms daarvan om te zien of er zich onder anonieme of foutief toegeschreven werken soms nog concordanties bevinden.
+Een dergelijk tijdrovend werk kan misschien nog informatie opleveren die mij tot dusver is ontgaan.
+Alle bibliografische gegevens zijn samengevat in de inventaris.
+Het vermelden van de modellen van de Missa Misericoria domini van Heinrich Isaac, en van de vier missen van Mattheus Pipelare was helaas door tijdgebrek niet meer mogelijk, maar deze modellen zijn - voor zover ze bekend zijn - ongetwijfeld te vinden in de wèl vermelde studies over het werk van deze componisten.
+Om het vergelijken van de inhoud met die van andere bronnen te vergemakkelijken heb ik een incipitindex gemaakt.
+
+
+== Samenvatting literatuur
