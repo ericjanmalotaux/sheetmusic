@@ -66,11 +66,11 @@ In het geval dat iemand zich ooit nog eens bezighoudt met deze onderwerpen hoop 
 == Samenvatting literatuur
 
 _Wenen 11883_ is niet bepaald een onbekend manuscript.
-De inhoud ervan is al bekend sinds 1875, toen deel VII van de _Tabulae_ footnote:[Joseph Mantuani (1875)] werd gepubliceerd, waarin _Wenen 11883_ gecatalogiseerd is.
-Doordat het manuscript onder meer werken bevat van enkele van de breoemdste componisten van de tweede helft van de 15e eeuw en het begin van de 16e eeuw, is het ook geregeld gebruikt in studies over het werk van deze componisten.
+De inhoud ervan is al bekend sinds 1875, toen deel VII van de _Tabulae_ footnote:[<<MANTUANI>>)] werd gepubliceerd, waarin _Wenen 11883_ gecatalogiseerd is.
+Doordat het manuscript onder meer werken bevat van enkele van de beroemdste componisten van de tweede helft van de 15e eeuw en het begin van de 16e eeuw, is het ook geregeld gebruikt in studies over het werk van deze componisten.
 
 De eerste die _Wenen 11883_ na het verschijnen van de _Tabulae_ noemt, is Robert Eitner <<EITNER>> in de _Quellenlexicon_, in de artikelen over componisten die met hun werk in het manuscript zijn vertegenwoordigd.
-Eitner vermeldt dan alleen dat het een manuscript uit de 164 eeuw is, dat het 325 bladen telt, en het nummer van de betreffende compositie.
+Eitner vermeldt dan alleen dat het een manuscript uit de 16e eeuw is, dat het 325 bladen telt, en het nummer van de betreffende compositie.
 
 De volgende die het manuscript noemt, is Johannes Wolf <<WOLF>> in de uitgave van werken van Jacob Obrecht.
 Wolf geeft tweemaal een beschrijving van het manuscript: éénmaal in de inleiding van de _Missa L'homme armé_ footnote:[_Werken_, deel V, voor pagina 53], en éénmaal in de inleiding van de _Missa sine nomine_ footnote:[_Werken_, deel V, voor pagina 157].
@@ -84,7 +84,7 @@ George van Doorslaer <<DOORSLAER1933>> noemt _Wenen 11883_ alleen maar in verban
 Vrijwel de enige informatie trouwens, die over deze componist, van wie alleen de mis in _Wenen 11883_ bekend is, te vinden is.
 
 Smijers <<SMIJERS1939>>footnote:[In de inleiding van de _Missa Malheur me bat_, _Werken_ afl.19, p. VII.] geeft behalve een beschrijving ook een inhoudsopgave, die kennelijk ontleend is aan de _Tabulae_.
-Smijers identificeert verde de _Missa 4 vocum_ op folia 42'-51 als de _Missa quant jái au cor_ van Heinrich Isaac, de _Missa 3 voc_ van Obrecht als _Missa De tous biens_,footnote:[Dit had Otto Gombosi al ontdekt: zie Gombosi (1925), 45-47.] en de _Missa 4 voc_ van Johannes Notens eveneens als een _Missa De tous biens_.
+Smijers identificeert verder de _Missa 4 vocum_ op folia 42'-51 als de _Missa quant j'ai au cor_ van Heinrich Isaac, de _Missa 3 voc_ van Obrecht als _Missa De tous biens_,footnote:[Dit had Otto Gombosi al ontdekt: zie Gombosi (1925), 45-47.] en de _Missa 4 voc_ van Johannes Notens eveneens als een _Missa De tous biens_.
 Als ontstaanstijd noemt hij het begin van de 16e eeuw.
 
 Enige informatie over minder bekende werken in _Wenen 11883_ vinden we in het boek van du Saar <<SAAR>> over Jacobus Barbireau.
@@ -107,9 +107,10 @@ Verder geeft Plamenac een beknopte beschrijving van _Wenen 11883_, die vrijwel o
 * [[[DOORSLAER1928, Doorslaer (1928)]]] G, van Doorslaer: "_Calligraphes de musique à Malines au XVIe siècle_", in: _Bulletin du Cercle archéologique, litteraire, et artistique de Malines_, 33 (1928), 91-102.
 * [[[DOORSLAER1933, Doorslaer (1933)]]] G. van Doorslaer: "_Nicole Carlier(gest. 1523), Componist en Zangmeester te Antwerpen_" in: _Antwerps Archievenblad_, 2e reeks, 8 (1933), 10-12.
 * [[[DOORSLAER1934, Doorslaer (1934)]]] G. van Doorslaer: "_La chapelle musicale de Philippe le Beau_", in: _Revue belge d'archéologie et d'histoire de l'art_, 4 (1934), 21-57, 139-165.
-* [[[EITNER, Eitner>]]] Robert Eitner: _Biographisch-Bibliographisches Quellen-Lexicon der Musiker und Musikgelehrten christlichter Zeitrechnung bis Mitte des neunzehnten Jahrhunderts_.&nbsp;- 2e verbesserte Auflage in 11 Bänden.&nbsp;- Graz : Akademische Druck- und Verlags-Anstalt, 1959.
+* [[[EITNER, Eitner (1959)]]] Robert Eitner: _Biographisch-Bibliographisches Quellen-Lexicon der Musiker und Musikgelehrten christlichter Zeitrechnung bis Mitte des neunzehnten Jahrhunderts_.&nbsp;- 2e verbesserte Auflage in 11 Bänden.&nbsp;- Graz : Akademische Druck- und Verlags-Anstalt, 1959.
 * [[[LOCKWOOD1964, Lockwood (1964)]]] Lewis Lockwood: "_A view of the Early Sixteenth-Century Parody Mass_" in: _The Department of Music, Queens College of the City University of New York: Thenty-fifth Anniversary Festschrift (1937-1962)_, 53-77 edited by Albert Mell.&nbsp;- New York.&nbsp:&nbsp;City University of New York, 1964.
 * [[[LOCKWOOD1966, Lockwood 1966)]]] Lewis Lockwood: "_On 'Parody' as Term and Concept in 16th-Century Music_" in: _Aspects of Medieval & Renaissance Music: A Birthday Offering to Gustave Reese_, 560-575&nbsp;/&nbsp; ed. by Jan LaRue.&nbsp;- New York&nbsp;: Nortin, 1966.
+* [[[MANTUANI, Mantuani (1875)]]] Joseph Mantuani: _Tabulae codicum manu scriptorum ... in bibliotheca palatina Vindobonensi asservatorum... Volumen VII_.&nbsp;- Vindobonae, 1875.&nbsp;- Reprint: Graz&nbsp;: Akademische Druck- und Verlags-Anstalt, 1965.
 * [[[NOWAK, Nowak (1948)]]] Leopold Nowak: "_Die Musikhandschriften aus Fuggerschem Besitz in der Österreichischen Nationalbibliotheek_" in: _Die Österreichische Nationalbibliotheek: Festschrift herausgegeven zum 25 Jährigen Dienstjubiläum... Dr. Josef Bick_, 505-515.&nbsp;- Wien, 1948.
 * [[[PLAMENAC, Plamenac (1966)]]] Dragan Plamenac (ed.): _Johannes Ockeghem: Collected Works_.&nbsp;- 2nd corrected edition.&nbsp;- [s.l.]&nbsp:&nbsp;American Musicological Society, 1966.&nbsp-&nbsp;(Studies and Documents; 1).
 * [[[SAAR, Saar 1949)]]] Johannes du Saar: _Het leven en de composities van Jacobus Barbireau_.&nbsp;- Utrecht : de Haan, 1946.&nbsp;- Proefschrift Rijksuniversiteit Utrecht.
