@@ -235,7 +235,6 @@ tekstDefinition = \markup {
 
 
 \book {
-  \bookOutputSuffix "a-moll"
   \score {
     \keepWithTag #'amoll
     \musicDefinition
