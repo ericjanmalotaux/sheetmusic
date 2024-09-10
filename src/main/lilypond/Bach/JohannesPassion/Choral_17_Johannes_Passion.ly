@@ -169,7 +169,8 @@ musicDefinition = \new ChoirStaff <<
   } <<
     \accidentalStyle choral-cautionary
     \new Voice = superius {
-      \superiusMusic
+      \tag #'amoll \superiusMusic
+      \tag #'fismoll \transpose a fis \superiusMusic
     }
   >>
   \new Lyrics \lyricsto superius \superiusLyrics
@@ -179,7 +180,8 @@ musicDefinition = \new ChoirStaff <<
     midiInstrument = "choir aahs"
   } <<
     \new Voice = altus {
-      \altusMusic
+      \tag #'amoll \altusMusic
+      \tag #'fismoll \transpose a fis \altusMusic
     }
   >>
   \new Lyrics \lyricsto altus \altusLyrics
@@ -189,7 +191,8 @@ musicDefinition = \new ChoirStaff <<
     midiInstrument = "choir aahs"
   } <<
     \new Voice = tenor {
-      \tenorMusic
+      \tag #'amoll \tenorMusic
+      \tag #'fismoll \transpose a fis \tenorMusic
     }
   >>
   \new Lyrics \lyricsto tenor \tenorLyrics
@@ -199,7 +202,8 @@ musicDefinition = \new ChoirStaff <<
     midiInstrument = "choir aahs"
   } <<
     \new Voice = bassus {
-      \bassusMusic
+      \tag #'amoll \bassusMusic
+      \tag #'fismoll \transpose a fis \bassusMusic
     }
   >>
   \new Lyrics \lyricsto bassus \bassusLyrics
@@ -231,7 +235,21 @@ tekstDefinition = \markup {
 
 
 \book {
+  \bookOutputSuffix "a-moll"
   \score {
+    \keepWithTag #'amoll
+    \musicDefinition
+    \layoutDefinition
+    \midiDefinition
+  }
+  \tekstDefinition
+}
+
+
+\book {
+  \bookOutputSuffix "fis-moll"	
+  \score {
+    \keepWithTag #'fismoll
     \musicDefinition
     \layoutDefinition
     \midiDefinition
